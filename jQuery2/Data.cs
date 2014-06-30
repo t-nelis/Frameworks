@@ -246,7 +246,6 @@ namespace Bridge.jQuery2
         /// Execute the next function on the queue for the matched element.
         /// </summary>
         /// <param name="element"></param>
-        [Template("$.dequeue({0})")]
         public static void Dequeue(Element element) { }
 
         /// <summary>
@@ -254,7 +253,6 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element"></param>
         /// <param name="queueName"></param>
-        [Template("$.dequeue({0}, {1})")]
         public static void Dequeue(Element element, string queueName) { }
 
         /// <summary>
@@ -262,7 +260,6 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM element to be checked for data.</param>
         /// <returns></returns>
-        [Template("$.hasData({0})")]
         public static bool HasData(Element element)
         {
             return false;
@@ -273,7 +270,6 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM element to inspect for an attached queue.</param>
         /// <returns></returns>
-        [Template("$.queue({0})")]
         public static Array Queue(Element element)
         {
             return null;
@@ -285,7 +281,6 @@ namespace Bridge.jQuery2
         /// <param name="element">A DOM element to inspect for an attached queue.</param>
         /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <returns></returns>
-        [Template("$.queue({0}, {1})")]
         public static Array Queue(Element element, string queueName)
         {
             return null;
@@ -298,7 +293,6 @@ namespace Bridge.jQuery2
         /// <param name="string">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="newQueue">An array of functions to replace the current queue contents.</param>
         /// <returns></returns>
-        [Template("$.queue({0}, {1}, {2})")]
         public static jQuery Queue(Element element, string queueName, Array newQueue)
         {
             return null;
@@ -311,7 +305,6 @@ namespace Bridge.jQuery2
         /// <param name="string">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="callback">he new function to add to the queue.</param>
         /// <returns></returns>
-        [Template("$.queue({0}, {1}, {2})")]
         public static jQuery Queue(Element element, string queueName, Func<jQuery> callback)
         {
             return null;
@@ -322,7 +315,6 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM element from which to remove data.</param>
         /// <returns></returns>
-        [Template("$.removeData({0})")]
         public static jQuery RemoveData(Element element)
         {
             return null;
@@ -334,7 +326,6 @@ namespace Bridge.jQuery2
         /// <param name="element">A DOM element from which to remove data.</param>
         /// <param name="name">A string naming the piece of data to remove.</param>
         /// <returns></returns>
-        [Template("$.removeData({0}, {1})")]
         public static jQuery RemoveData(Element element, string name)
         {
             return null;
