@@ -46,24 +46,6 @@ namespace Bridge.jQuery2
         {
         }
 
-        [Template("$()")]
-        public static jQuery Fn()
-        {
-            return null;
-        }
-
-        [Template("$({0})")]
-        public static jQuery Fn(object obj)
-        {
-            return null;
-        }
-
-        [Template("$({0}, {1})")]
-        public static jQuery Fn(object obj, object context)
-        {
-            return null;
-        }
-
         [Template("$({0})")]
         public static jQuery Element(Element element)
         {
@@ -133,6 +115,12 @@ namespace Bridge.jQuery2
 
         [Template("$({0})")]
         public static jQuery Select(string selector)
+        {
+            return null;
+        }
+
+        [Template("$({0})")]
+        public static jQuery Select(Element element)
         {
             return null;
         }

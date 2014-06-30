@@ -1,6 +1,4 @@
-﻿using Bridge.CLR;
-using Bridge.Html5;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Bridge.jQuery2
@@ -20,9 +18,19 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Adds the specified class(es) to each of the set of matched elements.
         /// </summary>
-        /// <param name="func">A function returning one or more space-separated class names to be added to the existing class name(s). Receives the index position of the element in the set and the existing class name(s) as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <param name="function">A function returning one or more space-separated class names to be added to the existing class name(s). Receives the index position of the element in the set and the existing class name(s) as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
-        public jQuery AddClass(Func<int, string, string> func)
+        public jQuery AddClass(Func<int, string> function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Adds the specified class(es) to each of the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function returning one or more space-separated class names to be added to the existing class name(s). Receives the index position of the element in the set and the existing class name(s) as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
+        public jQuery AddClass(Func<int, string, string> function)
         {
             return null;
         }
@@ -32,8 +40,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="attributeName">The name of the attribute to get.</param>
         /// <returns></returns>
-        [Name("attr")]
-        public string Attribute(string attributeName)
+        public string Attr(string attributeName)
         {
             return null;
         }
@@ -44,8 +51,7 @@ namespace Bridge.jQuery2
         /// <typeparam name="T"></typeparam>
         /// <param name="attributeName">The name of the attribute to get.</param>
         /// <returns></returns>
-        [Name("attr")]
-        public T Attribute<T>(string attributeName)
+        public T Attr<T>(string attributeName)
         {
             return default(T);
         }
@@ -56,8 +62,7 @@ namespace Bridge.jQuery2
         /// <param name="attributeName">The name of the attribute to set.</param>
         /// <param name="value">A value to set for the attribute.</param>
         /// <returns></returns>
-        [Name("attr")]
-        public jQuery Attribute(string attributeName, string value)
+        public jQuery Attr(string attributeName, string value)
         {
             return null;
         }
@@ -68,8 +73,7 @@ namespace Bridge.jQuery2
         /// <param name="attributeName">The name of the attribute to set.</param>
         /// <param name="value">A value to set for the attribute.</param>
         /// <returns></returns>
-        [Name("attr")]
-        public jQuery Attribute(string attributeName, int value)
+        public jQuery Attr(string attributeName, int value)
         {
             return null;
         }
@@ -79,8 +83,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="attributes">An object of attribute-value pairs to set.</param>
         /// <returns></returns>
-        [Name("attr")]
-        public jQuery Attribute(Dictionary<string, object> attributes)
+        public jQuery Attr(Dictionary<string, object> attributes)
         {
             return null;
         }
@@ -90,8 +93,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="attributes">An object of attribute-value pairs to set.</param>
         /// <returns></returns>
-        [Name("attr")]
-        public jQuery Attribute(object attributes)
+        public jQuery Attr(object attributes)
         {
             return null;
         }
@@ -100,10 +102,9 @@ namespace Bridge.jQuery2
         ///  Set one or more attributes for the set of matched elements.
         /// </summary>
         /// <param name="attributeName">The name of the attribute to set.</param>
-        /// <param name="func">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old attribute value as arguments.</param>
+        /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old attribute value as arguments.</param>
         /// <returns></returns>
-        [Name("attr")]
-        public jQuery Attribute(string attributeName, Func<int, string, string> func)
+        public jQuery Attr(string attributeName, Func<int, string> function)
         {
             return null;
         }
@@ -112,7 +113,7 @@ namespace Bridge.jQuery2
         /// Determine whether any of the matched elements are assigned the given class.
         /// </summary>
         /// <param name="className">The class name to search for.</param>
-        /// <returns></returns>
+        /// <returns>boolean</returns>
         public bool HasClass(string className)
         {
             return false;
@@ -140,9 +141,9 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Set the HTML contents of each element in the set of matched elements.
         /// </summary>
-        /// <param name="func">A function returning the HTML content to set. Receives the index position of the element in the set and the old HTML value as arguments. jQuery empties the element before calling the function; use the oldhtml argument to reference the previous content. Within the function, this refers to the current element in the set.</param>
+        /// <param name="function">A function returning the HTML content to set. Receives the index position of the element in the set and the old HTML value as arguments. jQuery empties the element before calling the function; use the oldhtml argument to reference the previous content. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
-        public jQuery Html(Func<int, string, string> func)
+        public jQuery Html(Func<int, string, string> function)
         {
             return null;
         }
@@ -152,8 +153,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="propertyName">The name of the property to get.</param>
         /// <returns></returns>
-        [Name("prop")]
-        public string Property(string propertyName)
+        public string Prop(string propertyName)
         {
             return null;
         }
@@ -163,8 +163,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="propertyName">The name of the property to get.</param>
         /// <returns></returns>
-        [Name("prop")]
-        public T Property<T>(string propertyName)
+        public T Prop<T>(string propertyName)
         {
             return default(T);
         }
@@ -175,8 +174,7 @@ namespace Bridge.jQuery2
         /// <param name="propertyName">The name of the property to set.</param>
         /// <param name="value">A value to set for the property.</param>
         /// <returns></returns>
-        [Name("prop")]
-        public jQuery Property(string propertyName, object value)
+        public jQuery Prop(string propertyName, object value)
         {
             return null;
         }
@@ -186,8 +184,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="properties">An object of property-value pairs to set.</param>
         /// <returns></returns>
-        [Name("prop")]
-        public jQuery Property(Dictionary<string, object> properties)
+        public jQuery Prop(Dictionary<string, object> properties)
         {
             return null;
         }
@@ -197,8 +194,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="properties">An object of property-value pairs to set.</param>
         /// <returns></returns>
-        [Name("prop")]
-        public jQuery Property(object properties)
+        public jQuery Prop(object properties)
         {
             return null;
         }
@@ -207,10 +203,9 @@ namespace Bridge.jQuery2
         /// Set one or more properties for the set of matched elements.
         /// </summary>
         /// <param name="propertyName">The name of the property to set.</param>
-        /// <param name="func">A function returning the value to set. Receives the index position of the element in the set and the old property value as arguments. Within the function, the keyword this refers to the current element.</param>
+        /// <param name="function">A function returning the value to set. Receives the index position of the element in the set and the old property value as arguments. Within the function, the keyword this refers to the current element.</param>
         /// <returns></returns>
-        [Name("prop")]
-        public jQuery Property(string propertyName, Func<int, object, object> func)
+        public jQuery Prop(string propertyName, Func<int, object, object> function)
         {
             return null;
         }
@@ -220,8 +215,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="attributeName">An attribute to remove; as of version 1.7, it can be a space-separated list of attributes.</param>
         /// <returns></returns>
-        [Name("removeAttr")]
-        public jQuery RemoveAttribute(string attributeName)
+        public jQuery RemoveAttr(string attributeName)
         {
             return null;
         }
@@ -239,9 +233,9 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
         /// </summary>
-        /// <param name="func">A function returning one or more space-separated class names to be removed. Receives the index position of the element in the set and the old class value as arguments.</param>
+        /// <param name="function">A function returning one or more space-separated class names to be removed. Receives the index position of the element in the set and the old class value as arguments.</param>
         /// <returns></returns>
-        public jQuery RemoveClass(Func<int, string, string> func)
+        public jQuery RemoveClass(Func<int, string, string> function)
         {
             return null;
         }
@@ -251,8 +245,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="propertyName">The name of the property to remove.</param>
         /// <returns></returns>
-        [Name("removeProp")]
-        public jQuery RemoveProperty(string propertyName)
+        public jQuery RemoveProp(string propertyName)
         {
             return null;
         }
@@ -281,6 +274,15 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
         /// </summary>
+        /// <returns></returns>
+        public jQuery ToggleClass()
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
+        /// </summary>
         /// <param name="switch">A Boolean (not just truthy/falsy) value to determine whether the class should be added or removed.</param>
         /// <returns></returns>
         public jQuery ToggleClass(bool @switch)
@@ -291,9 +293,9 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
         /// </summary>
-        /// <param name="func">A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as arguments.</param>
+        /// <param name="function">A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as arguments.</param>
         /// <returns></returns>
-        public jQuery ToggleClass(Func<int, string, bool, string> func)
+        public jQuery ToggleClass(Func<int, string, bool, string> function)
         {
             return null;
         }
@@ -301,10 +303,10 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
         /// </summary>
-        /// <param name="func">A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as arguments.</param>
+        /// <param name="function">A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as arguments.</param>
         /// <param name="switch">A Boolean (not just truthy/falsy) value to determine whether the class should be added or removed.</param>
         /// <returns></returns>
-        public jQuery ToggleClass(Func<int, string, bool, string> func, bool @switch)
+        public jQuery ToggleClass(Func<int, string, bool, string> function, bool @switch)
         {
             return null;
         }
@@ -313,8 +315,7 @@ namespace Bridge.jQuery2
         /// Get the current value of the first element in the set of matched elements.
         /// </summary>
         /// <returns></returns>
-        [Name("val")]
-        public string Value()
+        public string Val()
         {
             return null;
         }
@@ -323,8 +324,7 @@ namespace Bridge.jQuery2
         /// Get the current value of the first element in the set of matched elements.
         /// </summary>
         /// <returns></returns>
-        [Name("val")]
-        public T Value<T>()
+        public T Val<T>()
         {
             return default(T);
         }
@@ -334,8 +334,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="value">A string of text or an array of strings corresponding to the value of each matched element to set as selected/checked.</param>
         /// <returns></returns>
-        [Name("val")]
-        public jQuery Value(string value)
+        public jQuery Val(string value)
         {
             return null;
         }
@@ -345,8 +344,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="value">A string of text or an array of strings corresponding to the value of each matched element to set as selected/checked.</param>
         /// <returns></returns>
-        [Name("val")]
-        public jQuery Value(string[] value)
+        public jQuery Val(string[] value)
         {
             return null;
         }
@@ -354,10 +352,9 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Set the value of each element in the set of matched elements.
         /// </summary>
-        /// <param name="func">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.</param>
+        /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.</param>
         /// <returns></returns>
-        [Name("val")]
-        public jQuery Value(Func<int, string, string> func)
+        public jQuery Value(Func<int, string, string> function)
         {
             return null;
         }

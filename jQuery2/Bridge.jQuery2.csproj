@@ -30,10 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="jQuery.CSS.cs" />
-    <Compile Include="jQuery.Callbacks.cs" />
-    <Compile Include="jQuery.Attributes.cs" />
-    <Compile Include="jQuery.Core.cs" />
+    <Compile Include="Dimensions.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="CSS.cs" />
+    <Compile Include="Callbacks.cs" />
+    <Compile Include="Attributes.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Effects\Basic.cs" />
+    <Compile Include="Effects\Sliding.cs" />
+    <Compile Include="Effects\Fading.cs" />
+    <Compile Include="Effects\Custom.cs" />
+    <Compile Include="Effects\EffectOptions.cs" />
     <Compile Include="jQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -46,6 +53,7 @@
       <Name>Bridge.Html5</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\Bridge.NET\assemblies\BridgeNoTask.targets" />
 </Project>
