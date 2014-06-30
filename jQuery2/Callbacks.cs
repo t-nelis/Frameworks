@@ -39,7 +39,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callback">A function, or array of functions, that are to be added to the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks Add(Delegate callback)
+        public virtual Callbacks Add(Delegate callback)
         {
             return null;
         }
@@ -49,7 +49,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callbacks">A function, or array of functions, that are to be added to the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks Add(Delegate[] callbacks)
+        public virtual Callbacks Add(Delegate[] callbacks)
         {
             return null;
         }
@@ -58,7 +58,7 @@ namespace Bridge.jQuery2
         /// Disable a callback list from doing anything more.
         /// </summary>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks Disable()
+        public virtual Callbacks Disable()
         {
             return null;
         }
@@ -76,7 +76,7 @@ namespace Bridge.jQuery2
         /// Remove all of the callbacks from a list.
         /// </summary>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks Empty()
+        public virtual Callbacks Empty()
         {
             return null;
         }
@@ -86,7 +86,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="arguments">The argument or list of arguments to pass back to the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks Fire(params object[] arguments)
+        public virtual Callbacks Fire(params object[] arguments)
         {
             return null;
         }
@@ -105,7 +105,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="context">A reference to the context in which the callbacks in the list should be fired.</param>
         /// <returns></returns>
-        public Callbacks FireWith(object context)
+        public virtual Callbacks FireWith(object context)
         {
             return null;
         }
@@ -116,7 +116,7 @@ namespace Bridge.jQuery2
         /// <param name="context">A reference to the context in which the callbacks in the list should be fired.</param>
         /// <param name="arguments">An argument, or array of arguments, to pass to the callbacks in the list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks FireWith(object context, object[] arguments)
+        public virtual Callbacks FireWith(object context, object[] arguments)
         {
             return null;
         }
@@ -135,7 +135,7 @@ namespace Bridge.jQuery2
         /// Lock a callback list in its current state.
         /// </summary>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks Lock()
+        public virtual Callbacks Lock()
         {
             return null;
         }
@@ -154,7 +154,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callback">A function, or array of functions, that are to be removed from the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks Remove(Delegate callback)
+        public virtual Callbacks Remove(Delegate callback)
         {
             return null;
         }
@@ -164,7 +164,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callback">A function, or array of functions, that are to be removed from the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
-        public Callbacks Remove(Delegate[] callbacks)
+        public virtual Callbacks Remove(Delegate[] callbacks)
         {
             return null;
         }

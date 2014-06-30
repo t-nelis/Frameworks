@@ -51,7 +51,7 @@ namespace Bridge.jQuery2
         /// <typeparam name="T"></typeparam>
         /// <param name="attributeName">The name of the attribute to get.</param>
         /// <returns></returns>
-        public T Attr<T>(string attributeName)
+        public virtual T Attr<T>(string attributeName)
         {
             return default(T);
         }
@@ -163,7 +163,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="propertyName">The name of the property to get.</param>
         /// <returns></returns>
-        public T Prop<T>(string propertyName)
+        public virtual T Prop<T>(string propertyName)
         {
             return default(T);
         }
@@ -324,7 +324,7 @@ namespace Bridge.jQuery2
         /// Get the current value of the first element in the set of matched elements.
         /// </summary>
         /// <returns></returns>
-        public T Val<T>()
+        public virtual T Val<T>()
         {
             return default(T);
         }

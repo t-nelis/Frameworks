@@ -11,7 +11,7 @@ namespace Bridge.jQuery2
         /// Retrieve the elements matched by the jQuery object.
         /// </summary>
         /// <returns></returns>
-        public Array Get()
+        public virtual Array Get()
         {
             return null;
         }
@@ -69,7 +69,7 @@ namespace Bridge.jQuery2
         /// Retrieve all the elements contained in the jQuery set, as an array.
         /// </summary>
         /// <returns></returns>
-        public Array ToArray()
+        public virtual Array ToArray()
         {
             return null;
         }

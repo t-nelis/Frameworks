@@ -63,7 +63,7 @@ namespace Bridge.jQuery2
         /// <typeparam name="T">Return Type of Data object</typeparam>
         /// <param name="key">Name of the data stored.</param>
         /// <returns></returns>
-        public T Data<T>(string key)
+        public virtual T Data<T>(string key)
         {
             return default(T);
         }
@@ -82,7 +82,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <typeparam name="T">Return Type of Data object</typeparam>
         /// <returns></returns>
-        public T Data<T>()
+        public virtual T Data<T>()
         {
             return default(T);
         }
@@ -110,7 +110,7 @@ namespace Bridge.jQuery2
         /// Show the queue of functions to be executed on the matched elements.
         /// </summary>
         /// <returns></returns>
-        public Array Queue()
+        public virtual Array Queue()
         {
             return null;
         }
@@ -120,7 +120,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <returns></returns>
-        public Array Queue(string queueName)
+        public virtual Array Queue(string queueName)
         {
             return null;
         }
