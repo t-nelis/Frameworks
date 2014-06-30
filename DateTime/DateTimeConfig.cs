@@ -5,12 +5,12 @@ namespace System
     [ObjectLiteral]
     public class DateTimeConfig
     {
-        public int Year { get; set; }
-        public int Month { get; set; }
-        public int Day { get; set; }
-        public int Hour { get; set; }
-        public int Minute { get; set; }
-        public int Second { get; set; }
-        public int Millisecond { get; set; }
+        public virtual int Year { get; set; }
+        public virtual int Month { get; set; }
+        public virtual int Day { get; set; }
+        public virtual int Hour { get; set; }
+        public virtual int Minute { get; set; }
+        public virtual int Second { get; set; }
+        public virtual int Millisecond { get; set; }
     }
 }
