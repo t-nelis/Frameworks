@@ -4,7 +4,8 @@ using System;
 using System.Collections.Generic;
 
 namespace Bridge.jQuery2
-{    
+{
+    [Ignore]
     [ObjectLiteral]
     public partial class EffectOptions
     {

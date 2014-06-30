@@ -30,6 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Ajax\AjaxOptions.cs" />
+    <Compile Include="Ajax\Global.cs" />
+    <Compile Include="Ajax\LowLevel.cs" />
+    <Compile Include="Ajax\jqXHR.cs" />
+    <Compile Include="Ajax\Shorthand.cs" />
     <Compile Include="Dimensions.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="CSS.cs" />
