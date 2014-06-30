@@ -21,7 +21,7 @@ namespace Bridge.jQuery2
         public static readonly jQuery Document;
 
         [Template("$()")]
-        public static readonly jQuery Empty;
+        public static readonly jQuery Basic;
 
         IEnumerator IEnumerable.GetEnumerator() 
         { 
