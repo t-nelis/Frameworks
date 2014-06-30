@@ -67,7 +67,7 @@ namespace Bridge.jQuery2
         /// Determine if the callbacks list has been disabled.
         /// </summary>
         /// <returns></returns>
-        public bool Disabled()
+        public virtual bool Disabled()
         {
             return false;
         }
@@ -95,7 +95,7 @@ namespace Bridge.jQuery2
         /// Determine if the callbacks have already been called at least once.
         /// </summary>
         /// <returns></returns>
-        public bool Fired()
+        public virtual bool Fired()
         {
             return false;
         }
@@ -126,7 +126,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callback">The callback to search for.</param>
         /// <returns></returns>
-        public bool Has(Delegate callback)
+        public virtual bool Has(Delegate callback)
         {
             return false;
         }
@@ -144,7 +144,7 @@ namespace Bridge.jQuery2
         /// Determine if the callbacks list has been locked.
         /// </summary>
         /// <returns></returns>
-        public bool Locked()
+        public virtual bool Locked()
         {
             return false;
         }

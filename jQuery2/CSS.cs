@@ -12,7 +12,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="propertyName">A CSS property.</param>
         /// <returns></returns>
-        public string Css(string propertyName)
+        public virtual string Css(string propertyName)
         {
             return null;
         }
@@ -22,7 +22,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="propertyNames">An array of one or more CSS properties.</param>
         /// <returns></returns>
-        public object Css(string[] propertyNames)
+        public virtual object Css(string[] propertyNames)
         {
             return null;
         }
@@ -33,7 +33,7 @@ namespace Bridge.jQuery2
         /// <param name="name">A CSS property name.</param>
         /// <param name="value">A value to set for the property.</param>
         /// <returns></returns>
-        public jQuery Css(string name, object value)
+        public virtual jQuery Css(string name, object value)
         {
             return null;
         }
@@ -44,7 +44,7 @@ namespace Bridge.jQuery2
         /// <param name="name">A CSS property name.</param>
         /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.</param>
         /// <returns></returns>
-        public jQuery Css(string name, Func<int, string, int> function)
+        public virtual jQuery Css(string name, Func<int, string, int> function)
         {
             return null;
         }
@@ -55,7 +55,7 @@ namespace Bridge.jQuery2
         /// <param name="name">A CSS property name.</param>
         /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.</param>
         /// <returns></returns>
-        public jQuery Css(string name, Func<int, string, string> function)
+        public virtual jQuery Css(string name, Func<int, string, string> function)
         {
             return null;
         }
@@ -65,7 +65,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="properties">An object of property-value pairs to set.</param>
         /// <returns></returns>
-        public jQuery Css(object properties)
+        public virtual jQuery Css(object properties)
         {
             return null;
         }
@@ -79,7 +79,7 @@ namespace Bridge.jQuery2
         /// Get the current coordinates of the first element in the set of matched elements, relative to the document.
         /// </summary>
         /// <returns></returns>
-        public Point Offset()
+        public virtual Point Offset()
         {
             return null;
         }
@@ -89,7 +89,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="coordinates">An object containing the properties top and left, which are numbers indicating the new top and left coordinates for the elements.</param>
         /// <returns></returns>
-        public jQuery Offset(object coordinates)
+        public virtual jQuery Offset(object coordinates)
         {
             return null;
         }
@@ -98,7 +98,7 @@ namespace Bridge.jQuery2
         /// Get the current coordinates of the first element in the set of matched elements, relative to the offset parent.
         /// </summary>
         /// <returns></returns>
-        public Point Position()
+        public virtual Point Position()
         {
             return null;
         }
@@ -107,7 +107,7 @@ namespace Bridge.jQuery2
         /// Get the current horizontal position of the scroll bar for the first element in the set of matched elements.
         /// </summary>
         /// <returns></returns>
-        public int ScrollLeft()
+        public virtual int ScrollLeft()
         {
             return 0;
         }
@@ -117,7 +117,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="value">An integer indicating the new position to set the scroll bar to.</param>
         /// <returns></returns>
-        public jQuery ScrollLeft(int value)
+        public virtual jQuery ScrollLeft(int value)
         {
             return null;
         }
@@ -126,7 +126,7 @@ namespace Bridge.jQuery2
         ///  Get the current vertical position of the scroll bar for the first element in the set of matched elements or set the vertical position of the scroll bar for every matched element.
         /// </summary>
         /// <returns></returns>
-        public int ScrollTop()
+        public virtual int ScrollTop()
         {
             return 0;
         }
@@ -136,7 +136,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="value">An integer indicating the new position to set the scroll bar to.</param>
         /// <returns></returns>
-        public jQuery ScrollTop(int value)
+        public virtual jQuery ScrollTop(int value)
         {
             return null;
         }

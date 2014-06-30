@@ -13,7 +13,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(string content)
+        public virtual jQuery Append(string content)
         {
             return null;
         }
@@ -24,7 +24,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Element content)
+        public virtual jQuery Append(Element content)
         {
             return null;
         }
@@ -35,7 +35,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Array content)
+        public virtual jQuery Append(Array content)
         {
             return null;
         }
@@ -46,7 +46,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(jQuery content)
+        public virtual jQuery Append(jQuery content)
         {
             return null;
         }
@@ -57,7 +57,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(string content, string content2)
+        public virtual jQuery Append(string content, string content2)
         {
             return null;
         }
@@ -68,7 +68,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(string content, Element content2)
+        public virtual jQuery Append(string content, Element content2)
         {
             return null;
         }
@@ -79,7 +79,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(string content, Array content2)
+        public virtual jQuery Append(string content, Array content2)
         {
             return null;
         }
@@ -90,7 +90,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(string content, jQuery content2)
+        public virtual jQuery Append(string content, jQuery content2)
         {
             return null;
         }
@@ -101,7 +101,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Element content, string content2)
+        public virtual jQuery Append(Element content, string content2)
         {
             return null;
         }
@@ -112,7 +112,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Element content, Element content2)
+        public virtual jQuery Append(Element content, Element content2)
         {
             return null;
         }
@@ -123,7 +123,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Element content, Array content2)
+        public virtual jQuery Append(Element content, Array content2)
         {
             return null;
         }
@@ -134,7 +134,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Element content, jQuery content2)
+        public virtual jQuery Append(Element content, jQuery content2)
         {
             return null;
         }
@@ -145,7 +145,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Array content, string content2)
+        public virtual jQuery Append(Array content, string content2)
         {
             return null;
         }
@@ -156,7 +156,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Array content, Element content2)
+        public virtual jQuery Append(Array content, Element content2)
         {
             return null;
         }
@@ -167,7 +167,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Array content, Array content2)
+        public virtual jQuery Append(Array content, Array content2)
         {
             return null;
         }
@@ -178,7 +178,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(Array content, jQuery content2)
+        public virtual jQuery Append(Array content, jQuery content2)
         {
             return null;
         }
@@ -189,7 +189,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(jQuery content, string content2)
+        public virtual jQuery Append(jQuery content, string content2)
         {
             return null;
         }
@@ -200,7 +200,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(jQuery content, Element content2)
+        public virtual jQuery Append(jQuery content, Element content2)
         {
             return null;
         }
@@ -211,7 +211,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(jQuery content, Array content2)
+        public virtual jQuery Append(jQuery content, Array content2)
         {
             return null;
         }
@@ -222,7 +222,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Append(jQuery content, jQuery content2)
+        public virtual jQuery Append(jQuery content, jQuery content2)
         {
             return null;
         }
@@ -232,7 +232,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
-        public jQuery Append(Func<int, string, string> function)
+        public virtual jQuery Append(Func<int, string, string> function)
         {
             return null;
         }
@@ -242,7 +242,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
-        public jQuery Append(Func<int, string, Element> function)
+        public virtual jQuery Append(Func<int, string, Element> function)
         {
             return null;
         }
@@ -252,7 +252,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
-        public jQuery Append(Func<int, string, jQuery> function)
+        public virtual jQuery Append(Func<int, string, jQuery> function)
         {
             return null;
         }
@@ -262,7 +262,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector, element, HTML string, array of elements, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
         /// <returns></returns>
-        public jQuery AppendTo(string target)
+        public virtual jQuery AppendTo(string target)
         {
             return null;
         }
@@ -272,7 +272,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector, element, HTML string, array of elements, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
         /// <returns></returns>
-        public jQuery AppendTo(Element target)
+        public virtual jQuery AppendTo(Element target)
         {
             return null;
         }
@@ -282,7 +282,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector, element, HTML string, array of elements, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
         /// <returns></returns>
-        public jQuery AppendTo(Array target)
+        public virtual jQuery AppendTo(Array target)
         {
             return null;
         }
@@ -292,7 +292,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector, element, HTML string, array of elements, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
         /// <returns></returns>
-        public jQuery AppendTo(jQuery target)
+        public virtual jQuery AppendTo(jQuery target)
         {
             return null;
         }
@@ -303,7 +303,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(string content)
+        public virtual jQuery Prepend(string content)
         {
             return null;
         }
@@ -314,7 +314,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Element content)
+        public virtual jQuery Prepend(Element content)
         {
             return null;
         }
@@ -325,7 +325,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Array content)
+        public virtual jQuery Prepend(Array content)
         {
             return null;
         }
@@ -336,7 +336,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(jQuery content)
+        public virtual jQuery Prepend(jQuery content)
         {
             return null;
         }
@@ -347,7 +347,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(string content, string content2)
+        public virtual jQuery Prepend(string content, string content2)
         {
             return null;
         }
@@ -358,7 +358,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(string content, Element content2)
+        public virtual jQuery Prepend(string content, Element content2)
         {
             return null;
         }
@@ -369,7 +369,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(string content, Array content2)
+        public virtual jQuery Prepend(string content, Array content2)
         {
             return null;
         }
@@ -380,7 +380,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(string content, jQuery content2)
+        public virtual jQuery Prepend(string content, jQuery content2)
         {
             return null;
         }
@@ -391,7 +391,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Element content, string content2)
+        public virtual jQuery Prepend(Element content, string content2)
         {
             return null;
         }
@@ -402,7 +402,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Element content, Element content2)
+        public virtual jQuery Prepend(Element content, Element content2)
         {
             return null;
         }
@@ -413,7 +413,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Element content, Array content2)
+        public virtual jQuery Prepend(Element content, Array content2)
         {
             return null;
         }
@@ -424,7 +424,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Element content, jQuery content2)
+        public virtual jQuery Prepend(Element content, jQuery content2)
         {
             return null;
         }
@@ -435,7 +435,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Array content, string content2)
+        public virtual jQuery Prepend(Array content, string content2)
         {
             return null;
         }
@@ -446,7 +446,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Array content, Element content2)
+        public virtual jQuery Prepend(Array content, Element content2)
         {
             return null;
         }
@@ -457,7 +457,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Array content, Array content2)
+        public virtual jQuery Prepend(Array content, Array content2)
         {
             return null;
         }
@@ -468,7 +468,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(Array content, jQuery content2)
+        public virtual jQuery Prepend(Array content, jQuery content2)
         {
             return null;
         }
@@ -479,7 +479,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(jQuery content, string content2)
+        public virtual jQuery Prepend(jQuery content, string content2)
         {
             return null;
         }
@@ -490,7 +490,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(jQuery content, Element content2)
+        public virtual jQuery Prepend(jQuery content, Element content2)
         {
             return null;
         }
@@ -501,7 +501,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(jQuery content, Array content2)
+        public virtual jQuery Prepend(jQuery content, Array content2)
         {
             return null;
         }
@@ -512,7 +512,7 @@ namespace Bridge.jQuery2
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Prepend(jQuery content, jQuery content2)
+        public virtual jQuery Prepend(jQuery content, jQuery content2)
         {
             return null;
         }
@@ -522,7 +522,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
-        public jQuery Prepend(Func<int, string, string> function)
+        public virtual jQuery Prepend(Func<int, string, string> function)
         {
             return null;
         }
@@ -532,7 +532,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
-        public jQuery Prepend(Func<int, string, Element> function)
+        public virtual jQuery Prepend(Func<int, string, Element> function)
         {
             return null;
         }
@@ -542,7 +542,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
-        public jQuery Prepend(Func<int, string, jQuery> function)
+        public virtual jQuery Prepend(Func<int, string, jQuery> function)
         {
             return null;
         }
@@ -552,7 +552,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector, element, HTML string, array of elements, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
         /// <returns></returns>
-        public jQuery PrependTo(string target)
+        public virtual jQuery PrependTo(string target)
         {
             return null;
         }
@@ -562,7 +562,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector, element, HTML string, array of elements, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
         /// <returns></returns>
-        public jQuery PrependTo(Element target)
+        public virtual jQuery PrependTo(Element target)
         {
             return null;
         }
@@ -572,7 +572,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector, element, HTML string, array of elements, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
         /// <returns></returns>
-        public jQuery PrependTo(Array target)
+        public virtual jQuery PrependTo(Array target)
         {
             return null;
         }
@@ -582,7 +582,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector, element, HTML string, array of elements, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
         /// <returns></returns>
-        public jQuery PrependTo(jQuery target)
+        public virtual jQuery PrependTo(jQuery target)
         {
             return null;
         }
@@ -591,7 +591,7 @@ namespace Bridge.jQuery2
         /// Get the combined text contents of each element in the set of matched elements, including their descendants.
         /// </summary>
         /// <returns></returns>
-        public jQuery Text()
+        public virtual jQuery Text()
         {
             return null;
         }
@@ -601,7 +601,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="text">The text to set as the content of each matched element. When Number or Boolean is supplied, it will be converted to a String representation.</param>
         /// <returns></returns>
-        public jQuery Text(string text)
+        public virtual jQuery Text(string text)
         {
             return null;
         }
@@ -611,7 +611,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="text">The text to set as the content of each matched element. When Number or Boolean is supplied, it will be converted to a String representation.</param>
         /// <returns></returns>
-        public jQuery Text(int text)
+        public virtual jQuery Text(int text)
         {
             return null;
         }
@@ -621,7 +621,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="text">The text to set as the content of each matched element. When Number or Boolean is supplied, it will be converted to a String representation.</param>
         /// <returns></returns>
-        public jQuery Text(bool text)
+        public virtual jQuery Text(bool text)
         {
             return null;
         }
@@ -631,7 +631,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function returning the text content to set. Receives the index position of the element in the set and the old text value as arguments.</param>
         /// <returns></returns>
-        public jQuery Text(Func<int, string, string> function)
+        public virtual jQuery Text(Func<int, string, string> function)
         {
             return null;
         }

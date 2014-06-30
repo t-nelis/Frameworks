@@ -12,7 +12,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string representing a selector expression to find additional elements to add to the set of matched elements, or an HTML fragment to add to the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Add(string selector)
+        public virtual jQuery Add(string selector)
         {
             return null;
         }
@@ -23,7 +23,7 @@ namespace Bridge.jQuery2
         /// <param name="selector">A string representing a selector expression to find additional elements to add to the set of matched elements.</param>
         /// <param name="element">The point in the document at which the selector should begin matching; similar to the context argument of the $(selector, context) method.</param>
         /// <returns></returns>
-        public jQuery Add(string selector, Element element)
+        public virtual jQuery Add(string selector, Element element)
         {
             return null;
         }
@@ -33,7 +33,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">One or more elements to add to the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Add(Element element)
+        public virtual jQuery Add(Element element)
         {
             return null;
         }
@@ -43,7 +43,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="elements">One or more elements to add to the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Add(Element[] elements)
+        public virtual jQuery Add(Element[] elements)
         {
             return null;
         }
@@ -53,7 +53,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selection">An existing jQuery object to add to the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery Add(jQuery selection)
+        public virtual jQuery Add(jQuery selection)
         {
             return null;
         }
@@ -62,7 +62,7 @@ namespace Bridge.jQuery2
         /// Add the previous set of elements on the stack to the current set, optionally filtered by a selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery AddBack()
+        public virtual jQuery AddBack()
         {
             return null;
         }
@@ -72,7 +72,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match the current set of elements against.</param>
         /// <returns></returns>
-        public jQuery AddBack(string selector)
+        public virtual jQuery AddBack(string selector)
         {
             return null;
         }
@@ -81,7 +81,7 @@ namespace Bridge.jQuery2
         /// Add the previous set of elements on the stack to the current set.
         /// </summary>
         /// <returns></returns>
-        public jQuery AndSelf()
+        public virtual jQuery AndSelf()
         {
             return null;
         }
@@ -90,7 +90,7 @@ namespace Bridge.jQuery2
         /// Get the children of each element in the set of matched elements, including text and comment nodes.
         /// </summary>
         /// <returns></returns>
-        public jQuery Contents()
+        public virtual jQuery Contents()
         {
             return null;
         }
@@ -99,7 +99,7 @@ namespace Bridge.jQuery2
         /// End the most recent filtering operation in the current chain and return the set of matched elements to its previous state.
         /// </summary>
         /// <returns></returns>
-        public jQuery End()
+        public virtual jQuery End()
         {
             return null;
         }
@@ -109,7 +109,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Not(string selector)
+        public virtual jQuery Not(string selector)
         {
             return null;
         }
@@ -119,7 +119,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">One or more DOM elements to remove from the matched set.</param>
         /// <returns></returns>
-        public jQuery Not(Element element)
+        public virtual jQuery Not(Element element)
         {
             return null;
         }
@@ -129,7 +129,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="elements">One or more DOM elements to remove from the matched set.</param>
         /// <returns></returns>
-        public jQuery Not(Element[] elements)
+        public virtual jQuery Not(Element[] elements)
         {
             return null;
         }
@@ -139,7 +139,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function used as a test for each element in the set. this is the current DOM element.</param>
         /// <returns></returns>
-        public jQuery Not(Func<int, Element, bool> function)
+        public virtual jQuery Not(Func<int, Element, bool> function)
         {
             return null;
         }
@@ -149,7 +149,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selection">An existing jQuery object to match the current set of elements against.</param>
         /// <returns></returns>
-        public jQuery Not(jQuery selection)
+        public virtual jQuery Not(jQuery selection)
         {
             return null;
         }

@@ -11,7 +11,7 @@ namespace Bridge.jQuery2
         /// Get the children of each element in the set of matched elements, optionally filtered by a selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery Children()
+        public virtual jQuery Children()
         {
             return null;
         }
@@ -21,7 +21,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Children(string selector)
+        public virtual jQuery Children(string selector)
         {
             return null;
         }
@@ -31,7 +31,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Closest(string selector)
+        public virtual jQuery Closest(string selector)
         {
             return null;
         }     
@@ -42,7 +42,7 @@ namespace Bridge.jQuery2
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <param name="element">A DOM element within which a matching element may be found. If no context is passed in then the context of the jQuery set will be used instead.</param>
         /// <returns></returns>
-        public jQuery Closest(string selector, Element element)
+        public virtual jQuery Closest(string selector, Element element)
         {
             return null;
         }
@@ -52,7 +52,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selection">A jQuery object to match elements against.</param>
         /// <returns></returns>
-        public jQuery Closest(jQuery selection)
+        public virtual jQuery Closest(jQuery selection)
         {
             return null;
         }
@@ -62,7 +62,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">An element to match elements against.</param>
         /// <returns></returns>
-        public jQuery Closest(Element element)
+        public virtual jQuery Closest(Element element)
         {
             return null;
         }
@@ -72,7 +72,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Find(string selector)
+        public virtual jQuery Find(string selector)
         {
             return null;
         }
@@ -82,7 +82,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selection">A jQuery object to match elements against.</param>
         /// <returns></returns>
-        public jQuery Find(jQuery selection)
+        public virtual jQuery Find(jQuery selection)
         {
             return null;
         }
@@ -92,7 +92,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">An element to match elements against.</param>
         /// <returns></returns>
-        public jQuery Find(Element element)
+        public virtual jQuery Find(Element element)
         {
             return null;
         }
@@ -101,7 +101,7 @@ namespace Bridge.jQuery2
         /// Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery Next()
+        public virtual jQuery Next()
         {
             return null;
         }
@@ -111,7 +111,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Next(string selector)
+        public virtual jQuery Next(string selector)
         {
             return null;
         }
@@ -120,7 +120,7 @@ namespace Bridge.jQuery2
         /// Get all following siblings of each element in the set of matched elements, optionally filtered by a selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery NextAll()
+        public virtual jQuery NextAll()
         {
             return null;
         }
@@ -130,7 +130,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery NextAll(string selector)
+        public virtual jQuery NextAll(string selector)
         {
             return null;
         }
@@ -139,7 +139,7 @@ namespace Bridge.jQuery2
         /// Get all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed.
         /// </summary>
         /// <returns></returns>
-        public jQuery NextUntil()
+        public virtual jQuery NextUntil()
         {
             return null;
         }
@@ -149,7 +149,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to indicate where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery NextUntil(string selector)
+        public virtual jQuery NextUntil(string selector)
         {
             return null;
         }
@@ -159,7 +159,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery NextUntil(Element element)
+        public virtual jQuery NextUntil(Element element)
         {
             return null;
         }
@@ -169,7 +169,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery NextUntil(jQuery element)
+        public virtual jQuery NextUntil(jQuery element)
         {
             return null;
         }  
@@ -180,7 +180,7 @@ namespace Bridge.jQuery2
         /// <param name="selector"></param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery NextUntil(string selector, string filter)
+        public virtual jQuery NextUntil(string selector, string filter)
         {
             return null;
         }
@@ -191,7 +191,7 @@ namespace Bridge.jQuery2
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery NextUntil(Element element, string filter)
+        public virtual jQuery NextUntil(Element element, string filter)
         {
             return null;
         }
@@ -202,7 +202,7 @@ namespace Bridge.jQuery2
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery NextUntil(jQuery element, string filter)
+        public virtual jQuery NextUntil(jQuery element, string filter)
         {
             return null;
         }
@@ -211,7 +211,7 @@ namespace Bridge.jQuery2
         /// Get the closest ancestor element that is positioned.
         /// </summary>
         /// <returns></returns>
-        public jQuery OffsetParent()
+        public virtual jQuery OffsetParent()
         {
             return null;
         }
@@ -220,7 +220,7 @@ namespace Bridge.jQuery2
         /// Get the parent of each element in the current set of matched elements, optionally filtered by a selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery Parent()
+        public virtual jQuery Parent()
         {
             return null;
         }
@@ -230,7 +230,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Parent(string selector)
+        public virtual jQuery Parent(string selector)
         {
             return null;
         }
@@ -239,7 +239,7 @@ namespace Bridge.jQuery2
         /// Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery Parents()
+        public virtual jQuery Parents()
         {
             return null;
         }
@@ -249,7 +249,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Parents(string selector)
+        public virtual jQuery Parents(string selector)
         {
             return null;
         }
@@ -258,7 +258,7 @@ namespace Bridge.jQuery2
         /// Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.
         /// </summary>
         /// <returns></returns>
-        public jQuery ParentsUntil()
+        public virtual jQuery ParentsUntil()
         {
             return null;
         }
@@ -268,7 +268,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to indicate where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery ParentsUntil(string selector)
+        public virtual jQuery ParentsUntil(string selector)
         {
             return null;
         }
@@ -278,7 +278,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery ParentsUntil(Element element)
+        public virtual jQuery ParentsUntil(Element element)
         {
             return null;
         }
@@ -288,7 +288,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery ParentsUntil(jQuery element)
+        public virtual jQuery ParentsUntil(jQuery element)
         {
             return null;
         }
@@ -299,7 +299,7 @@ namespace Bridge.jQuery2
         /// <param name="selector"></param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery ParentsUntil(string selector, string filter)
+        public virtual jQuery ParentsUntil(string selector, string filter)
         {
             return null;
         }
@@ -310,7 +310,7 @@ namespace Bridge.jQuery2
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery ParentsUntil(Element element, string filter)
+        public virtual jQuery ParentsUntil(Element element, string filter)
         {
             return null;
         }
@@ -321,7 +321,7 @@ namespace Bridge.jQuery2
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery ParentsUntil(jQuery element, string filter)
+        public virtual jQuery ParentsUntil(jQuery element, string filter)
         {
             return null;
         }
@@ -330,7 +330,7 @@ namespace Bridge.jQuery2
         /// Get the immediately preceding sibling of each element in the set of matched elements, optionally filtered by a selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery Prev()
+        public virtual jQuery Prev()
         {
             return null;
         }
@@ -340,7 +340,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Prev(string selector)
+        public virtual jQuery Prev(string selector)
         {
             return null;
         }
@@ -349,7 +349,7 @@ namespace Bridge.jQuery2
         /// Get all preceding siblings of each element in the set of matched elements, optionally filtered by a selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery PrevAll()
+        public virtual jQuery PrevAll()
         {
             return null;
         }
@@ -359,7 +359,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery PrevAll(string selector)
+        public virtual jQuery PrevAll(string selector)
         {
             return null;
         }
@@ -368,7 +368,7 @@ namespace Bridge.jQuery2
         /// Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.
         /// </summary>
         /// <returns></returns>
-        public jQuery PrevUntil()
+        public virtual jQuery PrevUntil()
         {
             return null;
         }
@@ -378,7 +378,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to indicate where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery PrevUntil(string selector)
+        public virtual jQuery PrevUntil(string selector)
         {
             return null;
         }
@@ -388,7 +388,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery PrevUntil(Element element)
+        public virtual jQuery PrevUntil(Element element)
         {
             return null;
         }
@@ -398,7 +398,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <returns></returns>
-        public jQuery PrevUntil(jQuery element)
+        public virtual jQuery PrevUntil(jQuery element)
         {
             return null;
         }
@@ -409,7 +409,7 @@ namespace Bridge.jQuery2
         /// <param name="selector"></param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery PrevUntil(string selector, string filter)
+        public virtual jQuery PrevUntil(string selector, string filter)
         {
             return null;
         }
@@ -420,7 +420,7 @@ namespace Bridge.jQuery2
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery PrevUntil(Element element, string filter)
+        public virtual jQuery PrevUntil(Element element, string filter)
         {
             return null;
         }
@@ -431,7 +431,7 @@ namespace Bridge.jQuery2
         /// <param name="element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
         /// <param name="filter">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery PrevUntil(jQuery element, string filter)
+        public virtual jQuery PrevUntil(jQuery element, string filter)
         {
             return null;
         }
@@ -440,7 +440,7 @@ namespace Bridge.jQuery2
         /// Get the siblings of each element in the set of matched elements, optionally filtered by a selector.
         /// </summary>
         /// <returns></returns>
-        public jQuery Siblings()
+        public virtual jQuery Siblings()
         {
             return null;
         }
@@ -450,7 +450,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A string containing a selector expression to match elements against.</param>
         /// <returns></returns>
-        public jQuery Siblings(string selector)
+        public virtual jQuery Siblings(string selector)
         {
             return null;
         }

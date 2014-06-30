@@ -12,7 +12,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector string, jQuery object, DOM element, or array of elements indicating which element(s) to replace.</param>
         /// <returns></returns>
-        public jQuery ReplaceAll(string target)
+        public virtual jQuery ReplaceAll(string target)
         {
             return null;
         }
@@ -22,7 +22,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector string, jQuery object, DOM element, or array of elements indicating which element(s) to replace.</param>
         /// <returns></returns>
-        public jQuery ReplaceAll(Element target)
+        public virtual jQuery ReplaceAll(Element target)
         {
             return null;
         }
@@ -32,7 +32,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector string, jQuery object, DOM element, or array of elements indicating which element(s) to replace.</param>
         /// <returns></returns>
-        public jQuery ReplaceAll(Array target)
+        public virtual jQuery ReplaceAll(Array target)
         {
             return null;
         }
@@ -42,7 +42,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="target">A selector string, jQuery object, DOM element, or array of elements indicating which element(s) to replace.</param>
         /// <returns></returns>
-        public jQuery ReplaceAll(jQuery target)
+        public virtual jQuery ReplaceAll(jQuery target)
         {
             return null;
         }
@@ -52,7 +52,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="newContent">The content to insert. May be an HTML string, DOM element, array of DOM elements, or jQuery object.</param>
         /// <returns></returns>
-        public jQuery ReplaceWith(string newContent)
+        public virtual jQuery ReplaceWith(string newContent)
         {
             return null;
         }
@@ -62,7 +62,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="newContent">The content to insert. May be an HTML string, DOM element, array of DOM elements, or jQuery object.</param>
         /// <returns></returns>
-        public jQuery ReplaceWith(Element newContent)
+        public virtual jQuery ReplaceWith(Element newContent)
         {
             return null;
         }
@@ -72,7 +72,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="newContent">The content to insert. May be an HTML string, DOM element, array of DOM elements, or jQuery object.</param>
         /// <returns></returns>
-        public jQuery ReplaceWith(Array newContent)
+        public virtual jQuery ReplaceWith(Array newContent)
         {
             return null;
         }
@@ -82,7 +82,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="newContent">The content to insert. May be an HTML string, DOM element, array of DOM elements, or jQuery object.</param>
         /// <returns></returns>
-        public jQuery ReplaceWith(jQuery newContent)
+        public virtual jQuery ReplaceWith(jQuery newContent)
         {
             return null;
         }
@@ -92,7 +92,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns content with which to replace the set of matched elements.</param>
         /// <returns></returns>
-        public jQuery ReplaceWith(Func<jQuery> function)
+        public virtual jQuery ReplaceWith(Func<jQuery> function)
         {
             return null;
         }

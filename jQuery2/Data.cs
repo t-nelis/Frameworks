@@ -11,7 +11,7 @@ namespace Bridge.jQuery2
         /// Remove from the queue all items that have not yet been run.
         /// </summary>
         /// <returns></returns>
-        public jQuery ClearQueue()
+        public virtual jQuery ClearQueue()
         {
             return null;
         }
@@ -21,7 +21,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <returns></returns>
-        public string ClearQueue(string queueName)
+        public virtual string ClearQueue(string queueName)
         {
             return null;
         }
@@ -32,7 +32,7 @@ namespace Bridge.jQuery2
         /// <param name="key">A string naming the piece of data to set.</param>
         /// <param name="value">The new data value; it can be any Javascript type including Array or Object.</param>
         /// <returns></returns>
-        public jQuery Data(string key, object value)
+        public virtual jQuery Data(string key, object value)
         {
             return null;
         }
@@ -42,7 +42,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="obj">An object of key-value pairs of data to update.</param>
         /// <returns></returns>
-        public jQuery Data(object obj)
+        public virtual jQuery Data(object obj)
         {
             return null;
         }
@@ -52,7 +52,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="key">Name of the data stored.</param>
         /// <returns></returns>
-        public object Data(string key)
+        public virtual object Data(string key)
         {
             return null;
         }
@@ -72,7 +72,7 @@ namespace Bridge.jQuery2
         /// Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
         /// </summary>
         /// <returns></returns>
-        public object Data()
+        public virtual object Data()
         {
             return null;
         }
@@ -91,7 +91,7 @@ namespace Bridge.jQuery2
         /// Execute the next function on the queue for the matched elements.
         /// </summary>
         /// <returns></returns>
-        public jQuery Dequeue()
+        public virtual jQuery Dequeue()
         {
             return null;
         }
@@ -101,7 +101,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <returns></returns>
-        public jQuery Dequeue(string queueName)
+        public virtual jQuery Dequeue(string queueName)
         {
             return null;
         }
@@ -130,7 +130,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="newQueue"></param>
         /// <returns></returns>
-        public jQuery Queue(Array newQueue)
+        public virtual jQuery Queue(Array newQueue)
         {
             return null;
         }
@@ -141,7 +141,7 @@ namespace Bridge.jQuery2
         /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="newQueue">An array of functions to replace the current queue contents.</param>
         /// <returns></returns>
-        public jQuery Queue(string queueName, Array newQueue)
+        public virtual jQuery Queue(string queueName, Array newQueue)
         {
             return null;
         }
@@ -151,7 +151,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callback">The new function to add to the queue, with a function to call that will dequeue the next item.</param>
         /// <returns></returns>
-        public jQuery Queue(Func<jQuery> callback)
+        public virtual jQuery Queue(Func<jQuery> callback)
         {
             return null;
         }
@@ -162,7 +162,7 @@ namespace Bridge.jQuery2
         /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="callback">The new function to add to the queue, with a function to call that will dequeue the next item.</param>
         /// <returns></returns>
-        public jQuery Queue(string queueName, Func<jQuery> callback)
+        public virtual jQuery Queue(string queueName, Func<jQuery> callback)
         {
             return null;
         }
@@ -171,7 +171,7 @@ namespace Bridge.jQuery2
         /// Remove a previously-stored piece of data.
         /// </summary>
         /// <returns></returns>
-        public jQuery RemoveData()
+        public virtual jQuery RemoveData()
         {
             return null;
         }
@@ -181,7 +181,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="name">A string naming the piece of data to delete.</param>
         /// <returns></returns>
-        public jQuery RemoveData(string name)
+        public virtual jQuery RemoveData(string name)
         {
             return null;
         }
@@ -191,7 +191,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="list">An array or space-separated string naming the pieces of data to delete.</param>
         /// <returns></returns>
-        public jQuery RemoveData(Array list)
+        public virtual jQuery RemoveData(Array list)
         {
             return null;
         }

@@ -11,7 +11,7 @@ namespace Bridge.jQuery2
         /// Remove the set of matched elements from the DOM.
         /// </summary>
         /// <returns></returns>
-        public jQuery Detach()
+        public virtual jQuery Detach()
         {
             return null;
         }
@@ -21,7 +21,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A selector expression that filters the set of matched elements to be removed.</param>
         /// <returns></returns>
-        public jQuery Detach(string selector)
+        public virtual jQuery Detach(string selector)
         {
             return null;
         }
@@ -30,7 +30,7 @@ namespace Bridge.jQuery2
         /// Remove all child nodes of the set of matched elements from the DOM.
         /// </summary>
         /// <returns></returns>
-        public jQuery Empty()
+        public virtual jQuery Empty()
         {
             return null;
         }
@@ -39,7 +39,7 @@ namespace Bridge.jQuery2
         /// Remove the set of matched elements from the DOM.
         /// </summary>
         /// <returns></returns>
-        public jQuery Remove()
+        public virtual jQuery Remove()
         {
             return null;
         }
@@ -49,7 +49,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">A selector expression that filters the set of matched elements to be removed.</param>
         /// <returns></returns>
-        public jQuery Remove(string selector)
+        public virtual jQuery Remove(string selector)
         {
             return null;
         }

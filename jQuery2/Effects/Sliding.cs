@@ -11,7 +11,7 @@ namespace Bridge.jQuery2
         /// Display the matched elements with a sliding motion.
         /// </summary>
         /// <returns></returns>
-        public jQuery SlideDown()
+        public virtual jQuery SlideDown()
         {
             return null;
         }
@@ -21,28 +21,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <returns></returns>
-        public jQuery SlideDown(int duration)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Display the matched elements with a sliding motion.
-        /// </summary>
-        /// <param name="duration">A string or number determining how long the animation will run.</param>
-        /// <param name="complete">A function to call once the animation is complete.</param>
-        /// <returns></returns>
-        public jQuery SlideDown(int duration, Func<jQuery> complete)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Display the matched elements with a sliding motion.
-        /// </summary>
-        /// <param name="duration">A string or number determining how long the animation will run.</param>
-        /// <returns></returns>
-        public jQuery SlideDown(string duration)
+        public virtual jQuery SlideDown(int duration)
         {
             return null;
         }
@@ -53,7 +32,28 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery SlideDown(string duration, Func<jQuery> complete)
+        public virtual jQuery SlideDown(int duration, Func<jQuery> complete)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Display the matched elements with a sliding motion.
+        /// </summary>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <returns></returns>
+        public virtual jQuery SlideDown(string duration)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Display the matched elements with a sliding motion.
+        /// </summary>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <param name="complete">A function to call once the animation is complete.</param>
+        /// <returns></returns>
+        public virtual jQuery SlideDown(string duration, Func<jQuery> complete)
         {
             return null;
         }
@@ -63,7 +63,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="options">A map of additional options to pass to the method.</param>
         /// <returns></returns>
-        public jQuery SlideDown(EffectOptions options)
+        public virtual jQuery SlideDown(EffectOptions options)
         {
             return null;
         }
@@ -74,7 +74,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <returns></returns>
-        public jQuery SlideDown(int duration, string easing)
+        public virtual jQuery SlideDown(int duration, string easing)
         {
             return null;
         }
@@ -85,19 +85,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <returns></returns>
-        public jQuery SlideDown(string duration, string easing)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Display the matched elements with a sliding motion.
-        /// </summary>
-        /// <param name="duration">A string or number determining how long the animation will run.</param>
-        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
-        /// <param name="complete">A function to call once the animation is complete.</param>
-        /// <returns></returns>
-        public jQuery SlideDown(int duration, string easing, Func<jQuery> complete)
+        public virtual jQuery SlideDown(string duration, string easing)
         {
             return null;
         }
@@ -109,7 +97,19 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery SlideDown(string duration, string easing, Func<jQuery> complete)
+        public virtual jQuery SlideDown(int duration, string easing, Func<jQuery> complete)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Display the matched elements with a sliding motion.
+        /// </summary>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
+        /// <param name="complete">A function to call once the animation is complete.</param>
+        /// <returns></returns>
+        public virtual jQuery SlideDown(string duration, string easing, Func<jQuery> complete)
         {
             return null;
         }
@@ -118,7 +118,7 @@ namespace Bridge.jQuery2
         /// Display or hide the matched elements with a sliding motion.
         /// </summary>
         /// <returns></returns>
-        public jQuery SlideToggle()
+        public virtual jQuery SlideToggle()
         {
             return null;
         }
@@ -128,7 +128,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <returns></returns>
-        public jQuery SlideToggle(int duration)
+        public virtual jQuery SlideToggle(int duration)
         {
             return null;
         }
@@ -139,7 +139,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery SlideToggle(int duration, Func<jQuery> complete)
+        public virtual jQuery SlideToggle(int duration, Func<jQuery> complete)
         {
             return null;
         }
@@ -149,7 +149,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <returns></returns>
-        public jQuery SlideToggle(string duration)
+        public virtual jQuery SlideToggle(string duration)
         {
             return null;
         }
@@ -160,7 +160,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery SlideToggle(string duration, Func<jQuery> complete)
+        public virtual jQuery SlideToggle(string duration, Func<jQuery> complete)
         {
             return null;
         }
@@ -170,7 +170,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="options">A map of additional options to pass to the method.</param>
         /// <returns></returns>
-        public jQuery SlideToggle(EffectOptions options)
+        public virtual jQuery SlideToggle(EffectOptions options)
         {
             return null;
         }
@@ -181,7 +181,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <returns></returns>
-        public jQuery SlideToggle(int duration, string easing)
+        public virtual jQuery SlideToggle(int duration, string easing)
         {
             return null;
         }
@@ -192,19 +192,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <returns></returns>
-        public jQuery SlideToggle(string duration, string easing)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Display or hide the matched elements with a sliding motion.
-        /// </summary>
-        /// <param name="duration">A string or number determining how long the animation will run.</param>
-        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
-        /// <param name="complete">A function to call once the animation is complete.</param>
-        /// <returns></returns>
-        public jQuery SlideToggle(int duration, string easing, Func<jQuery> complete)
+        public virtual jQuery SlideToggle(string duration, string easing)
         {
             return null;
         }
@@ -216,7 +204,19 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery SlideToggle(string duration, string easing, Func<jQuery> complete)
+        public virtual jQuery SlideToggle(int duration, string easing, Func<jQuery> complete)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Display or hide the matched elements with a sliding motion.
+        /// </summary>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
+        /// <param name="complete">A function to call once the animation is complete.</param>
+        /// <returns></returns>
+        public virtual jQuery SlideToggle(string duration, string easing, Func<jQuery> complete)
         {
             return null;
         }
@@ -225,7 +225,7 @@ namespace Bridge.jQuery2
         /// Hide the matched elements with a sliding motion.
         /// </summary>
         /// <returns></returns>
-        public jQuery SlideUp()
+        public virtual jQuery SlideUp()
         {
             return null;
         }
@@ -235,7 +235,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <returns></returns>
-        public jQuery SlideUp(int duration)
+        public virtual jQuery SlideUp(int duration)
         {
             return null;
         }
@@ -246,7 +246,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery SlideUp(int duration, Func<jQuery> complete)
+        public virtual jQuery SlideUp(int duration, Func<jQuery> complete)
         {
             return null;
         }
@@ -256,7 +256,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <returns></returns>
-        public jQuery SlideUp(string duration)
+        public virtual jQuery SlideUp(string duration)
         {
             return null;
         }
@@ -267,7 +267,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery SlideUp(string duration, Func<jQuery> complete)
+        public virtual jQuery SlideUp(string duration, Func<jQuery> complete)
         {
             return null;
         }
@@ -277,7 +277,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="options">A map of additional options to pass to the method.</param>
         /// <returns></returns>
-        public jQuery SlideUp(EffectOptions options)
+        public virtual jQuery SlideUp(EffectOptions options)
         {
             return null;
         }
@@ -288,7 +288,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <returns></returns>
-        public jQuery SlideUp(int duration, string easing)
+        public virtual jQuery SlideUp(int duration, string easing)
         {
             return null;
         }
@@ -299,19 +299,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <returns></returns>
-        public jQuery SlideUp(string duration, string easing)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Hide the matched elements with a sliding motion.
-        /// </summary>
-        /// <param name="duration">A string or number determining how long the animation will run.</param>
-        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
-        /// <param name="complete">A function to call once the animation is complete.</param>
-        /// <returns></returns>
-        public jQuery SlideUp(int duration, string easing, Func<jQuery> complete)
+        public virtual jQuery SlideUp(string duration, string easing)
         {
             return null;
         }
@@ -323,7 +311,19 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery SlideUp(string duration, string easing, Func<jQuery> complete)
+        public virtual jQuery SlideUp(int duration, string easing, Func<jQuery> complete)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Hide the matched elements with a sliding motion.
+        /// </summary>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
+        /// <param name="complete">A function to call once the animation is complete.</param>
+        /// <returns></returns>
+        public virtual jQuery SlideUp(string duration, string easing, Func<jQuery> complete)
         {
             return null;
         }

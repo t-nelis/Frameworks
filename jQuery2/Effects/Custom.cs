@@ -12,7 +12,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
         /// <returns></returns>
-        public jQuery Animate(object properties)
+        public virtual jQuery Animate(object properties)
         {
             return null;
         }
@@ -23,43 +23,7 @@ namespace Bridge.jQuery2
         /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <returns></returns>
-        public jQuery Animate(object properties, int duration)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Perform a custom animation of a set of CSS properties.
-        /// </summary>
-        /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
-        /// <param name="duration">A string or number determining how long the animation will run.</param>
-        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
-        /// <returns></returns>
-        public jQuery Animate(object properties, int duration, string easing)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Perform a custom animation of a set of CSS properties.
-        /// </summary>
-        /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
-        /// <param name="duration">A string or number determining how long the animation will run.</param>
-        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
-        /// <param name="complete">A function to call once the animation is complete.</param>
-        /// <returns></returns>
-        public jQuery Animate(object properties, int duration, string easing, Func<jQuery> complete)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Perform a custom animation of a set of CSS properties.
-        /// </summary>
-        /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
-        /// <param name="duration">A string or number determining how long the animation will run.</param>
-        /// <returns></returns>
-        public jQuery Animate(object properties, string duration)
+        public virtual jQuery Animate(object properties, int duration)
         {
             return null;
         }
@@ -71,7 +35,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <returns></returns>
-        public jQuery Animate(object properties, string duration, string easing)
+        public virtual jQuery Animate(object properties, int duration, string easing)
         {
             return null;
         }
@@ -84,7 +48,43 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public jQuery Animate(object properties, string duration, string easing, Func<jQuery> complete)
+        public virtual jQuery Animate(object properties, int duration, string easing, Func<jQuery> complete)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Perform a custom animation of a set of CSS properties.
+        /// </summary>
+        /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <returns></returns>
+        public virtual jQuery Animate(object properties, string duration)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Perform a custom animation of a set of CSS properties.
+        /// </summary>
+        /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
+        /// <returns></returns>
+        public virtual jQuery Animate(object properties, string duration, string easing)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Perform a custom animation of a set of CSS properties.
+        /// </summary>
+        /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
+        /// <param name="complete">A function to call once the animation is complete.</param>
+        /// <returns></returns>
+        public virtual jQuery Animate(object properties, string duration, string easing, Func<jQuery> complete)
         {
             return null;
         }
@@ -95,7 +95,7 @@ namespace Bridge.jQuery2
         /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
         /// <param name="options">An object of CSS properties and values that the animation will move toward.</param>
         /// <returns></returns>
-        public jQuery Animate(object properties, EffectOptions options)
+        public virtual jQuery Animate(object properties, EffectOptions options)
         {
             return null;
         }
@@ -105,7 +105,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="duration">An integer indicating the number of milliseconds to delay execution of the next item in the queue.</param>
         /// <returns></returns>
-        public jQuery Delay(int duration) 
+        public virtual jQuery Delay(int duration) 
         { 
             return null; 
         }
@@ -116,7 +116,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">An integer indicating the number of milliseconds to delay execution of the next item in the queue.</param>
         /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <returns></returns>
-        public jQuery Delay(int duration, string queueName)
+        public virtual jQuery Delay(int duration, string queueName)
         {
             return null;
         }
@@ -125,7 +125,7 @@ namespace Bridge.jQuery2
         /// Stop the currently-running animation, remove all queued animations, and complete all animations for the matched elements.
         /// </summary>
         /// <returns></returns>
-        public jQuery Finish()
+        public virtual jQuery Finish()
         {
             return null;
         }
@@ -135,7 +135,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="queue">The name of the queue in which to stop animations.</param>
         /// <returns></returns>
-        public jQuery Finish(string queue)
+        public virtual jQuery Finish(string queue)
         {
             return null;
         }
@@ -144,7 +144,7 @@ namespace Bridge.jQuery2
         /// Stop the currently-running animation on the matched elements.
         /// </summary>
         /// <returns></returns>
-        public jQuery Stop()
+        public virtual jQuery Stop()
         {
             return null;
         }
@@ -154,7 +154,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="clearQueue">A Boolean indicating whether to remove queued animation as well. Defaults to false.</param>
         /// <returns></returns>
-        public jQuery Stop(bool clearQueue)
+        public virtual jQuery Stop(bool clearQueue)
         {
             return null;
         }
@@ -165,7 +165,7 @@ namespace Bridge.jQuery2
         /// <param name="clearQueue">A Boolean indicating whether to remove queued animation as well. Defaults to false.</param>
         /// <param name="jumpToEnd">A Boolean indicating whether to complete the current animation immediately. Defaults to false.</param>
         /// <returns></returns>
-        public jQuery Stop(bool clearQueue, bool jumpToEnd)
+        public virtual jQuery Stop(bool clearQueue, bool jumpToEnd)
         {
             return null;
         }
@@ -175,7 +175,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="queue">The name of the queue in which to stop animations.</param>
         /// <returns></returns>
-        public jQuery Stop(string queue)
+        public virtual jQuery Stop(string queue)
         {
             return null;
         }
@@ -186,7 +186,7 @@ namespace Bridge.jQuery2
         /// <param name="queue">The name of the queue in which to stop animations.</param>
         /// <param name="clearQueue">A Boolean indicating whether to remove queued animation as well. Defaults to false.</param>
         /// <returns></returns>
-        public jQuery Stop(string queue, bool clearQueue)
+        public virtual jQuery Stop(string queue, bool clearQueue)
         {
             return null;
         }
@@ -198,7 +198,7 @@ namespace Bridge.jQuery2
         /// <param name="clearQueue">A Boolean indicating whether to remove queued animation as well. Defaults to false.</param>
         /// <param name="jumpToEnd">A Boolean indicating whether to complete the current animation immediately. Defaults to false.</param>
         /// <returns></returns>
-        public jQuery Stop(string queue, bool clearQueue, bool jumpToEnd)
+        public virtual jQuery Stop(string queue, bool clearQueue, bool jumpToEnd)
         {
             return null;
         }

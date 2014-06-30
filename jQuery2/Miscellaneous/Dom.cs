@@ -30,7 +30,7 @@ namespace Bridge.jQuery2
         /// Search for a given element from among the matched elements.
         /// </summary>
         /// <returns></returns>
-        public int Index()
+        public virtual int Index()
         {
             return 0;
         }
@@ -40,7 +40,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="selector">The DOM element or first element within the jQuery object to look for.</param>
         /// <returns></returns>
-        public int Index(string selector)
+        public virtual int Index(string selector)
         {
             return 0;
         }
@@ -50,7 +50,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">The DOM element or first element within the jQuery object to look for.</param>
         /// <returns></returns>
-        public int Index(Element element)
+        public virtual int Index(Element element)
         {
             return 0;
         }
@@ -60,7 +60,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="element">The DOM element or first element within the jQuery object to look for.</param>
         /// <returns></returns>
-        public int Index(jQuery element)
+        public virtual int Index(jQuery element)
         {
             return 0;
         }

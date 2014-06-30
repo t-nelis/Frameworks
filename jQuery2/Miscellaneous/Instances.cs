@@ -5,7 +5,7 @@
         /// <summary>
         /// The number of elements in the jQuery object.
         /// </summary>
-        public int Length
+        public virtual int Length
         {
             get
             {
