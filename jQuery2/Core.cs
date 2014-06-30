@@ -108,12 +108,6 @@ namespace Bridge.jQuery2
         }
 
         [Template("$({0})")]
-        public static jQuery OnDocumentReady(Action callback)
-        {
-            return null;
-        }
-
-        [Template("$({0})")]
         public static jQuery Select(string selector)
         {
             return null;
