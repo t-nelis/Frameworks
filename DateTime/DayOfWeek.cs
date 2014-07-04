@@ -2,7 +2,7 @@
 
 namespace System
 {
-    [FileName("DateTime.DayOfWeek.js")]
+    [FileName("DateTime.js")]
     [Name("Bridge.DayOfWeek")]
     public enum DayOfWeek
     {
