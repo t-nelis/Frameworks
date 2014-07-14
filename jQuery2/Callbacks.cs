@@ -9,6 +9,7 @@ namespace Bridge.jQuery2
         /// A multi-purpose callbacks list object that provides a powerful way to manage callback lists.
         /// </summary>
         /// <returns></returns>
+        [Template("$.Callbacks()")]
         public static Callbacks Callbacks()
         {
             return null;
@@ -19,6 +20,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="flags">An optional list of space-separated flags that change how the callback list behaves. Possible flags: once: Ensures the callback list can only be fired once (like a Deferred). memory: Keeps track of previous values and will call any callback added after the list has been fired right away with the latest "memorized" values (like a Deferred). unique: Ensures a callback can only be added once (so there are no duplicates in the list). stopOnFalse: Interrupts callings when a callback returns false.</param>
         /// <returns></returns>
+        [Template("$.Callbacks({0})")]
         public static Callbacks Callbacks(string flags)
         {
             return null;

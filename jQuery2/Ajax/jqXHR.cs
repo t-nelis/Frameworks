@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Bridge.jQuery2
 {
     [Ignore]
-    public partial class jqXHR // : XMLHttpRequest
+    public partial class jqXHR : Deferred // : XMLHttpRequest
     {
         
     }
