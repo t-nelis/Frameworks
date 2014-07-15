@@ -48,7 +48,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery Animate(object properties, int duration, string easing, Func<jQuery> complete)
+        public virtual jQuery Animate(object properties, int duration, string easing, Action complete)
         {
             return null;
         }
@@ -84,7 +84,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery Animate(object properties, string duration, string easing, Func<jQuery> complete)
+        public virtual jQuery Animate(object properties, string duration, string easing, Action complete)
         {
             return null;
         }

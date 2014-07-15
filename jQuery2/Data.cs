@@ -151,7 +151,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callback">The new function to add to the queue, with a function to call that will dequeue the next item.</param>
         /// <returns></returns>
-        public virtual jQuery Queue(Func<jQuery> callback)
+        public virtual jQuery Queue(Action callback)
         {
             return null;
         }
@@ -162,7 +162,7 @@ namespace Bridge.jQuery2
         /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="callback">The new function to add to the queue, with a function to call that will dequeue the next item.</param>
         /// <returns></returns>
-        public virtual jQuery Queue(string queueName, Func<jQuery> callback)
+        public virtual jQuery Queue(string queueName, Action callback)
         {
             return null;
         }
@@ -305,7 +305,7 @@ namespace Bridge.jQuery2
         /// <param name="string">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="callback">he new function to add to the queue.</param>
         /// <returns></returns>
-        public static jQuery Queue(Element element, string queueName, Func<jQuery> callback)
+        public static jQuery Queue(Element element, string queueName, Action callback)
         {
             return null;
         }

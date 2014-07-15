@@ -39,46 +39,39 @@ namespace Bridge.jQuery2
         /// </summary>
         public virtual object SpecialEasing { get; set; }
 
-        // TODO: A Func? Maybe, it should be a Delegate.
         /// <summary>
         /// A function to be called for each animated property of each animated element. This function provides an opportunity to modify the Tween object to change the value of the property before it is set.
         /// </summary>
-        public virtual Func<int, object, jQuery> Step { get; set; }
+        public virtual Action<int, object> Step { get; set; }
 
-        // TODO: A Func? Maybe, it should be a Delegate.
         /// <summary>
         /// A function to be called after each step of the animation, only once per animated element regardless of the number of animated properties.
         /// </summary>
-        public virtual Func<Promise, int, int, jQuery> Progress { get; set; }
+        public virtual Action<Promise, int, int> Progress { get; set; }
 
-        // TODO: A Func? Maybe, it should be a Delegate.
         /// <summary>
         /// A function to call once the animation is complete.
         /// </summary>
-        public virtual Func<jQuery> Complete { get; set; }
+        public virtual Action Complete { get; set; }
 
-        // TODO: A Func? Maybe, it should be a Delegate.
         /// <summary>
         /// A function to call when the animation begins.
         /// </summary>
-        public virtual Func<Promise, jQuery> Start { get; set; }
+        public virtual Action<Promise> Start { get; set; }
 
-        // TODO: A Func? Maybe, it should be a Delegate.
         /// <summary>
         /// A function to be called when the animation completes (its Promise object is resolved).
         /// </summary>
-        public virtual Func<Promise, bool, jQuery> Done { get; set; }
+        public virtual Action<Promise, bool> Done { get; set; }
 
-        // TODO: A Func? Maybe, it should be a Delegate.
         /// <summary>
         /// A function to be called when the animation fails to complete (its Promise object is rejected). 
         /// </summary>
-        public virtual Func<Promise, bool, jQuery> Fail { get; set; }
+        public virtual Action<Promise, bool> Fail { get; set; }
 
-        // TODO: A Func? Maybe, it should be a Delegate.
         /// <summary>
         /// A function to be called when the animation completes or stops without completing (its Promise object is either resolved or rejected).
         /// </summary>
-        public virtual Func<Promise, bool, jQuery> Always { get; set; }
+        public virtual Action<Promise, bool> Always { get; set; }
     }
 }
