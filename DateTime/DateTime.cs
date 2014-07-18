@@ -388,7 +388,7 @@ namespace System
         /// <returns>An object that is equivalent to the date and time contained in s.</returns>
         public static DateTime Parse(string s)
         {
-            return new DateTime(System.Date.Parse(s).GetTime());
+            return new DateTime(System.Date.Parse(s));
         }
     }
 }
