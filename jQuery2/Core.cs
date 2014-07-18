@@ -159,7 +159,5 @@ namespace Bridge.jQuery2
         public static void NoConflict(bool removeAll)
         {
         }
-
-        //TODO: jQuery.when
     }
 }

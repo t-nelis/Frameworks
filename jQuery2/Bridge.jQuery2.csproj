@@ -31,10 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Ajax\AjaxOptions.cs" />
+    <Compile Include="Ajax\HelperFunctions.cs" />
     <Compile Include="Ajax\Global.cs" />
     <Compile Include="Ajax\LowLevel.cs" />
     <Compile Include="Ajax\jqXHR.cs" />
     <Compile Include="Ajax\Shorthand.cs" />
+    <Compile Include="Effects\Fx.cs" />
+    <Compile Include="Events\Browser.cs" />
+    <Compile Include="Events\Attachment.cs" />
+    <Compile Include="Events\Mouse.cs" />
+    <Compile Include="Events\Keyboard.cs" />
+    <Compile Include="Events\Form.cs" />
+    <Compile Include="Internals.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Promise.cs" />
+    <Compile Include="Deferred.cs" />
+    <Compile Include="Events\Event.cs" />
     <Compile Include="Dimensions.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="CSS.cs" />

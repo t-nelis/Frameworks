@@ -32,7 +32,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeIn(int duration, Func<jQuery> complete)
+        public virtual jQuery FadeIn(int duration, Action complete)
         {
             return null;
         }
@@ -53,7 +53,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeIn(string duration, Func<jQuery> complete)
+        public virtual jQuery FadeIn(string duration, Action complete)
         {
             return null;
         }
@@ -97,7 +97,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeIn(int duration, string easing, Func<jQuery> complete)
+        public virtual jQuery FadeIn(int duration, string easing, Action complete)
         {
             return null;
         }
@@ -109,7 +109,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeIn(string duration, string easing, Func<jQuery> complete)
+        public virtual jQuery FadeIn(string duration, string easing, Action complete)
         {
             return null;
         }
@@ -139,7 +139,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeOut(int duration, Func<jQuery> complete)
+        public virtual jQuery FadeOut(int duration, Action complete)
         {
             return null;
         }
@@ -160,7 +160,7 @@ namespace Bridge.jQuery2
         /// <param name="duration">A string or number determining how long the animation will run.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeOut(string duration, Func<jQuery> complete)
+        public virtual jQuery FadeOut(string duration, Action complete)
         {
             return null;
         }
@@ -204,7 +204,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeOut(int duration, string easing, Func<jQuery> complete)
+        public virtual jQuery FadeOut(int duration, string easing, Action complete)
         {
             return null;
         }
@@ -216,7 +216,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeOut(string duration, string easing, Func<jQuery> complete)
+        public virtual jQuery FadeOut(string duration, string easing, Action complete)
         {
             return null;
         }
@@ -270,7 +270,7 @@ namespace Bridge.jQuery2
         /// <param name="opacity">A number between 0 and 1 denoting the target opacity.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeTo(int duration, int opacity, Func<jQuery> complete)
+        public virtual jQuery FadeTo(int duration, int opacity, Action complete)
         {
             return null;
         }
@@ -282,7 +282,7 @@ namespace Bridge.jQuery2
         /// <param name="opacity">A number between 0 and 1 denoting the target opacity.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeTo(string duration, int opacity, Func<jQuery> complete)
+        public virtual jQuery FadeTo(string duration, int opacity, Action complete)
         {
             return null;
         }
@@ -319,7 +319,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeTo(int duration, int opacity, string easing, Func<jQuery> complete)
+        public virtual jQuery FadeTo(int duration, int opacity, string easing, Action complete)
         {
             return null;
         }
@@ -332,7 +332,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeTo(string duration, int opacity, string easing, Func<jQuery> complete)
+        public virtual jQuery FadeTo(string duration, int opacity, string easing, Action complete)
         {
             return null;
         }
@@ -386,7 +386,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeToggle(int duration, string easing, Func<jQuery> complete)
+        public virtual jQuery FadeToggle(int duration, string easing, Action complete)
         {
             return null;
         }
@@ -398,7 +398,7 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
-        public virtual jQuery FadeToggle(string duration, string easing, Func<jQuery> complete)
+        public virtual jQuery FadeToggle(string duration, string easing, Action complete)
         {
             return null;
         }

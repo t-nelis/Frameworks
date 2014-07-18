@@ -2,7 +2,7 @@
 
 namespace System
 {
-    [FileName("DateTime.UX.js")]
+    [FileName("DateTime.js")]
     [Name("Bridge.DateTime.UX")]
     public static class Extensions
     {
