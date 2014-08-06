@@ -1,5 +1,6 @@
 ﻿using Bridge.CLR;
 using System;
+using System.Threading.Tasks;
 
 namespace Bridge.jQuery2
 {    
@@ -64,7 +65,7 @@ namespace Bridge.jQuery2
     /// </summary>
     [Ignore]
     [Name("Object")]
-    public class Deferred
+    public class Deferred : IPromise
     {
         /// <summary>
         /// Add handlers to be called when the Deferred object is either resolved or rejected. 
@@ -234,5 +235,24 @@ namespace Bridge.jQuery2
         {
             return null;
         }
+
+        #region IPromise
+        /// <summary>
+        /// Adds a fulfilledHandler to be called for completion of a promise.
+        /// </summary>
+        /// <param name="fulfilledHandler">The fulfilledHandler is called when the promise is fulfilled</param>
+        void IPromise.Then(Delegate fulfilledHandler)
+        {
+        }
+
+        /// <summary>
+        /// Adds a fulfilledHandler, errorHandler to be called for completion of a promise.
+        /// </summary>
+        /// <param name="fulfilledHandler">The fulfilledHandler is called when the promise is fulfilled</param>
+        /// <param name="errorHandler">The errorHandler is called when a promise fails.</param>
+        void IPromise.Then(Delegate fulfilledHandler, Delegate errorHandler)
+        {
+        }
+        #endregion
     }
 }
