@@ -591,7 +591,7 @@ namespace Bridge.jQuery2
         /// Get the combined text contents of each element in the set of matched elements, including their descendants.
         /// </summary>
         /// <returns></returns>
-        public virtual jQuery Text()
+        public virtual string Text()
         {
             return null;
         }
