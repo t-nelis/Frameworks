@@ -2,6 +2,7 @@
 using Bridge.Html5;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Bridge.jQuery2
 {    
@@ -12,6 +13,56 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <returns></returns>
         public virtual jQuery FadeIn()
+        {
+            return null;
+        }
+
+        //[Template("Bridge.Task.fromCallbackOptions({this}, 'fadeIn', 'complete')")] 
+        [Template("Bridge.Task.fromPromise({this}.fadeIn())")] 
+        public virtual Task FadeInTask()
+        {
+            return null;
+        }
+
+        [Template("Bridge.Task.fromPromise({this}.fadeIn({0}))")]
+        public virtual Task FadeInTask(int duration)
+        {
+            return null;
+        }
+
+        [Template("Bridge.Task.fromPromise({this}.fadeIn({0}, {1}))")]
+        public virtual Task FadeInTask(int duration, string easing)
+        {
+            return null;
+        }
+
+        [Template("Bridge.Task.fromPromise({this}.fadeIn({0}))")]
+        public virtual Task FadeInTask(EffectOptions options)
+        {
+            return null;
+        }
+
+        //[Template("Bridge.Task.fromCallbackOptions({this}, 'fadeOut', 'complete')")] 
+        [Template("Bridge.Task.fromPromise({this}.fadeOut())")]
+        public virtual Task FadeOutTask()
+        {
+            return null;
+        }
+
+        [Template("Bridge.Task.fromPromise({this}.fadeOut({0}))")]
+        public virtual Task FadeOutTask(int duration)
+        {
+            return null;
+        }
+
+        [Template("Bridge.Task.fromPromise({this}.fadeOut({0}, {1}))")]
+        public virtual Task FadeOutTask(int duration, string easing)
+        {
+            return null;
+        }
+
+        [Template("Bridge.Task.fromPromise({this}.fadeOut({0}))")]
+        public virtual Task FadeOutTask(EffectOptions options)
         {
             return null;
         }
