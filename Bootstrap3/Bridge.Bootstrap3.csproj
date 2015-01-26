@@ -68,9 +68,6 @@
       <Name>Bridge.jQuery2</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\Bridge.NET\assemblies\BridgeNoTask.targets" />
 </Project>
