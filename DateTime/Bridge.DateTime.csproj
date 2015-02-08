@@ -53,6 +53,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\Bridge.NET\assemblies\BridgeNoTask.targets" />
   <PropertyGroup>
-    <PostBuildEvent>"$(ProjectDir)build.bat"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
