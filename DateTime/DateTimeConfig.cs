@@ -1,6 +1,6 @@
 ﻿using Bridge.CLR;
 
-namespace System
+namespace Bridge.DateTime
 {
     [ObjectLiteral]
     public class DateTimeConfig

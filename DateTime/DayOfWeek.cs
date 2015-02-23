@@ -1,6 +1,6 @@
 ﻿using Bridge.CLR;
 
-namespace System
+namespace Bridge.DateTime
 {
     [FileName("DateTime.js")]
     [Name("Bridge.DayOfWeek")]

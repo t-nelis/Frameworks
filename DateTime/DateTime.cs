@@ -1,16 +1,17 @@
 ﻿using Bridge.CLR;
 using Bridge.Html5;
+using System;
 
-namespace System
+namespace Bridge.DateTime
 {
     [FileName("DateTime.js")]
     [Name("Bridge.DateTime")]
-    public struct DateTime
+    public class DateTime
     {
-        //public DateTime()
-        //{
-        //    this.Date = new Date();
-        //}
+        public DateTime()
+        {
+            this.DateData = new Date();
+        }
 
         public DateTime(double time)
         {
