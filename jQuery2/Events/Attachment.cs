@@ -20,10 +20,32 @@ namespace Bridge.jQuery2
         /// <summary>
         ///  Attach a handler to an event for the elements.
         /// </summary>
+        /// <param name="eventType">A string containing one or more DOM event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Bind(string eventType, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        ///  Attach a handler to an event for the elements.
+        /// </summary>
         /// <param name="eventType">An Enum's option containing one or more DOM event types, such as "click" or "submit," or custom event names.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery Bind(Enum eventType, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        ///  Attach a handler to an event for the elements.
+        /// </summary>
+        /// <param name="eventType">An Enum's option containing one or more DOM event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Bind(Enum eventType, Action handler)
         {
             return null;
         }
@@ -44,10 +66,34 @@ namespace Bridge.jQuery2
         ///  Attach a handler to an event for the elements.
         /// </summary>
         /// <param name="eventType">A string containing one or more DOM event types, such as "click" or "submit," or custom event names.</param>
+        /// /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Bind(string eventType, object eventData, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        ///  Attach a handler to an event for the elements.
+        /// </summary>
+        /// <param name="eventType">A string containing one or more DOM event types, such as "click" or "submit," or custom event names.</param>
         /// /// <param name="eventData">An Enum's option containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery Bind(Enum eventType, object eventData, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        ///  Attach a handler to an event for the elements.
+        /// </summary>
+        /// <param name="eventType">A string containing one or more DOM event types, such as "click" or "submit," or custom event names.</param>
+        /// /// <param name="eventData">An Enum's option containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Bind(Enum eventType, object eventData, Action handler)
         {
             return null;
         }
@@ -124,10 +170,34 @@ namespace Bridge.jQuery2
         /// Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
         /// </summary>
         /// <param name="selector">A selector to filter the elements that trigger the event.</param>
+        /// <param name="eventType">A string containing one or more space-separated JavaScript event types, such as "click" or "keydown," or custom event names.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Delegate(string selector, string eventType, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+        /// </summary>
+        /// <param name="selector">A selector to filter the elements that trigger the event.</param>
         /// <param name="eventType">An Enum's option containing one or more space-separated JavaScript event types, such as "click" or "keydown," or custom event names.</param>
         /// <param name="handler">A function to execute at the time the event is triggered.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery Delegate(string selector, Enum eventType, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+        /// </summary>
+        /// <param name="selector">A selector to filter the elements that trigger the event.</param>
+        /// <param name="eventType">An Enum's option containing one or more space-separated JavaScript event types, such as "click" or "keydown," or custom event names.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Delegate(string selector, Enum eventType, Action handler)
         {
             return null;
         }
@@ -149,11 +219,37 @@ namespace Bridge.jQuery2
         /// Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
         /// </summary>
         /// <param name="selector">A selector to filter the elements that trigger the event.</param>
+        /// <param name="eventType">A string containing one or more space-separated JavaScript event types, such as "click" or "keydown," or custom event names.</param>
+        /// /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Delegate(string selector, string eventType, object eventData, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+        /// </summary>
+        /// <param name="selector">A selector to filter the elements that trigger the event.</param>
         /// <param name="eventType">An Enum's option containing one or more space-separated JavaScript event types, such as "click" or "keydown," or custom event names.</param>
         /// /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute at the time the event is triggered.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery Delegate(string selector, Enum eventType, object eventData, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+        /// </summary>
+        /// <param name="selector">A selector to filter the elements that trigger the event.</param>
+        /// <param name="eventType">An Enum's option containing one or more space-separated JavaScript event types, such as "click" or "keydown," or custom event names.</param>
+        /// /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Delegate(string selector, Enum eventType, object eventData, Action handler)
         {
             return null;
         }
@@ -220,11 +316,35 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Remove an event handler.
         /// </summary>
+        /// <param name="events">One or more space-separated event types and optional namespaces, or just namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".</param>
+        /// <param name="selector">A selector which should match the one originally passed to .on() when attaching event handlers.</param>
+        /// <param name="handler">A handler function previously attached for the event(s), or the special value false.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Off(string events, string selector, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove an event handler.
+        /// </summary>
         /// <param name="events">An Enum's option containing one or more space-separated event types and optional namespaces, or just namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".</param>
         /// <param name="selector">A selector which should match the one originally passed to .on() when attaching event handlers.</param>
         /// <param name="handler">A handler function previously attached for the event(s), or the special value false.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery Off(Enum events, string selector, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove an event handler.
+        /// </summary>
+        /// <param name="events">An Enum's option containing one or more space-separated event types and optional namespaces, or just namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".</param>
+        /// <param name="selector">A selector which should match the one originally passed to .on() when attaching event handlers.</param>
+        /// <param name="handler">A handler function previously attached for the event(s), or the special value false.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Off(Enum events, string selector, Action handler)
         {
             return null;
         }
@@ -254,10 +374,32 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Attach an event handler function for one or more events to the selected elements.
         /// </summary>
+        /// <param name="events">One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</param>
+        /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery On(string events, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach an event handler function for one or more events to the selected elements.
+        /// </summary>
         /// <param name="events">An Enum's option containing one or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</param>
         /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery On(Enum events, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach an event handler function for one or more events to the selected elements.
+        /// </summary>
+        /// <param name="events">An Enum's option containing one or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</param>
+        /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery On(Enum events, Action handler)
         {
             return null;
         }
@@ -277,11 +419,35 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Attach an event handler function for one or more events to the selected elements.
         /// </summary>
+        /// <param name="events">One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</param>
+        /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
+        /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery On(string events, string selector, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach an event handler function for one or more events to the selected elements.
+        /// </summary>
         /// <param name="events">An Enum's option containing one or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</param>
         /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
         /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery On(Enum events, string selector, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach an event handler function for one or more events to the selected elements.
+        /// </summary>
+        /// <param name="events">An Enum's option containing one or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</param>
+        /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
+        /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery On(Enum events, string selector, Action handler)
         {
             return null;
         }
@@ -298,6 +464,19 @@ namespace Bridge.jQuery2
         {
             return null;
         }
+
+        /// <summary>
+        /// Attach an event handler function for one or more events to the selected elements.
+        /// </summary>
+        /// <param name="events">One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</param>
+        /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
+        /// <param name="data">Data to be passed to the handler in event.data when an event is triggered.</param>
+        /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery On(string events, string selector, object data, Action handler)
+        {
+            return null;
+        }
         
         /// <summary>
         /// Attach an event handler function for one or more events to the selected elements.
@@ -308,6 +487,19 @@ namespace Bridge.jQuery2
         /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery On(Enum events, string selector, object data, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach an event handler function for one or more events to the selected elements.
+        /// </summary>
+        /// <param name="events">An Enum's option containing one or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</param>
+        /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
+        /// <param name="data">Data to be passed to the handler in event.data when an event is triggered.</param>
+        /// <param name="handler">A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery On(Enum events, string selector, object data, Action handler)
         {
             return null;
         }
@@ -358,10 +550,32 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
         /// </summary>
+        /// <param name="events">A string containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery One(string events, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+        /// </summary>
         /// <param name="events">An Enum's option containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
         /// <param name="handler">A function to execute at the time the event is triggered.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery One(Enum events, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+        /// </summary>
+        /// <param name="events">An Enum's option containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery One(Enum events, Action handler)
         {
             return null;
         }
@@ -381,11 +595,35 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
         /// </summary>
+        /// <param name="events">A string containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="data">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery One(string events, object data, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+        /// </summary>
         /// <param name="events">An Enum's option containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
         /// <param name="data">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute at the time the event is triggered.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery One(Enum events, object data, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+        /// </summary>
+        /// <param name="events">An Enum's option containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="data">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery One(Enum events, object data, Action handler)
         {
             return null;
         }
@@ -405,11 +643,35 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
         /// </summary>
+        /// <param name="events">A string containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery One(string events, string selector, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+        /// </summary>
         /// <param name="events">An Enum's option containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
         /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
         /// <param name="handler">A function to execute at the time the event is triggered.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery One(Enum events, string selector, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+        /// </summary>
+        /// <param name="events">An Enum's option containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery One(Enum events, string selector, Action handler)
         {
             return null;
         }
@@ -430,12 +692,38 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
         /// </summary>
+        /// <param name="events">A string containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
+        /// <param name="data">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery One(string events, string selector, object data, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+        /// </summary>
         /// <param name="events">An Enum's option containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
         /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
         /// <param name="data">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute at the time the event is triggered.</param>
         /// <returns>The jQuery object</returns>
         public virtual jQuery One(Enum events, string selector, object data, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+        /// </summary>
+        /// <param name="events">An Enum's option containing one or more JavaScript event types, such as "click" or "submit," or custom event names.</param>
+        /// <param name="selector">A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.</param>
+        /// <param name="data">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery One(Enum events, string selector, object data, Action handler)
         {
             return null;
         }
@@ -678,10 +966,32 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Remove a previously-attached event handler from the elements.
         /// </summary>
+        /// <param name="eventType">A string containing a JavaScript event type, such as click or submit.</param>
+        /// <param name="handler">The function that is to be no longer executed.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Unbind(string eventType, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove a previously-attached event handler from the elements.
+        /// </summary>
         /// <param name="eventType">An Enum's option containing a JavaScript event type, such as click or submit.</param>
         /// <param name="handler">The function that is to be no longer executed.</param>
         /// <returns>The jQuery instance</returns>
         public virtual jQuery Unbind(Enum eventType, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove a previously-attached event handler from the elements.
+        /// </summary>
+        /// <param name="eventType">An Enum's option containing a JavaScript event type, such as click or submit.</param>
+        /// <param name="handler">The function that is to be no longer executed.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Unbind(Enum eventType, Action handler)
         {
             return null;
         }
@@ -776,10 +1086,34 @@ namespace Bridge.jQuery2
         /// Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
         /// </summary>
         /// <param name="selector">A selector which will be used to filter the event results.</param>
+        /// <param name="eventType">A string containing a JavaScript event type, such as "click" or "keydown"</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Undelegate(string selector, string eventType, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+        /// </summary>
+        /// <param name="selector">A selector which will be used to filter the event results.</param>
         /// <param name="eventType">An Enum's option containing a JavaScript event type, such as "click" or "keydown"</param>
         /// <param name="handler">A function to execute at the time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
         public virtual jQuery Undelegate(string selector, Enum eventType, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+        /// </summary>
+        /// <param name="selector">A selector which will be used to filter the event results.</param>
+        /// <param name="eventType">An Enum's option containing a JavaScript event type, such as "click" or "keydown"</param>
+        /// <param name="handler">A function to execute at the time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Undelegate(string selector, Enum eventType, Action handler)
         {
             return null;
         }

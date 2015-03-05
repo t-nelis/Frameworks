@@ -108,6 +108,18 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
+        /// Iterate over a jQuery object, executing a function for each matched element. 
+        /// A function takes the two arguments: the index of the element and the element itself.
+        /// Return false to break out of each() loops early.
+        /// </summary>
+        /// <param name="function">A function to execute for each matched element.</param>
+        /// <returns>The jQuery object</returns>
+        public virtual jQuery Each(Action function)
+        {
+            return null;
+        }
+
+        /// <summary>
         /// End the most recent filtering operation in the current chain and return the set of matched elements to its previous state.
         /// </summary>
         /// <returns></returns>
@@ -142,6 +154,16 @@ namespace Bridge.jQuery2
         /// <param name="elements">One or more DOM elements to remove from the matched set.</param>
         /// <returns></returns>
         public virtual jQuery Not(Element[] elements)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove elements from the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function used as a test for each element in the set. this is the current DOM element.</param>
+        /// <returns></returns>
+        public virtual jQuery Not(Delegate function)
         {
             return null;
         }

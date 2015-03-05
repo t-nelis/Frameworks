@@ -49,9 +49,29 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Add a callback or a collection of callbacks to a callback list.
         /// </summary>
+        /// <param name="callback">A function, or array of functions, that are to be added to the callback list.</param>
+        /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
+        public virtual Callbacks Add(Action callback)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Add a callback or a collection of callbacks to a callback list.
+        /// </summary>
         /// <param name="callbacks">A function, or array of functions, that are to be added to the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
         public virtual Callbacks Add(Delegate[] callbacks)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Add a callback or a collection of callbacks to a callback list.
+        /// </summary>
+        /// <param name="callbacks">A function, or array of functions, that are to be added to the callback list.</param>
+        /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
+        public virtual Callbacks Add(Action[] callbacks)
         {
             return null;
         }
@@ -134,6 +154,16 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
+        /// Determine whether a supplied callback is in a list
+        /// </summary>
+        /// <param name="callback">The callback to search for.</param>
+        /// <returns></returns>
+        public virtual bool Has(Action callback)
+        {
+            return false;
+        }
+
+        /// <summary>
         /// Lock a callback list in its current state.
         /// </summary>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
@@ -166,7 +196,27 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callback">A function, or array of functions, that are to be removed from the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
+        public virtual Callbacks Remove(Action callback)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove a callback or a collection of callbacks from a callback list.
+        /// </summary>
+        /// <param name="callback">A function, or array of functions, that are to be removed from the callback list.</param>
+        /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
         public virtual Callbacks Remove(Delegate[] callbacks)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove a callback or a collection of callbacks from a callback list.
+        /// </summary>
+        /// <param name="callback">A function, or array of functions, that are to be removed from the callback list.</param>
+        /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
+        public virtual Callbacks Remove(Action[] callbacks)
         {
             return null;
         }

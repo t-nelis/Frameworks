@@ -92,6 +92,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns content with which to replace the set of matched elements.</param>
         /// <returns></returns>
+        public virtual jQuery ReplaceWith(Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.
+        /// </summary>
+        /// <param name="function">A function that returns content with which to replace the set of matched elements.</param>
+        /// <returns></returns>
         public virtual jQuery ReplaceWith(Func<jQuery> function)
         {
             return null;

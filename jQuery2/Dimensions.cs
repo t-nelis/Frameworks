@@ -41,6 +41,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function returning the height to set. Receives the index position of the element in the set and the old height as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
+        public virtual jQuery Height(Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Set the CSS height of every matched element.
+        /// </summary>
+        /// <param name="function">A function returning the height to set. Receives the index position of the element in the set and the old height as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
         public virtual jQuery Height(Func<int, int, int> function)
         {
             return null;
@@ -90,6 +100,16 @@ namespace Bridge.jQuery2
         /// <param name="value">A number representing the number of pixels, or a number along with an optional unit of measure appended (as a string).</param>
         /// <returns></returns>
         public virtual jQuery InnerWidth(string value)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Set the CSS inner width of each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function returning the inner width (including padding but not border) to set. Receives the index position of the element in the set and the old inner width as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
+        public virtual jQuery InnerHeight(Delegate function)
         {
             return null;
         }
@@ -167,6 +187,16 @@ namespace Bridge.jQuery2
         /// <param name="value">An integer representing the number of pixels, or an integer along with an optional unit of measure appended (as a string).</param>
         /// <returns></returns>
         public virtual jQuery Width(string value)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Set the CSS width of each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function returning the width to set. Receives the index position of the element in the set and the old width as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
+        public virtual jQuery Width(Delegate function)
         {
             return null;
         }

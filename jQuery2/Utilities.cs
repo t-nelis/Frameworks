@@ -71,7 +71,32 @@ namespace Bridge.jQuery2
         /// <param name="function">The function to process each item against. The first argument to the function is the item, and the second argument is the index. The function should return a Boolean value. this will be the global window object.</param>
         /// <returns>A new array that contains filtered items</returns>
         [Template("$.grep({0},{1})")]
+        public static Array Grep(Array array, Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Finds the elements of an array which satisfy a filter function. The original array is not affected.
+        /// </summary>
+        /// <param name="array">The array to search through.</param>
+        /// <param name="function">The function to process each item against. The first argument to the function is the item, and the second argument is the index. The function should return a Boolean value. this will be the global window object.</param>
+        /// <returns>A new array that contains filtered items</returns>
+        [Template("$.grep({0},{1})")]
         public static Array Grep(Array array, Func<object, int, bool> function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Finds the elements of an array which satisfy a filter function. The original array is not affected.
+        /// </summary>
+        /// <param name="array">The array to search through.</param>
+        /// <param name="function">The function to process each item against. The first argument to the function is the item, and the second argument is the index. The function should return a Boolean value. this will be the global window object.</param>
+        /// <param name="invert">If "invert" is false, or not provided, then the function returns an array consisting of all elements for which "callback" returns true. If "invert" is true, then the function returns an array consisting of all elements for which "callback" returns false.</param>
+        /// <returns>A new array that contains filtered items</returns>
+        [Template("$.grep({0},{1},{2})")]
+        public static Array Grep(Array array, Delegate function, bool invert)
         {
             return null;
         }
@@ -205,11 +230,35 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Translate all items in an array or object to new array of items.
         /// </summary>
+        /// <param name="array">The Array to translate.</param>
+        /// <param name="callback">The function to process each item against. The first argument to the function is the array item, the second argument is the index in array The function can return any value. A returned array will be flattened into the resulting array. Within the function, this refers to the global (window) object.</param>
+        /// <returns>An array</returns>
+        [Template("$.map({0},{1})")]
+        public static Array Map(Array array, Action callback)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Translate all items in an array or object to new array of items.
+        /// </summary>
         /// <param name="obj">The Object to translate.</param>
         /// <param name="callback">The function to process each item against. The first argument to the function is the array item, the second argument is the index in array The function can return any value. A returned array will be flattened into the resulting array. Within the function, this refers to the global (window) object.</param>
         /// <returns>An array</returns>
         [Template("$.map({0},{1})")]
         public static Array Map(object obj, Delegate callback)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Translate all items in an array or object to new array of items.
+        /// </summary>
+        /// <param name="obj">The Object to translate.</param>
+        /// <param name="callback">The function to process each item against. The first argument to the function is the array item, the second argument is the index in array The function can return any value. A returned array will be flattened into the resulting array. Within the function, this refers to the global (window) object.</param>
+        /// <returns>An array</returns>
+        [Template("$.map({0},{1})")]
+        public static Array Map(object obj, Action callback)
         {
             return null;
         }
@@ -308,10 +357,35 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">The function whose context will be changed.</param>
         /// <param name="context">The object to which the context (this) of the function should be set.</param>
+        /// <returns>A new function that will always have a particular context.</returns>
+        [Template("$.proxy({0},{1})")]
+        public static Delegate Proxy(Action function, object context)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Takes a function and returns a new one that will always have a particular context.
+        /// </summary>
+        /// <param name="function">The function whose context will be changed.</param>
+        /// <param name="context">The object to which the context (this) of the function should be set.</param>
         /// <param name="additionalArguments">Any number of arguments to be passed to the function referenced in the function argument.</param>
         /// <returns>A new function that will always have a particular context.</returns>
         [Template("$.proxy({0},{1},{2})")]
         public static Delegate Proxy(Delegate function, object context, params object[] additionalArguments)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Takes a function and returns a new one that will always have a particular context.
+        /// </summary>
+        /// <param name="function">The function whose context will be changed.</param>
+        /// <param name="context">The object to which the context (this) of the function should be set.</param>
+        /// <param name="additionalArguments">Any number of arguments to be passed to the function referenced in the function argument.</param>
+        /// <returns>A new function that will always have a particular context.</returns>
+        [Template("$.proxy({0},{1},{2})")]
+        public static Delegate Proxy(Action function, object context, params object[] additionalArguments)
         {
             return null;
         }
@@ -333,10 +407,35 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">The function whose context will be changed.</param>
         /// <param name="name">The name of the function whose context will be changed (should be a property of the context object).</param>
+        /// <returns>A new function that will always have a particular context.</returns>
+        [Template("$.proxy({0},{1})")]
+        public static Delegate Proxy(Action function, string name)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Takes a function and returns a new one that will always have a particular context.
+        /// </summary>
+        /// <param name="function">The function whose context will be changed.</param>
+        /// <param name="name">The name of the function whose context will be changed (should be a property of the context object).</param>
         /// <param name="additionalArguments">Any number of arguments to be passed to the function referenced in the function argument.</param>
         /// <returns>A new function that will always have a particular context.</returns>
         [Template("$.proxy({0},{1},{2})")]
         public static Delegate Proxy(Delegate function, string name, params object[] additionalArguments)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Takes a function and returns a new one that will always have a particular context.
+        /// </summary>
+        /// <param name="function">The function whose context will be changed.</param>
+        /// <param name="name">The name of the function whose context will be changed (should be a property of the context object).</param>
+        /// <param name="additionalArguments">Any number of arguments to be passed to the function referenced in the function argument.</param>
+        /// <returns>A new function that will always have a particular context.</returns>
+        [Template("$.proxy({0},{1},{2})")]
+        public static Delegate Proxy(Action function, string name, params object[] additionalArguments)
         {
             return null;
         }

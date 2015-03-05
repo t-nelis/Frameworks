@@ -20,6 +20,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function returning one or more space-separated class names to be added to the existing class name(s). Receives the index position of the element in the set and the existing class name(s) as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
+        public virtual jQuery AddClass(Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Adds the specified class(es) to each of the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function returning one or more space-separated class names to be added to the existing class name(s). Receives the index position of the element in the set and the existing class name(s) as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
         public virtual jQuery AddClass(Func<int, string> function)
         {
             return null;
@@ -104,6 +114,17 @@ namespace Bridge.jQuery2
         /// <param name="attributeName">The name of the attribute to set.</param>
         /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old attribute value as arguments.</param>
         /// <returns></returns>
+        public virtual jQuery Attr(string attributeName, Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        ///  Set one or more attributes for the set of matched elements.
+        /// </summary>
+        /// <param name="attributeName">The name of the attribute to set.</param>
+        /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old attribute value as arguments.</param>
+        /// <returns></returns>
         public virtual jQuery Attr(string attributeName, Func<int, string> function)
         {
             return null;
@@ -134,6 +155,16 @@ namespace Bridge.jQuery2
         /// <param name="htmlString">A string of HTML to set as the content of each matched element.</param>
         /// <returns></returns>
         public virtual jQuery Html(string htmlString)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Set the HTML contents of each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function returning the HTML content to set. Receives the index position of the element in the set and the old HTML value as arguments. jQuery empties the element before calling the function; use the oldhtml argument to reference the previous content. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
+        public virtual jQuery Html(Delegate function)
         {
             return null;
         }
@@ -205,6 +236,17 @@ namespace Bridge.jQuery2
         /// <param name="propertyName">The name of the property to set.</param>
         /// <param name="function">A function returning the value to set. Receives the index position of the element in the set and the old property value as arguments. Within the function, the keyword this refers to the current element.</param>
         /// <returns></returns>
+        public virtual jQuery Prop(string propertyName, Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Set one or more properties for the set of matched elements.
+        /// </summary>
+        /// <param name="propertyName">The name of the property to set.</param>
+        /// <param name="function">A function returning the value to set. Receives the index position of the element in the set and the old property value as arguments. Within the function, the keyword this refers to the current element.</param>
+        /// <returns></returns>
         public virtual jQuery Prop(string propertyName, Func<int, object, object> function)
         {
             return null;
@@ -226,6 +268,16 @@ namespace Bridge.jQuery2
         /// <param name="className">One or more space-separated classes to be removed from the class attribute of each matched element.</param>
         /// <returns></returns>
         public virtual jQuery RemoveClass(string className)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function returning one or more space-separated class names to be removed. Receives the index position of the element in the set and the old class value as arguments.</param>
+        /// <returns></returns>
+        public virtual jQuery RemoveClass(Delegate function)
         {
             return null;
         }
@@ -295,6 +347,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as arguments.</param>
         /// <returns></returns>
+        public virtual jQuery ToggleClass(Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.
+        /// </summary>
+        /// <param name="function">A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as arguments.</param>
+        /// <returns></returns>
         public virtual jQuery ToggleClass(Func<int, string, bool, string> function)
         {
             return null;
@@ -345,6 +407,16 @@ namespace Bridge.jQuery2
         /// <param name="value">A string of text or an array of strings corresponding to the value of each matched element to set as selected/checked.</param>
         /// <returns></returns>
         public virtual jQuery Val(string[] value)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Set the value of each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.</param>
+        /// <returns></returns>
+        public virtual jQuery Value(Delegate function)
         {
             return null;
         }

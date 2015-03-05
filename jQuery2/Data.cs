@@ -151,7 +151,28 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="callback">The new function to add to the queue, with a function to call that will dequeue the next item.</param>
         /// <returns></returns>
+        public virtual jQuery Queue(Delegate callback)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Manipulate the queue of functions to be executed, once for each matched element.
+        /// </summary>
+        /// <param name="callback">The new function to add to the queue, with a function to call that will dequeue the next item.</param>
+        /// <returns></returns>
         public virtual jQuery Queue(Action callback)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Manipulate the queue of functions to be executed, once for each matched element.
+        /// </summary>
+        /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
+        /// <param name="callback">The new function to add to the queue, with a function to call that will dequeue the next item.</param>
+        /// <returns></returns>
+        public virtual jQuery Queue(string queueName, Delegate callback)
         {
             return null;
         }
@@ -294,6 +315,18 @@ namespace Bridge.jQuery2
         /// <param name="newQueue">An array of functions to replace the current queue contents.</param>
         /// <returns></returns>
         public static jQuery Queue(Element element, string queueName, Array newQueue)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Manipulate the queue of functions to be executed on the matched element.
+        /// </summary>
+        /// <param name="element">A DOM element where the array of queued functions is attached.</param>
+        /// <param name="string">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
+        /// <param name="callback">he new function to add to the queue.</param>
+        /// <returns></returns>
+        public static jQuery Queue(Element element, string queueName, Delegate callback)
         {
             return null;
         }

@@ -32,6 +32,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function used as a test for each element in the set. this is the current DOM element.</param>
         /// <returns></returns>
+        public virtual jQuery Filter(Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Reduce the set of matched elements to those that match the selector or pass the function's test. 
+        /// </summary>
+        /// <param name="function">A function used as a test for each element in the set. this is the current DOM element.</param>
+        /// <returns></returns>
         public virtual jQuery Filter(Func<int, Element, bool> function)
         {
             return null;
@@ -105,6 +115,16 @@ namespace Bridge.jQuery2
         {
             return false;
         }
+
+        /// <summary>
+        /// Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
+        /// </summary>
+        /// <param name="function">A function used as a test for the set of elements. It accepts one argument, index, which is the element's index in the jQuery collection. Within the function, this refers to the current DOM element. </param>
+        /// <returns></returns>
+        public virtual bool Is(Delegate function)
+        {
+            return false;
+        }
         
         /// <summary>
         /// Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
@@ -151,6 +171,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <returns></returns>
         public virtual jQuery Last()
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Pass each element in the current matched set through a function, producing a new jQuery object containing the return values.
+        /// </summary>
+        /// <param name="callback">A function object that will be invoked for each element in the current set.</param>
+        /// <returns></returns>
+        public virtual jQuery Map(Delegate callback)
         {
             return null;
         }

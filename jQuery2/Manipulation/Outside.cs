@@ -232,6 +232,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
+        public virtual jQuery After(Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Insert content, specified by the parameter, after each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
         public virtual jQuery After(Func<int, string, string> function)
         {
             return null;
@@ -473,6 +483,16 @@ namespace Bridge.jQuery2
         /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Before(jQuery content, jQuery content2)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Insert content, specified by the parameter, before each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
+        public virtual jQuery Before(Delegate function)
         {
             return null;
         }

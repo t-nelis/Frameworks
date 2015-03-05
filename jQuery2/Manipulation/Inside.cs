@@ -232,6 +232,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
+        public virtual jQuery Append(Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Insert content, specified by the parameter, to the end of each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
         public virtual jQuery Append(Func<int, string, string> function)
         {
             return null;
@@ -522,6 +532,16 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
         /// <returns></returns>
+        public virtual jQuery Prepend(Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
+        /// </summary>
+        /// <param name="function">A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</param>
+        /// <returns></returns>
         public virtual jQuery Prepend(Func<int, string, string> function)
         {
             return null;
@@ -622,6 +642,16 @@ namespace Bridge.jQuery2
         /// <param name="text">The text to set as the content of each matched element. When Number or Boolean is supplied, it will be converted to a String representation.</param>
         /// <returns></returns>
         public virtual jQuery Text(bool text)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Set the content of each element in the set of matched elements to the specified text.
+        /// </summary>
+        /// <param name="function">A function returning the text content to set. Receives the index position of the element in the set and the old text value as arguments.</param>
+        /// <returns></returns>
+        public virtual jQuery Text(Delegate function)
         {
             return null;
         }

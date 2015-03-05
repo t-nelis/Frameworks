@@ -151,7 +151,7 @@ namespace Bridge.Bootstrap3
         /// You can define a function which returns a placement string. The two arguments are passed to a function - a tooltip/popover and a target DOM elements.
         /// Defaults to 'top'.
         /// </summary>
-        public virtual Any<string, PopupPlacement, Func<Element, Element, string>> Placement { get; set; }
+        public virtual Any<string, PopupPlacement, Delegate, Func<Element, Element, string>> Placement { get; set; }
 
         /// <summary>
         /// If a selector is provided, tooltip/popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have tooltips/popovers added. 
@@ -165,7 +165,7 @@ namespace Bridge.Bootstrap3
         /// If a function is given, you can access the element that the popover is attached to via the "this" reference (Script.This<Element>()).
         /// Defaults to "".
         /// </summary>
-        public virtual Any<string, Func<string>> Title { get; set; }
+        public virtual Any<string, Delegate, Func<string>> Title { get; set; }
 
         /// <summary>
         /// How tooltip/popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space.
@@ -213,7 +213,7 @@ namespace Bridge.Bootstrap3
         /// If a function is given, you can access the element that the popover is attached to via the "this" reference (Script.This<Element>()).
         /// Defaults to ''.
         /// </summary>
-        public virtual Any<string, Func<string>> Content { get; set; }
+        public virtual Any<string, Delegate, Func<string>> Content { get; set; }
 
         /// <summary>
         /// Base HTML to use when creating the popover.

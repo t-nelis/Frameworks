@@ -44,6 +44,17 @@ namespace Bridge.jQuery2
         /// <param name="name">A CSS property name.</param>
         /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.</param>
         /// <returns></returns>
+        public virtual jQuery Css(string name, Delegate function)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Set one or more CSS properties for the set of matched elements.
+        /// </summary>
+        /// <param name="name">A CSS property name.</param>
+        /// <param name="function">A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.</param>
+        /// <returns></returns>
         public virtual jQuery Css(string name, Func<int, string, int> function)
         {
             return null;

@@ -48,6 +48,19 @@ namespace Bridge.jQuery2
         /// <param name="easing">A string indicating which easing function to use for the transition.</param>
         /// <param name="complete">A function to call once the animation is complete.</param>
         /// <returns></returns>
+        public virtual jQuery Animate(object properties, int duration, string easing, Delegate complete)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Perform a custom animation of a set of CSS properties.
+        /// </summary>
+        /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
+        /// <param name="complete">A function to call once the animation is complete.</param>
+        /// <returns></returns>
         public virtual jQuery Animate(object properties, int duration, string easing, Action complete)
         {
             return null;
@@ -75,6 +88,19 @@ namespace Bridge.jQuery2
         {
             return null;
         }
+        /// <summary>
+        /// Perform a custom animation of a set of CSS properties.
+        /// </summary>
+        /// <param name="properties">An object of CSS properties and values that the animation will move toward.</param>
+        /// <param name="duration">A string or number determining how long the animation will run.</param>
+        /// <param name="easing">A string indicating which easing function to use for the transition.</param>
+        /// <param name="complete">A function to call once the animation is complete.</param>
+        /// <returns></returns>
+        public virtual jQuery Animate(object properties, string duration, string easing, Delegate complete)
+        {
+            return null;
+        }
+
 
         /// <summary>
         /// Perform a custom animation of a set of CSS properties.

@@ -102,6 +102,12 @@ namespace Bridge.jQuery2
         }
 
         [Template("$({0})")]
+        public static jQuery Ready(Delegate callback)
+        {
+            return null;
+        }
+
+        [Template("$({0})")]
         public static jQuery Ready(Action callback)
         {
             return null;
