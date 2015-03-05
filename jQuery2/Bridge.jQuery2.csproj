@@ -40,7 +40,7 @@
     <Compile Include="Effects\Fx.cs" />
     <Compile Include="Events\Browser.cs" />
     <Compile Include="Events\Attachment.cs" />
-    <Compile Include="Events\EventAttributes.cs" />
+    <Compile Include="Events\AdapterAttributes.cs" />
     <Compile Include="Events\Mouse.cs" />
     <Compile Include="Events\Keyboard.cs" />
     <Compile Include="Events\Form.cs" />

@@ -13,13 +13,13 @@ namespace Bridge.jQuery2
     }
 
     [Ignore]
-    public abstract class EventAttribute : Bridge.CLR.EventAttribute
+    public abstract class AdapterAttribute : Bridge.CLR.AdapterAttribute
     {
         public const string Format = "$({1}).on('{0}', this.{2});";
     }
 
     [Ignore]
-    public class JQueryEventAttribute : EventAttribute
+    public class JQueryEventAttribute : AdapterAttribute
     {
         public const bool IsCommonEvent = true;
 
@@ -29,7 +29,7 @@ namespace Bridge.jQuery2
     }  
 
     [Ignore]
-    public class ReadyAttribute : EventAttribute
+    public class ReadyAttribute : AdapterAttribute
     {
         public const string Format = "$(this.{2});";
         public const string Event = "ready";
@@ -40,7 +40,7 @@ namespace Bridge.jQuery2
     }
 
     [Ignore]
-    public class ClickAttribute : EventAttribute
+    public class ClickAttribute : AdapterAttribute
     {
         public const string Event = "click";
 
