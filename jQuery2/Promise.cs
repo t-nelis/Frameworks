@@ -1,4 +1,4 @@
-﻿using Bridge.CLR;
+﻿using Bridge.Foundation;
 using System;
 
 namespace Bridge.jQuery2

@@ -1,4 +1,4 @@
-﻿using Bridge.CLR;
+﻿using Bridge.Foundation;
 using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3

@@ -1,5 +1,5 @@
 ﻿using System;
-using Bridge.CLR;
+using Bridge.Foundation;
 using Bridge.Html5;
 
 namespace Bridge.Bootstrap3
