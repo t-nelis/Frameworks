@@ -19,11 +19,11 @@ namespace Bridge.jQuery2
     }
 
     [Ignore]
-    public class JQueryEventAttribute : AdapterAttribute
+    public class jQueryEventAttribute : AdapterAttribute
     {
         public const bool IsCommonEvent = true;
 
-        public JQueryEventAttribute(string eventName, string selector, JqueryEventTarget target = JqueryEventTarget.Value)
+        public jQueryEventAttribute(string eventName, string selector, JqueryEventTarget target = JqueryEventTarget.Value)
         {
         }
     }  
