@@ -161,8 +161,9 @@ namespace Bridge.Bootstrap3
         /// </summary>
         public virtual string Selector { get; set; }
 
+        /// <summary>
         /// Default title value if title attribute isn't present.
-        /// If a function is given, you can access the element that the popover is attached to via the "this" reference (Script.This<Element>()).
+        /// If a function is given, you can access the element that the popover is attached to via the "this" reference (Script.This&lt;Element&gt;()).
         /// Defaults to "".
         /// </summary>
         public virtual Any<string, Delegate, Func<string>> Title { get; set; }
@@ -210,7 +211,7 @@ namespace Bridge.Bootstrap3
     {
         /// <summary>
         /// Default content value if data-content attribute isn't present.
-        /// If a function is given, you can access the element that the popover is attached to via the "this" reference (Script.This<Element>()).
+        /// If a function is given, you can access the element that the popover is attached to via the "this" reference (Script.This&lt;Element&gt;()).
         /// Defaults to ''.
         /// </summary>
         public virtual Any<string, Delegate, Func<string>> Content { get; set; }

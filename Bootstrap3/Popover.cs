@@ -23,6 +23,7 @@ namespace Bridge.Bootstrap3
         /// Initializes popovers for an element collection.
         /// </summary>
         /// <param name="instance">The jQuery object</param>
+        /// <param name="options">The options</param>
         /// <returns>The jQuery object</returns>
         [Template("{0}.popover({1})")]
         public static jQuery Popover(this jQuery instance, PopoverOptions options)

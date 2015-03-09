@@ -23,6 +23,7 @@ namespace Bridge.Bootstrap3
         /// Attaches a tooltip handler to an element collection.
         /// </summary>
         /// <param name="instance">The jQuery object</param>
+        /// <param name="options">The options</param>
         /// <returns>The jQuery object</returns>
         [Template("{0}.tooltip({1})")]
         public static jQuery Tooltip(this jQuery instance, TooltipOptions options)

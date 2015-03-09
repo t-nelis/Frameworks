@@ -311,7 +311,7 @@ namespace Bridge.jQuery2
         /// Manipulate the queue of functions to be executed on the matched element.
         /// </summary>
         /// <param name="element">A DOM element where the array of queued functions is attached.</param>
-        /// <param name="string">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
+        /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="newQueue">An array of functions to replace the current queue contents.</param>
         /// <returns></returns>
         public static jQuery Queue(Element element, string queueName, Array newQueue)
@@ -323,7 +323,7 @@ namespace Bridge.jQuery2
         /// Manipulate the queue of functions to be executed on the matched element.
         /// </summary>
         /// <param name="element">A DOM element where the array of queued functions is attached.</param>
-        /// <param name="string">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
+        /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="callback">he new function to add to the queue.</param>
         /// <returns></returns>
         public static jQuery Queue(Element element, string queueName, Delegate callback)
@@ -335,7 +335,7 @@ namespace Bridge.jQuery2
         /// Manipulate the queue of functions to be executed on the matched element.
         /// </summary>
         /// <param name="element">A DOM element where the array of queued functions is attached.</param>
-        /// <param name="string">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
+        /// <param name="queueName">A string containing the name of the queue. Defaults to fx, the standard effects queue.</param>
         /// <param name="callback">he new function to add to the queue.</param>
         /// <returns></returns>
         public static jQuery Queue(Element element, string queueName, Action callback)

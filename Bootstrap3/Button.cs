@@ -35,6 +35,7 @@ namespace Bridge.Bootstrap3
         /// Does something with a button - "loading", "reset" or "toggle" operations.
         /// </summary>
         /// <param name="instance">The jQuery object</param>
+        /// <param name="operation"></param>
         /// <returns>The jQuery object</returns>
         [Template("{0}.button({1})")]
         public static jQuery Button(this jQuery instance, ButtonOperation operation)

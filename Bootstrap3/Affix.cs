@@ -23,6 +23,7 @@ namespace Bridge.Bootstrap3
         /// Initializes an affix with the options object.
         /// </summary>
         /// <param name="instance">The jQuery object</param>
+        /// <param name="options"></param>
         /// <returns>The jQuery object</returns>
         [Template("{0}.affix({1})")]
         public static jQuery Affix(this jQuery instance, AffixOptions options)

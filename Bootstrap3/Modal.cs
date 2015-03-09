@@ -11,7 +11,7 @@ namespace Bridge.Bootstrap3
         /// Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs). 
         /// </summary>
         /// <param name="instance">The jQuery object with a modal or modals</param>
-        /// <param name="operation">The operation to be done. Either "toggle", "show" or "hide.</param>
+        /// <param name="options">The options</param>
         /// <returns>The jQuery object</returns>
         [Template("{0}.modal({1})")]
         public static jQuery Modal(this jQuery instance, ModalOptions options)

@@ -204,7 +204,7 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Remove a callback or a collection of callbacks from a callback list.
         /// </summary>
-        /// <param name="callback">A function, or array of functions, that are to be removed from the callback list.</param>
+        /// <param name="callbacks">A function, or array of functions, that are to be removed from the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
         public virtual Callbacks Remove(Delegate[] callbacks)
         {
@@ -214,7 +214,7 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Remove a callback or a collection of callbacks from a callback list.
         /// </summary>
-        /// <param name="callback">A function, or array of functions, that are to be removed from the callback list.</param>
+        /// <param name="callbacks">A function, or array of functions, that are to be removed from the callback list.</param>
         /// <returns>This method returns the Callbacks object onto which it is attached (this).</returns>
         public virtual Callbacks Remove(Action[] callbacks)
         {

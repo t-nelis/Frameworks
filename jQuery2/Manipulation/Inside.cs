@@ -11,7 +11,6 @@ namespace Bridge.jQuery2
         /// Insert content, specified by the parameter, to the end of each element in the set of matched elements.
         /// </summary>
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
-        /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Append(string content)
         {
@@ -22,7 +21,6 @@ namespace Bridge.jQuery2
         /// Insert content, specified by the parameter, to the end of each element in the set of matched elements.
         /// </summary>
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
-        /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Append(Element content)
         {
@@ -33,7 +31,6 @@ namespace Bridge.jQuery2
         /// Insert content, specified by the parameter, to the end of each element in the set of matched elements.
         /// </summary>
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
-        /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Append(Array content)
         {
@@ -44,7 +41,6 @@ namespace Bridge.jQuery2
         /// Insert content, specified by the parameter, to the end of each element in the set of matched elements.
         /// </summary>
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
-        /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Append(jQuery content)
         {
@@ -311,7 +307,6 @@ namespace Bridge.jQuery2
         /// Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
         /// </summary>
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
-        /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Prepend(string content)
         {
@@ -322,7 +317,6 @@ namespace Bridge.jQuery2
         /// Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
         /// </summary>
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
-        /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Prepend(Element content)
         {
@@ -333,7 +327,6 @@ namespace Bridge.jQuery2
         /// Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
         /// </summary>
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
-        /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Prepend(Array content)
         {
@@ -344,7 +337,6 @@ namespace Bridge.jQuery2
         /// Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
         /// </summary>
         /// <param name="content">DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.</param>
-        /// <param name="content2">One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</param>
         /// <returns></returns>
         public virtual jQuery Prepend(jQuery content)
         {
