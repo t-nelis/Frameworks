@@ -59,7 +59,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Bridge.NET\Core\Html5\Bridge.Html5.csproj">
+    <ProjectReference Include="..\..\Foundation\Core\Html5\Bridge.Html5.csproj">
       <Project>{99decd28-d3e3-4ea7-acae-ab5dfc9913bd}</Project>
       <Name>Bridge.Html5</Name>
     </ProjectReference>
@@ -69,5 +69,5 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\Bridge.NET\assemblies\BridgeNoTask.targets" />
+  <Import Project="..\..\Foundation\assemblies\BridgeNoTask.targets" />
 </Project>
