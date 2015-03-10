@@ -84,5 +84,5 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\Foundation\assemblies\BridgeNoTask.targets" />
+  <Import Project="..\..\Foundation\assemblies\BridgeProjectRefs.targets" />
 </Project>
