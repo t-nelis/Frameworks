@@ -1,4 +1,4 @@
-﻿using Bridge.Foundation;
+﻿using Bridge;
 using System;
 using System.Threading.Tasks;
 

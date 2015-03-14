@@ -1,4 +1,4 @@
-﻿using Bridge.Foundation;
+﻿using Bridge;
 using Bridge.Html5;
 using System;
 using System.Collections.Generic;

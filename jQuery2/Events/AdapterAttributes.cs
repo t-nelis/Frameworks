@@ -1,4 +1,4 @@
-﻿using Bridge.Foundation;
+﻿using Bridge;
 
 namespace Bridge.jQuery2
 {
@@ -13,7 +13,7 @@ namespace Bridge.jQuery2
     }
 
     [Ignore]
-    public abstract class AdapterAttribute : Bridge.Foundation.AdapterAttribute
+    public abstract class AdapterAttribute : Bridge.AdapterAttribute
     {
         public const string Format = "$({1}).on('{0}', this.{2});";
     }
