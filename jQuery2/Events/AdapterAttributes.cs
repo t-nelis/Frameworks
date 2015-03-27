@@ -29,17 +29,6 @@ namespace Bridge.jQuery2
     }  
 
     [Ignore]
-    public class ReadyAttribute : AdapterAttribute
-    {
-        public const string Format = "$(this.{2});";
-        public const string Event = "ready";
-
-        public ReadyAttribute()
-        {            
-        }
-    }
-
-    [Ignore]
     public class ClickAttribute : AdapterAttribute
     {
         public const string Event = "click";
