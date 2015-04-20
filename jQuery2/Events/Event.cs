@@ -23,7 +23,7 @@ namespace Bridge.jQuery2
         /// <param name="eventName">The name of the event</param>
         /// <param name="arguments">A set of settings specific for the event</param>
         /// <returns>A jQuery Event object</returns>
-        [Template("$.Event({0},{1})")]
+        [Template("$.Event({0},{arguments})")]
         public static jQueryEvent Event(string eventName, params object[] arguments)
         {
             return null;
@@ -51,7 +51,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="eventName">The name of the event</param>
         /// <param name="arguments">A set of settings specific for the event</param>
-        [Template("$.Event({0},{1})")]
+        [Template("$.Event({0},{arguments})")]
         public jQueryEvent(string eventName, params object[] arguments)
         {
         }

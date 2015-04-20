@@ -25,7 +25,7 @@ namespace Bridge.jQuery2
         /// <param name="target">An object that will receive the new properties if additional objects are passed in or that will extend the jQuery namespace if it is the sole argument.</param>
         /// <param name="objects">Objects containing additional properties to merge in.</param>
         /// <returns>The merged object</returns>
-        [Template("$.extend({0},{1})")]
+        [Template("$.extend({0},{objects})")]
         public static object Extend(object target, params object[] objects)
         {
             return null;
@@ -38,7 +38,7 @@ namespace Bridge.jQuery2
         /// <param name="target">An object that will receive the new properties if additional objects are passed in or that will extend the jQuery namespace if it is the sole argument.</param>
         /// <param name="objects">Objects containing additional properties to merge in.</param>
         /// <returns>The merged object</returns>
-        [Template("$.extend({0},{1},{2})")]
+        [Template("$.extend({0},{1},{objects})")]
         public static object Extend(bool deep, object target, params object[] objects)
         {
             return null;
@@ -371,7 +371,7 @@ namespace Bridge.jQuery2
         /// <param name="context">The object to which the context (this) of the function should be set.</param>
         /// <param name="additionalArguments">Any number of arguments to be passed to the function referenced in the function argument.</param>
         /// <returns>A new function that will always have a particular context.</returns>
-        [Template("$.proxy({0},{1},{2})")]
+        [Template("$.proxy({0},{1},{additionalArguments})")]
         public static Delegate Proxy(Delegate function, object context, params object[] additionalArguments)
         {
             return null;
@@ -384,7 +384,7 @@ namespace Bridge.jQuery2
         /// <param name="context">The object to which the context (this) of the function should be set.</param>
         /// <param name="additionalArguments">Any number of arguments to be passed to the function referenced in the function argument.</param>
         /// <returns>A new function that will always have a particular context.</returns>
-        [Template("$.proxy({0},{1},{2})")]
+        [Template("$.proxy({0},{1},{additionalArguments})")]
         public static Delegate Proxy(Action function, object context, params object[] additionalArguments)
         {
             return null;
@@ -421,7 +421,7 @@ namespace Bridge.jQuery2
         /// <param name="name">The name of the function whose context will be changed (should be a property of the context object).</param>
         /// <param name="additionalArguments">Any number of arguments to be passed to the function referenced in the function argument.</param>
         /// <returns>A new function that will always have a particular context.</returns>
-        [Template("$.proxy({0},{1},{2})")]
+        [Template("$.proxy({0},{1},{additionalArguments})")]
         public static Delegate Proxy(Delegate function, string name, params object[] additionalArguments)
         {
             return null;
@@ -434,7 +434,7 @@ namespace Bridge.jQuery2
         /// <param name="name">The name of the function whose context will be changed (should be a property of the context object).</param>
         /// <param name="additionalArguments">Any number of arguments to be passed to the function referenced in the function argument.</param>
         /// <returns>A new function that will always have a particular context.</returns>
-        [Template("$.proxy({0},{1},{2})")]
+        [Template("$.proxy({0},{1},{additionalArguments})")]
         public static Delegate Proxy(Action function, string name, params object[] additionalArguments)
         {
             return null;
