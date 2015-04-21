@@ -228,7 +228,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="url">A string containing the URL to which the request is sent.</param>
         /// <returns>A jqXHR instance</returns>
-        public static jqXHR Load(string url)
+        public jqXHR Load(string url)
         {
             return null;
         }
@@ -239,19 +239,7 @@ namespace Bridge.jQuery2
         /// <param name="url">A string containing the URL to which the request is sent.</param>
         /// <param name="data">A plain object or string that is sent to the server with the request.</param>
         /// <returns>A jqXHR instance</returns>
-        public static jqXHR Load(string url, object data)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Load data from the server and place the returned HTML into the matched element.
-        /// </summary>
-        /// <param name="url">A string containing the URL to which the request is sent.</param>
-        /// <param name="data">A plain object or string that is sent to the server with the request.</param>
-        /// <param name="success">A callback function that is executed when the request completes. The responseText, textStatus and jqXHR instance are passed to the success handler.</param>
-        /// <returns>A jqXHR instance</returns>
-        public static jqXHR Load(string url, object data, Delegate success)
+        public jqXHR Load(string url, object data)
         {
             return null;
         }
@@ -263,7 +251,19 @@ namespace Bridge.jQuery2
         /// <param name="data">A plain object or string that is sent to the server with the request.</param>
         /// <param name="success">A callback function that is executed when the request completes. The responseText, textStatus and jqXHR instance are passed to the success handler.</param>
         /// <returns>A jqXHR instance</returns>
-        public static jqXHR Load(string url, object data, Action<string, string, jqXHR> success)
+        public jqXHR Load(string url, object data, Delegate success)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Load data from the server and place the returned HTML into the matched element.
+        /// </summary>
+        /// <param name="url">A string containing the URL to which the request is sent.</param>
+        /// <param name="data">A plain object or string that is sent to the server with the request.</param>
+        /// <param name="success">A callback function that is executed when the request completes. The responseText, textStatus and jqXHR instance are passed to the success handler.</param>
+        /// <returns>A jqXHR instance</returns>
+        public jqXHR Load(string url, object data, Action<string, string, jqXHR> success)
         {
             return null;
         }
