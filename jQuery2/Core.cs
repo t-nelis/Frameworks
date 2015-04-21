@@ -46,6 +46,11 @@ namespace Bridge.jQuery2
         {
         }
 
+        [Template("$(\"<{0:raw}>\")")]
+        public jQuery(ElementType elementType)
+        {
+        }
+
         [Template("$({0})")]
         public static jQuery Element(Element element)
         {
