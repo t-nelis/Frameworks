@@ -5,7 +5,7 @@
     /// </summary>
     [Ignore]
     [ObjectLiteral]
-    public class WebGLPrecisionFormat
+    public class WebGLShaderPrecisionFormat
     {
         /// <summary>
         /// Represents the precision in bits for a given data type. 

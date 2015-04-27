@@ -1025,7 +1025,7 @@ namespace Bridge.WebGL
         ///     gl.HIGH_INT
         /// </param>
         /// <returns>Precision and range of numeric format.</returns>
-        public virtual WebGLPrecisionFormat GetShaderPrecisionFormat(int shaderType, int precisionType)
+        public virtual WebGLShaderPrecisionFormat GetShaderPrecisionFormat(int shaderType, int precisionType)
         {
             return null;
         }
