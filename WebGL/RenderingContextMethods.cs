@@ -90,7 +90,7 @@ namespace Bridge.WebGL
         ///     gl.INVALID_OPERATION	If texture was created with different target than target.   
         /// </summary>
         /// <param name="target">gl.TEXTURE_2D or gl.TEXTURE_CUBE_MAP</param>
-        /// <param name="WebGLTexture">Either a reference to a texture object or null.</param>
+        /// <param name="texture">Either a reference to a texture object or null.</param>
         public virtual void BindTexture(int target, WebGLTexture texture) { }
 
         /// <summary>
@@ -424,7 +424,6 @@ namespace Bridge.WebGL
         ///     
         ///     gl.INVALID_FRAMEBUFFER_OPERATION	The currently bound WebGLFramebuffer is not framebuffer complete
         ///                                         checkFramebufferStatus does not return gl.FRAMEBUFFER_COMPLETE
-
         /// </summary>
         /// <param name="target">The target texture. One of the following:
         ///     gl.TEXTURE_2D                       Uses a 2D image.
@@ -714,11 +713,12 @@ namespace Bridge.WebGL
         ///                             If texture isn't 0 or the name of an existing texture object
         /// </summary>
         /// <param name="target">Always use gl.FRAMEBUFFER.</param>
-        /// /// <param name="attachment">Specifies the attachment point. One of the following:
+        /// <param name="attachment">Specifies the attachment point. One of the following:
         ///     gl.COLOR_ATTACHMENT0
         ///     gl.DEPTH_ATTACHMENT
         ///     gl.STENCIL_ATTACHEMENT
         ///     gl.DEPTH_STENCIL_ATTACHEMENT
+        /// </param>
         /// <param name="texTarget">The texture target:
         ///     gl.TEXTURE_2D                       Uses a 2D image.
         ///     gl.TEXTURE_CUBE_MAP_POSITIVE_X      Image for the positive X face of the cube.
@@ -729,7 +729,7 @@ namespace Bridge.WebGL
         ///     gl.TEXTURE_CUBE_MAP_NEGATIVE_Z      Image for the negative Z face of the cube.
         /// </param>
         /// <param name="texture">WebGLTexture object with image to attach.</param>
-        /// <param name="level">The mipmap level of the texture image to attach. Always set to 0. </param>
+        /// <param name="level">The mipmap level of the texture image to attach. Always set to 0.</param>
         public virtual void FramebufferTexture2D(int target, int attachment, int texTarget, WebGLTexture texture, int level) { }
 
         /// <summary>
@@ -1728,7 +1728,7 @@ namespace Bridge.WebGL
         ///     gl.INVALID_ENUM	        If target, format, or type aren't one of the listed values.     
         /// 
         /// </summary>
-        /// <param name="target">The target texture of the active texture unit. Must be one of the following: </param>
+        /// <param name="target">The target texture of the active texture unit. Must be one of the following:
         ///     gl.TEXTURE_2D                       Uses a 2D image.
         ///     gl.TEXTURE_CUBE_MAP_POSITIVE_X      Image for the positive X face of the cube map.
         ///     gl.TEXTURE_CUBE_MAP_NEGATIVE_X      Image for the negative X face of the cube map.
@@ -1773,7 +1773,7 @@ namespace Bridge.WebGL
         ///     gl.INVALID_ENUM	        If target, format, or type aren't one of the listed values.     
         /// 
         /// </summary>
-        /// <param name="target">The target texture of the active texture unit. Must be one of the following: </param>
+        /// <param name="target">The target texture of the active texture unit. Must be one of the following:
         ///     gl.TEXTURE_2D                       Uses a 2D image.
         ///     gl.TEXTURE_CUBE_MAP_POSITIVE_X      Image for the positive X face of the cube map.
         ///     gl.TEXTURE_CUBE_MAP_NEGATIVE_X      Image for the negative X face of the cube map.
@@ -1818,7 +1818,7 @@ namespace Bridge.WebGL
         ///     gl.INVALID_ENUM	        If target, format, or type aren't one of the listed values.     
         /// 
         /// </summary>
-        /// <param name="target">The target texture of the active texture unit. Must be one of the following: </param>
+        /// <param name="target">The target texture of the active texture unit. Must be one of the following:
         ///     gl.TEXTURE_2D                       Uses a 2D image.
         ///     gl.TEXTURE_CUBE_MAP_POSITIVE_X      Image for the positive X face of the cube map.
         ///     gl.TEXTURE_CUBE_MAP_NEGATIVE_X      Image for the negative X face of the cube map.
@@ -1863,7 +1863,7 @@ namespace Bridge.WebGL
         ///     gl.INVALID_ENUM	        If target, format, or type aren't one of the listed values.     
         /// 
         /// </summary>
-        /// <param name="target">The target texture of the active texture unit. Must be one of the following: </param>
+        /// <param name="target">The target texture of the active texture unit. Must be one of the following:
         ///     gl.TEXTURE_2D                       Uses a 2D image.
         ///     gl.TEXTURE_CUBE_MAP_POSITIVE_X      Image for the positive X face of the cube map.
         ///     gl.TEXTURE_CUBE_MAP_NEGATIVE_X      Image for the negative X face of the cube map.

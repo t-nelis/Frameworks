@@ -1141,7 +1141,6 @@ namespace Bridge.WebGL
 
         /// <summary>
         /// Passed to stencilOp. Increments the current stencil buffer value. Wraps stencil buffer value to zero when incrementing the maximum representable unsigned value.
-
         /// </summary>
         [Name(false)]
         public readonly int INCR_WRAP;
