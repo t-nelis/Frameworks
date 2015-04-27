@@ -1,8 +1,8 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Bridge.QUnit1")]
-[assembly: AssemblyProduct("Bridge.QUnit1")]
+[assembly: AssemblyTitle("Bridge.QUnit")]
+[assembly: AssemblyProduct("Bridge.QUnit")]
 [assembly: AssemblyDescription("QUnit version 1.x bindings for Bridge.NET.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Object.NET, Inc.")]
