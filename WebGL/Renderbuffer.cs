@@ -1,4 +1,4 @@
-﻿namespace Bridge.Html5.WebGL
+﻿namespace Bridge.WebGL
 {
     /// <summary>
     /// Represents a buffer which can contain an image and act as the source or target of a render operation.

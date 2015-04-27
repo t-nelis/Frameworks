@@ -1,4 +1,4 @@
-﻿namespace Bridge.Html5.WebGL
+﻿namespace Bridge.WebGL
 {
     /// <summary>
     /// Provides the precision, rangeMin, and rangeMax properties returned by the getShaderPrecisionFormat method.

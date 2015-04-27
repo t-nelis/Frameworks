@@ -1,4 +1,4 @@
-﻿namespace Bridge.Html5.WebGL
+﻿namespace Bridge.WebGL
 {
     /// <summary>
     /// A dictionary object of attributes used to initialize the context for the first time. 

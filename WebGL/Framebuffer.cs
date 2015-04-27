@@ -1,4 +1,4 @@
-﻿namespace Bridge.Html5.WebGL
+﻿namespace Bridge.WebGL
 {
     /// <summary>
     /// Represents a collection of buffers that serve as a rendering destination.

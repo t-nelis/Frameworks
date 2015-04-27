@@ -1,4 +1,4 @@
-﻿namespace Bridge.Html5.WebGL
+﻿namespace Bridge.WebGL
 {
     /// <summary>
     /// Corresponds to the location of a uniform variable in a shader program.
