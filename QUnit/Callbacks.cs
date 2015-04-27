@@ -1,7 +1,7 @@
 ﻿using System;
 using Bridge;
 
-namespace Bridge.QUnit1
+namespace Bridge.QUnit
 {
     /// <summary>
     /// When integrating QUnit into other tools like CI servers, use these callbacks as an API to read test results.

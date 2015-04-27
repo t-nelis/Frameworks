@@ -1,7 +1,7 @@
 ﻿using System;
 using Bridge;
 
-namespace Bridge.QUnit1
+namespace Bridge.QUnit
 {
     [Ignore]
     [Name("QUnit")]

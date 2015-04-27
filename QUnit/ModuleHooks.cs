@@ -1,7 +1,7 @@
 ﻿using System;
 using Bridge;
 
-namespace Bridge.QUnit1
+namespace Bridge.QUnit
 {
     /// <summary>
     /// You can specify code to run before and after each test using the hooks argument, and also to create properties that will be shared on the context of each test.

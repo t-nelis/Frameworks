@@ -1,7 +1,7 @@
 ﻿using System;
 using Bridge;
 
-namespace Bridge.QUnit1
+namespace Bridge.QUnit
 {
     /// <summary>
     ///  Advanced and extensible data dumping for JavaScript.
