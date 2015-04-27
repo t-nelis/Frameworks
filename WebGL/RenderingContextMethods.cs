@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bridge.Html5;
+using System;
 
 namespace Bridge.WebGL
 {

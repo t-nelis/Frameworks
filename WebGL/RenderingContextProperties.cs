@@ -1,4 +1,6 @@
-﻿namespace Bridge.WebGL
+﻿using Bridge.Html5;
+
+namespace Bridge.WebGL
 {
     /// <summary>
     /// WebGLRenderingContext objects expose the WebGLRenderingContext interface, the principal interface in WebGL which provides special properties and methods to manipulate the 3D content rendered in an HTML canvas element.
