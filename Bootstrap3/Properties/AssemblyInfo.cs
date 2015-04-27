@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Bridge.Bootstrap3")]
 [assembly: AssemblyProduct("Bridge.Bootstrap3")]
-[assembly: AssemblyDescription("Bootstrap 3.x API implementation for Bridge.NET.")]
+[assembly: AssemblyDescription("Bootstrap version 3.x bindings for Bridge.NET.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Object.NET, Inc.")]
 [assembly: AssemblyCopyright("Copyright 2008-2015 Object.NET, Inc.")]

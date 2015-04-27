@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Bridge.QUnit1")]
 [assembly: AssemblyProduct("Bridge.QUnit1")]
-[assembly: AssemblyDescription("QUnit 1.17.x API implementation for Bridge.NET.")]
+[assembly: AssemblyDescription("QUnit version 1.x bindings for Bridge.NET.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Object.NET, Inc.")]
 [assembly: AssemblyCopyright("Copyright 2008-2015 Object.NET, Inc.")]

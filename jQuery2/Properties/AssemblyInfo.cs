@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Bridge.jQuery2")]
 [assembly: AssemblyProduct("Bridge.jQuery2")]
-[assembly: AssemblyDescription("jQuery 2.x API implementation for Bridge.NET.")]
+[assembly: AssemblyDescription("jQuery version 2.x bindings for Bridge.NET.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Object.NET, Inc.")]
 [assembly: AssemblyCopyright("Copyright 2008-2015 Object.NET, Inc.")]
