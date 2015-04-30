@@ -225,5 +225,43 @@ namespace Bridge.QUnit
         public virtual void Throws(Action block, string message)
         {
         }
+
+        /// <summary>
+        /// Test if a callback throws an exception, and optionally compare the thrown error.
+        /// </summary>
+        /// <param name="block">Function to execute</param>
+        /// <param name="expected">Expected error string representation or RegExp  that matches (or partially matches)</param>
+        public virtual void Throws(Action block, object expected)
+        {
+        }
+
+        /// <summary>
+        /// Test if a callback throws an exception, and optionally compare the thrown error.
+        /// </summary>
+        /// <param name="block">Function to execute</param>
+        /// <param name="expected">Expected error string representation or RegExp  that matches (or partially matches)</param>
+        /// <param name="message">A short description of the assertion</param>
+        public virtual void Throws(Action block, object expected, string message)
+        {
+        }
+
+        /// <summary>
+        /// Test if a callback throws an exception, and optionally compare the thrown error.
+        /// </summary>
+        /// <param name="block">Function to execute</param>
+        /// <param name="expected">A callback Function that must return true to pass the assertion check</param>
+        public virtual void Throws(Action block, Func<object, bool> expected)
+        {
+        }
+
+        /// <summary>
+        /// Test if a callback throws an exception, and optionally compare the thrown error.
+        /// </summary>
+        /// <param name="block">Function to execute</param>
+        /// <param name="expected">A callback Function that must return true to pass the assertion check</param>
+        /// <param name="message">A short description of the assertion</param>
+        public virtual void Throws(Action block, Func<object, bool> expected, string message)
+        {
+        }
     }
 }
