@@ -1268,6 +1268,19 @@ namespace Bridge.WebGL
         public virtual void PixelStorei(int pName, int param) { }
 
         /// <summary>
+        /// Sets pixel storage modes for readPixels and unpacking of textures with texImage2D and texSubImage2D .
+        /// </summary>
+        /// <param name="pName">The symbolic parameter name. One of the following:
+        ///     gl.PACK_ALIGNMENT                       Affects packing of pixel data into memory. The initial param value is 4, but it can be set to 1,2,4, or 8.
+        ///     gl.UNPACK_ALIGNMENT                     Affects unpacking of pixel data from memory. The initial param value is 4, but can be set to 1,2,4, or 8.
+        ///     gl.UNPACK_FLIP_Y_WEBGL                  Flips the source data along its vertical axis when texImage2D or texSubImage2D are called when param is true. The initial value for param is false.
+        ///     gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL       Multiplies the alpha channel, if it exists, into the other color channels during the data transfer when texImage2D or texSubImage2D are called when param is true. The initial value for param is false.
+        ///     gl.UNPACK_COLORSPACE_CONVERSION_WEBGL   The browser's default colorspace conversion is applied when texImage2D or texSubImage2D are called with an HTMLImageElement texture data source. The initial value for param is BROWSER_DEFAULT_WEBGL. No colorspace conversion is applied when set to NONE.
+        /// </param>
+        /// <param name="param">Values depend on value of pname.</param>
+        public virtual void PixelStorei(int pName, bool param) { }
+
+        /// <summary>
         /// Sets the implementation-specific units and scale factor used to calculate fragment depth values. 
         /// </summary>
         /// <param name="factor">The scale factor. Initial value is 0.</param>
@@ -1937,6 +1950,19 @@ namespace Bridge.WebGL
         /// <param name="location">Specifies the location of the uniform to modify.</param>
         /// <param name="value">The new value for the uniform variable. </param>
         public virtual void Uniform1i(WebGLUniformLocation location, int value) { }
+
+        /// <summary>
+        /// Assigns a boolean value to a uniform variable for the current program object. 
+        /// Uniform1i can be used to set texture samplers. If location is a texture sampler, then value refers to an offset into the array of active textures. 
+        /// 
+        /// Errors:
+        ///     gl.INVALID_OPERATION	The location doesn't belong to the current program.
+        ///                             There is no current program object.
+        ///                             If location is an invalid location for the current program object and location isn't equal to -1.
+        /// </summary>
+        /// <param name="location">Specifies the location of the uniform to modify.</param>
+        /// <param name="value">The new value for the uniform variable. </param>
+        public virtual void Uniform1i(WebGLUniformLocation location, bool value) { }
 
         /// <summary>
         /// Assigns an integer vector array value to a uniform variable for the current program object. 
