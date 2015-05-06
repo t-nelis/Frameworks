@@ -219,5 +219,5 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-    }  
+    }
 }

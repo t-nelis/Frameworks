@@ -11,7 +11,7 @@ namespace Bridge.jQuery2
     public partial class jqXHR : XMLHttpRequest, IPromise
     {
         /// <summary>
-        /// Add handlers to be called when the Deferred object is either resolved or rejected. 
+        /// Add handlers to be called when the Deferred object is either resolved or rejected.
         /// </summary>
         /// <param name="alwaysCallbacks">A function, or array of functions, that is called when the Deferred is resolved or rejected.</param>
         /// <returns>The Deferred object</returns>
@@ -21,7 +21,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Add handlers to be called when the Deferred object is either resolved or rejected. 
+        /// Add handlers to be called when the Deferred object is either resolved or rejected.
         /// </summary>
         /// <param name="alwaysCallbacks">A function, or array of functions, that is called when the Deferred is resolved or rejected.</param>
         /// <returns>The Deferred object</returns>
@@ -31,7 +31,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved. 
+        /// Add handlers to be called when the Deferred object is resolved.
         /// </summary>
         /// <param name="doneCallbacks">A function, or array of functions, that is called when the Deferred is resolved or rejected.</param>
         /// <returns>The Deferred object</returns>
@@ -41,7 +41,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved. 
+        /// Add handlers to be called when the Deferred object is resolved.
         /// </summary>
         /// <param name="doneCallbacks">A function, or array of functions, that is called when the Deferred is resolved or rejected.</param>
         /// <returns>The Deferred object</returns>
@@ -51,7 +51,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Add handlers to be called when the Deferred object is rejected. 
+        /// Add handlers to be called when the Deferred object is rejected.
         /// </summary>
         /// <param name="failCallbacks">A function, or array of functions, that are called when the Deferred is rejected.</param>
         /// <returns>The Deferred object</returns>
@@ -61,7 +61,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Add handlers to be called when the Deferred object is rejected. 
+        /// Add handlers to be called when the Deferred object is rejected.
         /// </summary>
         /// <param name="failCallbacks">A function, or array of functions, that are called when the Deferred is rejected.</param>
         /// <returns>The Deferred object</returns>
@@ -71,7 +71,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Call the progressCallbacks on a Deferred object with the given args. 
+        /// Call the progressCallbacks on a Deferred object with the given args.
         /// </summary>
         /// <param name="arguments">Optional arguments that are passed to the progressCallbacks.</param>
         /// <returns>The Deferred object</returns>
@@ -81,7 +81,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Call the progressCallbacks on a Deferred object with the given context and args. 
+        /// Call the progressCallbacks on a Deferred object with the given context and args.
         /// </summary>
         /// <param name="context">Context passed to the progressCallbacks as the this object.</param>
         /// <param name="arguments">An optional array of arguments that are passed to the progressCallbacks.</param>
@@ -112,7 +112,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Return a Deferred's Promise object. 
+        /// Return a Deferred's Promise object.
         /// </summary>
         /// <returns>A Deferred's Promise object.</returns>
         public virtual Promise Promise()
@@ -121,7 +121,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Return a Deferred's Promise object. 
+        /// Return a Deferred's Promise object.
         /// </summary>
         /// <param name="target">Object onto which the promise methods have to be attached.</param>
         /// <returns>A Deferred's Promise object.</returns>
@@ -131,7 +131,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Reject a Deferred object and call any failCallbacks with the given args. 
+        /// Reject a Deferred object and call any failCallbacks with the given args.
         /// </summary>
         /// <param name="arguments">Optional arguments that are passed to the failCallbacks.</param>
         /// <returns>The Deferred object</returns>
@@ -141,7 +141,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Reject a Deferred object and call any failCallbacks with the given context and args. 
+        /// Reject a Deferred object and call any failCallbacks with the given context and args.
         /// </summary>
         /// <param name="arguments">Optional arguments that are passed to the failCallbacks.</param>
         /// <param name="context">Context passed to the failCallbacks as the this object.</param>
@@ -173,9 +173,9 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Determine the current state of a Deferred object. 
+        /// Determine the current state of a Deferred object.
         /// The deferred.state() method returns a string representing the current state of the Deferred object. The Deferred object can be in one of three states:
-        /// 
+        ///
         ///     "pending" : The Deferred object is not yet in a completed state (neither "rejected" nor "resolved").
         ///     "resolved": The Deferred object is in the resolved state, meaning that either deferred.resolve() or deferred.resolveWith() has been called for the object and the doneCallbacks have been called (or are in the process of being called).
         ///     "rejected": The Deferred object is in the rejected state, meaning that either deferred.reject() or deferred.rejectWith() has been called for the object and the failCallbacks have been called (or are in the process of being called).
@@ -229,7 +229,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress. 
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
         /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
         /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
@@ -241,7 +241,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress. 
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
         /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
         /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>

@@ -44,7 +44,7 @@ namespace Bridge.Bootstrap3
         }
 
         /// <summary>
-        /// Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute data-loading-text. 
+        /// Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute data-loading-text.
         /// </summary>
         /// <param name="instance">The jQuery object</param>
         /// <returns>The jQuery object</returns>
@@ -86,7 +86,7 @@ namespace Bridge.Bootstrap3
     public enum ButtonOperation
     {
         /// <summary>
-        /// Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute data-loading-text. 
+        /// Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute data-loading-text.
         /// </summary>
         Loading,
 

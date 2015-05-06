@@ -7,7 +7,7 @@ namespace Bridge.Bootstrap3
     public static partial class Bootstrap
     {
         /// <summary>
-        /// Does something with a tab. Actully, the only operation is supported - 'show'. It activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM. 
+        /// Does something with a tab. Actully, the only operation is supported - 'show'. It activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM.
         /// </summary>
         /// <param name="instance">The jQuery object with a tab</param>
         /// <param name="operation">The operation to be done. The only one is actually supported - "show".</param>
@@ -19,7 +19,7 @@ namespace Bridge.Bootstrap3
         }
 
         /// <summary>
-        /// Does something with a tab. Actully, the only operation is supported - 'show'. It activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM. 
+        /// Does something with a tab. Actully, the only operation is supported - 'show'. It activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM.
         /// </summary>
         /// <param name="instance">The jQuery object with a tab</param>
         /// <param name="operation">The operation to be done. The only one is actually supported - "show".</param>
@@ -31,7 +31,7 @@ namespace Bridge.Bootstrap3
         }
 
         /// <summary>
-        /// Activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM. 
+        /// Activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM.
         /// </summary>
         /// <param name="instance">The jQuery object with a tab</param>
         /// <returns>The jQuery object</returns>
@@ -51,7 +51,7 @@ namespace Bridge.Bootstrap3
     public enum TabOperation
     {
         /// <summary>
-        /// Activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM. 
+        /// Activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM.
         /// </summary>
         Show
     }

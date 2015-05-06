@@ -2,7 +2,7 @@
 using System;
 
 namespace Bridge.jQuery2
-{    
+{
     public partial class jQuery
     {
         /// <summary>

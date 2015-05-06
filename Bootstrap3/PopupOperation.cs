@@ -29,5 +29,5 @@ namespace Bridge.Bootstrap3
         /// Toggles an element's tooltip/popover.
         /// </summary>
         Toggle
-    } 
+    }
 }

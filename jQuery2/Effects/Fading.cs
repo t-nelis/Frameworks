@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Bridge.jQuery2
-{    
+{
     public partial class jQuery
     {
         /// <summary>
@@ -17,8 +17,8 @@ namespace Bridge.jQuery2
             return null;
         }
 
-        //[Template("Bridge.Task.fromCallbackOptions({this}, 'fadeIn', 'complete')")] 
-        [Template("Bridge.Task.fromPromise({this}.fadeIn())")] 
+        //[Template("Bridge.Task.fromCallbackOptions({this}, 'fadeIn', 'complete')")]
+        [Template("Bridge.Task.fromPromise({this}.fadeIn())")]
         public virtual Task FadeInTask()
         {
             return null;
@@ -42,7 +42,7 @@ namespace Bridge.jQuery2
             return null;
         }
 
-        //[Template("Bridge.Task.fromCallbackOptions({this}, 'fadeOut', 'complete')")] 
+        //[Template("Bridge.Task.fromCallbackOptions({this}, 'fadeOut', 'complete')")]
         [Template("Bridge.Task.fromPromise({this}.fadeOut())")]
         public virtual Task FadeOutTask()
         {

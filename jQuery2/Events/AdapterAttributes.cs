@@ -26,7 +26,7 @@ namespace Bridge.jQuery2
         public jQueryEventAttribute(string eventName, string selector, JqueryEventTarget target = JqueryEventTarget.Value)
         {
         }
-    }  
+    }
 
     [Ignore]
     public class ClickAttribute : AdapterAttribute
@@ -36,5 +36,5 @@ namespace Bridge.jQuery2
         public ClickAttribute(string selector, JqueryEventTarget target = JqueryEventTarget.Value)
         {
         }
-    } 
+    }
 }

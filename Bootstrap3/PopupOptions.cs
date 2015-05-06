@@ -109,7 +109,7 @@ namespace Bridge.Bootstrap3
         /// Padding
         /// </summary>
         public virtual int Padding { get; set; }
-    }    
+    }
 
     /// <summary>
     /// A base class for a tooltip and a popover options
@@ -125,7 +125,7 @@ namespace Bridge.Bootstrap3
         public virtual bool Animation { get; set; }
 
         /// <summary>
-        /// Appends the tooltip/popover to a specific element. 
+        /// Appends the tooltip/popover to a specific element.
         /// Example: container: 'body'. This option is particularly useful in that it allows you to position the tooltip/popover in the flow of the document near the triggering element - which will prevent the tooltip/popover from floating away from the triggering element during a window resize.
         /// Defaults to false.
         /// </summary>
@@ -154,7 +154,7 @@ namespace Bridge.Bootstrap3
         public virtual Any<string, PopupPlacement, Delegate, Func<Element, Element, string>> Placement { get; set; }
 
         /// <summary>
-        /// If a selector is provided, tooltip/popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have tooltips/popovers added. 
+        /// If a selector is provided, tooltip/popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have tooltips/popovers added.
         /// See this Issue: https://github.com/twbs/bootstrap/issues/4215
         /// and an informative example: http://jsfiddle.net/fScua/
         /// Defaults to no selector.
@@ -190,11 +190,11 @@ namespace Bridge.Bootstrap3
         /// The tooltip's title will be injected into the .tooltip-inner.
         /// .tooltip-arrow will become the tooltip's arrow.
         /// The outermost wrapper element should have the .tooltip class.
-        /// Defaults to 
+        /// Defaults to
         ///     <div class="tooltip" role="tooltip">
         ///         <div class="tooltip-arrow">
         ///         </div>
-        ///         
+        ///
         ///         <div class="tooltip-inner">
         ///         </div>
         ///     </div>
@@ -222,7 +222,7 @@ namespace Bridge.Bootstrap3
         /// The popover's content will be injected into the .popover-content.
         /// .arrow will become the popover's arrow.
         /// The outermost wrapper element should have the .popover class.
-        /// Defaults to 
+        /// Defaults to
         ///     <div class="popover" role="tooltip">
         ///         <div class="arrow">
         ///         </div>

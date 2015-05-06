@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 
 namespace Bridge.jQuery2
-{    
+{
     public partial class jQuery
     {
         /// <summary>
@@ -131,9 +131,9 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="duration">An integer indicating the number of milliseconds to delay execution of the next item in the queue.</param>
         /// <returns></returns>
-        public virtual jQuery Delay(int duration) 
-        { 
-            return null; 
+        public virtual jQuery Delay(int duration)
+        {
+            return null;
         }
 
         /// <summary>

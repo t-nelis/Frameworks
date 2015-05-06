@@ -3,7 +3,7 @@ using Bridge.Html5;
 using System;
 
 namespace Bridge.jQuery2
-{    
+{
     public partial class jQuery
     {
         /// <summary>
@@ -150,7 +150,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Determine if the argument passed is a Javascript function object. 
+        /// Determine if the argument passed is a Javascript function object.
         /// </summary>
         /// <param name="obj">Object to test whether or not it is a function.</param>
         /// <returns>True if the passed object is a function, otherwise - false.</returns>
@@ -264,7 +264,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Merge the contents of two arrays together into the first array. 
+        /// Merge the contents of two arrays together into the first array.
         /// </summary>
         /// <param name="array1">The first array to merge, the elements of second added.</param>
         /// <param name="array2">The second array to merge into the first, unaltered.</param>
@@ -292,7 +292,7 @@ namespace Bridge.jQuery2
         public static double Now()
         {
             return -1;
-        } 
+        }
 
         /// <summary>
         /// Parses a string into an array of DOM nodes.

@@ -28,7 +28,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-    }  
+    }
 
     /// <summary>
     /// jQuery’s event system normalizes the event object according to W3C standards. The event object is guaranteed to be passed to the event handler. Most properties from the original event are copied over and normalized to the new event object.
@@ -43,7 +43,7 @@ namespace Bridge.jQuery2
         /// <param name="eventName">The name of the event</param>
         [Template("$.Event({0})")]
         public jQueryEvent(string eventName)
-        { 
+        {
         }
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace Bridge.jQuery2
         public int Which;
 
         /// <summary>
-        /// Returns whether event.preventDefault() was ever called on this event object. 
+        /// Returns whether event.preventDefault() was ever called on this event object.
         /// </summary>
         public bool IsDefaultPrevented()
         {
@@ -140,7 +140,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Returns whether event.stopImmediatePropagation() was ever called on this event object. 
+        /// Returns whether event.stopImmediatePropagation() was ever called on this event object.
         /// </summary>
         public bool IsImmediatePropagationStopped()
         {
@@ -148,7 +148,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Returns whether event.stopPropagation() was ever called on this event object. 
+        /// Returns whether event.stopPropagation() was ever called on this event object.
         /// </summary>
         public bool IsPropagationStopped()
         {

@@ -37,7 +37,7 @@ namespace Bridge.WebGL
         #region Primitives constants
 
         /// <summary>
-        /// Draws a single dot per vertex. For example, 12 vertices produce 12 dots. 
+        /// Draws a single dot per vertex. For example, 12 vertices produce 12 dots.
         /// </summary>
         [Name(false)]
         public readonly int POINTS;
@@ -49,7 +49,7 @@ namespace Bridge.WebGL
         public readonly int LINES;
 
         /// <summary>
-        /// Similar to gl.LINE_STRIP, but connects the last vertex back to the first. For example, 12 vertices produce 12 straight lines. Not as efficient as gl.LINES, and incurs a conversion cost. 
+        /// Similar to gl.LINE_STRIP, but connects the last vertex back to the first. For example, 12 vertices produce 12 straight lines. Not as efficient as gl.LINES, and incurs a conversion cost.
         /// </summary>
         [Name(false)]
         public readonly int LINE_LOOP;
@@ -61,7 +61,7 @@ namespace Bridge.WebGL
         public readonly int LINE_STRIP;
 
         /// <summary>
-        /// Draws a triangle for each group of three consecutive vertices. For example, 12 vertices create 4 separate triangles. 
+        /// Draws a triangle for each group of three consecutive vertices. For example, 12 vertices create 4 separate triangles.
         /// </summary>
         [Name(false)]
         public readonly int TRIANGLES;
@@ -73,7 +73,7 @@ namespace Bridge.WebGL
         public readonly int TRIANGLE_STRIP;
 
         /// <summary>
-        /// Similar to gl.TRIANGLE_STRIP, but creates a fan shaped output. For example 12 vertices create 10 triangles. May incur a conversion cost. 
+        /// Similar to gl.TRIANGLE_STRIP, but creates a fan shaped output. For example 12 vertices create 10 triangles. May incur a conversion cost.
         /// </summary>
         [Name(false)]
         public readonly int TRIANGLE_FAN;
@@ -103,7 +103,7 @@ namespace Bridge.WebGL
         public readonly int SRC_COLOR;
 
         /// <summary>
-        /// Factor: (1-Rs) (1-Gs) (1-Bs) (1-As) 
+        /// Factor: (1-Rs) (1-Gs) (1-Bs) (1-As)
         /// Multiply by 1 minus each color value.
         /// </summary>
         [Name(false)]
@@ -464,7 +464,7 @@ namespace Bridge.WebGL
         public readonly int NO_ERROR;
 
         /// <summary>
-        /// An unacceptable value for an enumerated argument was specified. 
+        /// An unacceptable value for an enumerated argument was specified.
         /// </summary>
         [Name(false)]
         public readonly int INVALID_ENUM;
@@ -476,13 +476,13 @@ namespace Bridge.WebGL
         public readonly int INVALID_VALUE;
 
         /// <summary>
-        /// The specified operation isn't allowed for the current state. The command is ignored. 
+        /// The specified operation isn't allowed for the current state. The command is ignored.
         /// </summary>
         [Name(false)]
         public readonly int INVALID_OPERATION;
 
         /// <summary>
-        /// The command requires more memory than is available. After this error is reported, the state of the WebGL context is undefined except for error flags. 
+        /// The command requires more memory than is available. After this error is reported, the state of the WebGL context is undefined except for error flags.
         /// </summary>
         [Name(false)]
         public readonly int OUT_OF_MEMORY;
@@ -605,7 +605,7 @@ namespace Bridge.WebGL
         public readonly int STENCIL_VALUE_MASK;
 
         /// <summary>
-        /// Passed to getParameter to get the mask that controls writing of the stencil bitplanes for front-facing polygons and non-polygons. 
+        /// Passed to getParameter to get the mask that controls writing of the stencil bitplanes for front-facing polygons and non-polygons.
         /// The initial value is all 1's. See glStencilMask and glStencilMaskSeparate.
         /// </summary>
         [Name(false)]
@@ -618,49 +618,49 @@ namespace Bridge.WebGL
         public readonly int STENCIL_BACK_FUNC;
 
         /// <summary>
-        /// Passed to getParameter to get a symbolic constant indicating what function is used for back-facing polygons to compare the stencil reference value with the stencil buffer value. 
+        /// Passed to getParameter to get a symbolic constant indicating what function is used for back-facing polygons to compare the stencil reference value with the stencil buffer value.
         /// The initial value is GL_ALWAYS. See glStencilFuncSeparate.
         /// </summary>
         [Name(false)]
         public readonly int STENCIL_BACK_FAIL;
 
         /// <summary>
-        /// Passed to getParameter to get a symbolic constant indicating what action is taken for back-facing polygons when the stencil test passes, but the depth test fails. 
+        /// Passed to getParameter to get a symbolic constant indicating what action is taken for back-facing polygons when the stencil test passes, but the depth test fails.
         /// The initial value is GL_KEEP. See glStencilOpSeparate.
         /// </summary>
         [Name(false)]
         public readonly int STENCIL_BACK_PASS_DEPTH_FAIL;
 
         /// <summary>
-        /// Passed to getParameter to get a symbolic constant indicating what action is taken for back-facing polygons when the stencil test passes and the depth test passes. 
-        /// The initial value is GL_KEEP. See glStencilOpSeparate.                    
+        /// Passed to getParameter to get a symbolic constant indicating what action is taken for back-facing polygons when the stencil test passes and the depth test passes.
+        /// The initial value is GL_KEEP. See glStencilOpSeparate.
         /// </summary>
         [Name(false)]
         public readonly int STENCIL_BACK_PASS_DEPTH_PASS;
 
         /// <summary>
-        /// Passed to getParameter to get the reference value that is compared with the contents of the stencil buffer for back-facing polygons. 
+        /// Passed to getParameter to get the reference value that is compared with the contents of the stencil buffer for back-facing polygons.
         /// The initial value is 0. See glStencilFuncSeparate.
         /// </summary>
         [Name(false)]
         public readonly int STENCIL_BACK_REF;
 
         /// <summary>
-        /// Passed to getParameter to get the mask that is used for back-facing polygons to mask both the stencil reference value and the stencil buffer value before they are compared. 
+        /// Passed to getParameter to get the mask that is used for back-facing polygons to mask both the stencil reference value and the stencil buffer value before they are compared.
         /// The initial value is all 1's. See glStencilFuncSeparate.
         /// </summary>
         [Name(false)]
         public readonly int STENCIL_BACK_VALUE_MASK;
 
         /// <summary>
-        /// Passed to getParameter to get the mask that controls writing of the stencil bitplanes for back-facing polygons. 
+        /// Passed to getParameter to get the mask that controls writing of the stencil bitplanes for back-facing polygons.
         /// The initial value is all 1's. See glStencilMaskSeparate.
         /// </summary>
         [Name(false)]
         public readonly int STENCIL_BACK_WRITEMASK;
 
         /// <summary>
-        /// Passed to getParameter to get the viewport, i.e. the x and y window coordinates of the viewport, followed by its width and height. Initially the x and y window coordinates are both set to 0, 
+        /// Passed to getParameter to get the viewport, i.e. the x and y window coordinates of the viewport, followed by its width and height. Initially the x and y window coordinates are both set to 0,
         /// and the width and height are set to the width and height of the window into which the GL will do its rendering.
         /// See glViewport.
         /// </summary>
@@ -668,8 +668,8 @@ namespace Bridge.WebGL
         public readonly int VIEWPORT;
 
         /// <summary>
-        /// Passed to getParameter to get the scissor box, i.e. the x and y window coordinates of the scissor box, followed by its width and height. 
-        /// Initially the x and y window coordinates are both 0, and the width and height are set to the size of the window. 
+        /// Passed to getParameter to get the scissor box, i.e. the x and y window coordinates of the scissor box, followed by its width and height.
+        /// Initially the x and y window coordinates are both 0, and the width and height are set to the size of the window.
         /// See glScissor.
         /// </summary>
         [Name(false)]
@@ -680,16 +680,16 @@ namespace Bridge.WebGL
         #region SCISSOR_TEST
 
         /// <summary>
-        /// Passed to getParameter to get the red, green, blue, and alpha values used to clear the color buffers. Integer values, if requested, are linearly mapped from the internal floating-point representation such that 1.0 returns the most positive representable integer value, 
-        /// and -1.0 returns the most negative representable integer value. 
-        /// The initial value is (0, 0, 0, 0). 
+        /// Passed to getParameter to get the red, green, blue, and alpha values used to clear the color buffers. Integer values, if requested, are linearly mapped from the internal floating-point representation such that 1.0 returns the most positive representable integer value,
+        /// and -1.0 returns the most negative representable integer value.
+        /// The initial value is (0, 0, 0, 0).
         /// See glClearColor.
         /// </summary>
         [Name(false)]
         public readonly int COLOR_CLEAR_VALUE;
 
         /// <summary>
-        /// Passed to getParameter to get the red, green, blue, and alpha write enables for the color buffers. 
+        /// Passed to getParameter to get the red, green, blue, and alpha write enables for the color buffers.
         /// The initial value is (GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE).
         /// See glColorMask.
         /// </summary>
@@ -697,7 +697,7 @@ namespace Bridge.WebGL
         public readonly int COLOR_WRITEMASK;
 
         /// <summary>
-        /// Passed to getParameter to get the byte alignment used for reading pixel data from memory. 
+        /// Passed to getParameter to get the byte alignment used for reading pixel data from memory.
         /// The initial value is 4.
         /// See glPixelStorei.
         /// </summary>
@@ -705,7 +705,7 @@ namespace Bridge.WebGL
         public readonly int UNPACK_ALIGNMENT;
 
         /// <summary>
-        /// Passed to getParameter to get the byte alignment used for writing pixel data to memory. 
+        /// Passed to getParameter to get the byte alignment used for writing pixel data to memory.
         /// The initial value is 4.
         /// See glPixelStorei.
         /// </summary>
@@ -727,7 +727,7 @@ namespace Bridge.WebGL
         public readonly int MAX_VIEWPORT_DIMS;
 
         /// <summary>
-        /// Passed to getParameter to get an estimate of the number of bits of subpixel resolution that are used to position rasterized geometry in window coordinates. The value must be at least 4.                    
+        /// Passed to getParameter to get an estimate of the number of bits of subpixel resolution that are used to position rasterized geometry in window coordinates. The value must be at least 4.
         /// </summary>
         [Name(false)]
         public readonly int SUBPIXEL_BITS;
@@ -769,7 +769,7 @@ namespace Bridge.WebGL
         public readonly int STENCIL_BITS;
 
         /// <summary>
-        /// Passed to getParameter to get the value that is multiplied by an implementation-specific value and then added to the depth value of each fragment generated when a polygon is rasterized. 
+        /// Passed to getParameter to get the value that is multiplied by an implementation-specific value and then added to the depth value of each fragment generated when a polygon is rasterized.
         /// The initial value is 0.
         /// See glPolygonOffset.
         /// </summary>
@@ -781,7 +781,7 @@ namespace Bridge.WebGL
         #region POLYGON_OFFSET_FILL
 
         /// <summary>
-        /// Passed to getParameter to get the scaling factor used to determine the variable offset that is added to the depth value of each fragment generated when a polygon is rasterized. 
+        /// Passed to getParameter to get the scaling factor used to determine the variable offset that is added to the depth value of each fragment generated when a polygon is rasterized.
         /// The initial value is 0.
         /// See glPolygonOffset.
         /// </summary>
@@ -789,7 +789,7 @@ namespace Bridge.WebGL
         public readonly int POLYGON_OFFSET_FACTOR;
 
         /// <summary>
-        /// Passed to getParameter to get the name of the texture currently bound to the target GL_TEXTURE_2D for the active multitexture unit. 
+        /// Passed to getParameter to get the name of the texture currently bound to the target GL_TEXTURE_2D for the active multitexture unit.
         /// The initial value is 0.
         /// See glBindTexture.
         /// </summary>
@@ -864,8 +864,8 @@ namespace Bridge.WebGL
         #region HintTarget
 
         /// <summary>
-        /// Passed to getParameter to get a symbolic constant indicating the mode of the mipmap generation filtering hint. 
-        /// The initial value is GL_DONT_CARE. 
+        /// Passed to getParameter to get a symbolic constant indicating the mode of the mipmap generation filtering hint.
+        /// The initial value is GL_DONT_CARE.
         /// See glHint.
         /// </summary>
         [Name(false)]
@@ -923,7 +923,7 @@ namespace Bridge.WebGL
 
         /// <summary>
         /// To be used for depth textures.
-        /// See texImage2D. 
+        /// See texImage2D.
         /// </summary>
         [Name(false)]
         public readonly int DEPTH_COMPONENT;
@@ -951,14 +951,14 @@ namespace Bridge.WebGL
 
         /// <summary>
         /// Each element is a single luminance component. The system converts it to floating point value, clamped to the range [0, 1], and assembles it into an RGBA element by placing the luminance value in the red, green and blue channels, and attaching 1.0 to the alpha channel.
-        /// See texImage2D. 
+        /// See texImage2D.
         /// </summary>
         [Name(false)]
         public readonly int LUMINANCE;
 
         /// <summary>
         /// Each element is an luminance/alpha double. The systems converts each component to floating point, clamped to the range [0, 1], and assembles them into an RGBA element by placing the luminance value in the red, green and blue channels.
-        /// See texImage2D. 
+        /// See texImage2D.
         /// </summary>
         [Name(false)]
         public readonly int LUMINANCE_ALPHA;
@@ -1025,7 +1025,7 @@ namespace Bridge.WebGL
         public readonly int MAX_VARYING_VECTORS;
 
         /// <summary>
-        /// Passed to getParameter to get the maximum supported texture image units that can be used to access texture maps from the vertex shader and the fragment processor combined. 
+        /// Passed to getParameter to get the maximum supported texture image units that can be used to access texture maps from the vertex shader and the fragment processor combined.
         /// If both the vertex shader and the fragment processing stage access the same texture image unit, then that counts as using two texture image units against this limit.
         /// The value must be at least 8.
         /// See glActiveTexture.
@@ -1041,7 +1041,7 @@ namespace Bridge.WebGL
         public readonly int MAX_VERTEX_TEXTURE_IMAGE_UNITS;
 
         /// <summary>
-        /// Passed to getParameter to get the maximum supported texture image units that  can be used to access texture maps from the fragment shader. 
+        /// Passed to getParameter to get the maximum supported texture image units that  can be used to access texture maps from the fragment shader.
         /// The value must be at least 8.
         /// See glActiveTexture.
         /// </summary>
@@ -1049,7 +1049,7 @@ namespace Bridge.WebGL
         public readonly int MAX_TEXTURE_IMAGE_UNITS;
 
         /// <summary>
-        /// Passed to getParameter to get the maximum number of four-element floating-point, integer, or boolean vectors that can be held in uniform variable storage for a fragment shader. 
+        /// Passed to getParameter to get the maximum number of four-element floating-point, integer, or boolean vectors that can be held in uniform variable storage for a fragment shader.
         /// The value must be at least 16.
         /// See glUniform.
         /// </summary>
@@ -1192,7 +1192,7 @@ namespace Bridge.WebGL
 
         /// <summary>
         /// Returns the weighted average of the four texture elements that are closest to the center of the pixel being textured.
-        /// See glTexParameter.               
+        /// See glTexParameter.
         /// </summary>
         [Name(false)]
         public readonly int LINEAR;
@@ -1270,7 +1270,7 @@ namespace Bridge.WebGL
         #region TextureTarget
 
         /// <summary>
-        /// Represents a 2D image. 
+        /// Represents a 2D image.
         /// See glTexParameter.
         /// </summary>
         [Name(false)]
@@ -1291,7 +1291,7 @@ namespace Bridge.WebGL
         public readonly int TEXTURE_CUBE_MAP;
 
         /// <summary>
-        /// Passed to getParameter to get the name of the texture currently bound to the target GL_TEXTURE_CUBE_MAP for the active multitexture unit. 
+        /// Passed to getParameter to get the name of the texture currently bound to the target GL_TEXTURE_CUBE_MAP for the active multitexture unit.
         /// The initial value is 0.
         /// See glBindTexture.
         /// </summary>
@@ -1341,7 +1341,7 @@ namespace Bridge.WebGL
         public readonly int TEXTURE_CUBE_MAP_NEGATIVE_Z;
 
         /// <summary>
-        /// Passed to getParameter to get the value gives a rough estimate of the largest cube-map texture that the GL can handle. 
+        /// Passed to getParameter to get the value gives a rough estimate of the largest cube-map texture that the GL can handle.
         /// The value must be at least 16.
         /// See glTexImage2D.
         /// </summary>
@@ -1401,7 +1401,7 @@ namespace Bridge.WebGL
         public readonly int TEXTURE7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Name(false)]
         public readonly int TEXTURE8;
@@ -1557,7 +1557,7 @@ namespace Bridge.WebGL
         #region TextureWrapMode
 
         /// <summary>
-        /// The wrap parameter for texture coordinate. 
+        /// The wrap parameter for texture coordinate.
         /// REPEAT causes the  integer part of the coordinate to be ignored.
         /// See glTexParameter.
         /// </summary>
@@ -1565,7 +1565,7 @@ namespace Bridge.WebGL
         public readonly int REPEAT;
 
         /// <summary>
-        /// The wrap parameter for texture coordinates. 
+        /// The wrap parameter for texture coordinates.
         /// CLAMP_TO_EDGE causes coordinates to be clamped.
         /// See glTexParameter.
         /// </summary>
@@ -1573,7 +1573,7 @@ namespace Bridge.WebGL
         public readonly int CLAMP_TO_EDGE;
 
         /// <summary>
-        /// The wrap parameter for texture coordinate. 
+        /// The wrap parameter for texture coordinate.
         /// MIRRORED_REPEAT causes the s coordinate to be set to the fractional part of the texture coordinate.
         /// See glTexParameter.
         /// </summary>
@@ -1673,37 +1673,37 @@ namespace Bridge.WebGL
         #region Vertex Arrays
 
         /// <summary>
-        /// Passed to the getVertexAttrib to get a single value that is non-zero (true) if the vertex attribute array for index is enabled and 0 (false) if it is disabled. 
-        /// The initial value is GL_FALSE. 
+        /// Passed to the getVertexAttrib to get a single value that is non-zero (true) if the vertex attribute array for index is enabled and 0 (false) if it is disabled.
+        /// The initial value is GL_FALSE.
         /// </summary>
         [Name(false)]
         public readonly int VERTEX_ATTRIB_ARRAY_ENABLED;
 
         /// <summary>
-        /// Passed to the getVertexAttrib to get a single value, the size of the vertex attribute array for index. The size is the number of values for each element of the vertex attribute array, and it will be 1, 2, 3, or 4. 
-        /// The initial value is 4. 
+        /// Passed to the getVertexAttrib to get a single value, the size of the vertex attribute array for index. The size is the number of values for each element of the vertex attribute array, and it will be 1, 2, 3, or 4.
+        /// The initial value is 4.
         /// </summary>
         [Name(false)]
         public readonly int VERTEX_ATTRIB_ARRAY_SIZE;
 
         /// <summary>
-        /// Passed to the getVertexAttrib to get a single value, the array stride for (number of bytes between successive elements in) the vertex attribute array for index. A value of 0 indicates that the array elements are stored sequentially in memory. 
-        /// The initial value is 0. 
+        /// Passed to the getVertexAttrib to get a single value, the array stride for (number of bytes between successive elements in) the vertex attribute array for index. A value of 0 indicates that the array elements are stored sequentially in memory.
+        /// The initial value is 0.
         /// </summary>
         [Name(false)]
         public readonly int VERTEX_ATTRIB_ARRAY_STRIDE;
 
         /// <summary>
-        /// Passed to the getVertexAttrib to get a single value, a symbolic constant indicating the array type for the vertex attribute array for index. 
-        /// Possible values are GL_BYTE, GL_UNSIGNED_BYTE, GL_SHORT, GL_UNSIGNED_SHORT, GL_FIXED and GL_FLOAT. 
-        /// The initial value is GL_FLOAT. 
+        /// Passed to the getVertexAttrib to get a single value, a symbolic constant indicating the array type for the vertex attribute array for index.
+        /// Possible values are GL_BYTE, GL_UNSIGNED_BYTE, GL_SHORT, GL_UNSIGNED_SHORT, GL_FIXED and GL_FLOAT.
+        /// The initial value is GL_FLOAT.
         /// </summary>
         [Name(false)]
         public readonly int VERTEX_ATTRIB_ARRAY_TYPE;
 
         /// <summary>
-        /// Passed to the getVertexAttrib to get a single value that is non-zero (true) if fixed-point data types for the vertex attribute array indicated by index are normalized when they are converted to floating point, and 0 (false) otherwise. 
-        /// The initial value is GL_FALSE. 
+        /// Passed to the getVertexAttrib to get a single value that is non-zero (true) if fixed-point data types for the vertex attribute array indicated by index are normalized when they are converted to floating point, and 0 (false) otherwise.
+        /// The initial value is GL_FALSE.
         /// </summary>
         [Name(false)]
         public readonly int VERTEX_ATTRIB_ARRAY_NORMALIZED;
@@ -1715,8 +1715,8 @@ namespace Bridge.WebGL
         public readonly int VERTEX_ATTRIB_ARRAY_POINTER;
 
         /// <summary>
-        /// Passed to the getVertexAttrib to get the the name of the buffer object currently bound to he binding point corresponding to generic vertex attribute array index. 
-        /// If no buffer object is bound, 0 is returned. 
+        /// Passed to the getVertexAttrib to get the the name of the buffer object currently bound to he binding point corresponding to generic vertex attribute array index.
+        /// If no buffer object is bound, 0 is returned.
         /// The initial value is 0.
         /// </summary>
         [Name(false)]
@@ -1735,7 +1735,7 @@ namespace Bridge.WebGL
         public readonly int IMPLEMENTATION_COLOR_READ_TYPE;
 
         /// <summary>
-        /// Passed to getParameter to get the format chosen by the implementation in which pixels may be read from the color buffer of the currently bound framebuffer in conjunction with GL_IMPLEMENTATION_COLOR_READ_TYPE. 
+        /// Passed to getParameter to get the format chosen by the implementation in which pixels may be read from the color buffer of the currently bound framebuffer in conjunction with GL_IMPLEMENTATION_COLOR_READ_TYPE.
         /// In addition to this implementation-dependent format/type pair, format GL_RGBA in conjunction with type GL_UNSIGNED_BYTE is always allowed by every implementation, regardless of the currently bound render surface.
         /// See glReadPixels.
         /// </summary>
@@ -1826,7 +1826,7 @@ namespace Bridge.WebGL
         public readonly int RGB565;
 
         /// <summary>
-        /// 16 bit Depth component. 
+        /// 16 bit Depth component.
         /// See renderbufferStorage.
         /// </summary>
         [Name(false)]
@@ -1865,7 +1865,7 @@ namespace Bridge.WebGL
         public readonly int RENDERBUFFER_HEIGHT;
 
         /// <summary>
-        /// Passed to getRenderbufferParameter to get the internal format for the image. 
+        /// Passed to getRenderbufferParameter to get the internal format for the image.
         /// </summary>
         [Name(false)]
         public readonly int RENDERBUFFER_INTERNAL_FORMAT;
@@ -1914,7 +1914,7 @@ namespace Bridge.WebGL
         public readonly int FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE;
 
         /// <summary>
-        /// Passed to getFramebufferAttachmentParameter as a parameter name. 
+        /// Passed to getFramebufferAttachmentParameter as a parameter name.
         /// If the value of GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE is GL_RENDERBUFFER, params returns the name of the renderbuffer object which contains the attached image.
         /// If the value of GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE is GL_TEXTURE, params returns the name of the texture object which contains the attached image.
         /// The initial value is zero.
@@ -1923,7 +1923,7 @@ namespace Bridge.WebGL
         public readonly int FRAMEBUFFER_ATTACHMENT_OBJECT_NAME;
 
         /// <summary>
-        /// Passed to getFramebufferAttachmentParameter as a parameter name. 
+        /// Passed to getFramebufferAttachmentParameter as a parameter name.
         /// If the value of GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE is GL_TEXTURE, params returns the mipmap level of the texture object which contains the attached image.
         /// The initial value is zero.
         /// </summary>
@@ -1931,8 +1931,8 @@ namespace Bridge.WebGL
         public readonly int FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL;
 
         /// <summary>
-        /// Passed to getFramebufferAttachmentParameter as a parameter name. 
-        /// If the value of GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE is GL_TEXTURE and  GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME is the name of a cube-map texture, params returns the cube map face of the cube-map texture object which contains the attached image. 
+        /// Passed to getFramebufferAttachmentParameter as a parameter name.
+        /// If the value of GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE is GL_TEXTURE and  GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME is the name of a cube-map texture, params returns the cube map face of the cube-map texture object which contains the attached image.
         /// If the attached image is from a texture object but not a cube-map, params returns 0.
         /// The initial value is GL_TEXTURE_CUBE_MAP_POSITIVE_X.
         /// </summary>
@@ -2000,7 +2000,7 @@ namespace Bridge.WebGL
         public readonly int FRAMEBUFFER_UNSUPPORTED;
 
         /// <summary>
-        /// Passed to getParameter to get the name of the currently bound framebuffer. 
+        /// Passed to getParameter to get the name of the currently bound framebuffer.
         /// The initial value is 0, indicating the default framebuffer.
         /// See glBindFramebuffer.
         /// </summary>
@@ -2008,7 +2008,7 @@ namespace Bridge.WebGL
         public readonly int FRAMEBUFFER_BINDING;
 
         /// <summary>
-        /// Passed to getParameter to get the name of the currently bound renderbuffer. 
+        /// Passed to getParameter to get the name of the currently bound renderbuffer.
         /// The initial value is 0, indicating no renderbuffer is bound.
         /// See glBindRenderbuffer.
         /// </summary>
@@ -2016,7 +2016,7 @@ namespace Bridge.WebGL
         public readonly int RENDERBUFFER_BINDING;
 
         /// <summary>
-        ///  Passed to getParameter to get the value indicates the largest renderbuffer width and height that the GL can handle. 
+        ///  Passed to getParameter to get the value indicates the largest renderbuffer width and height that the GL can handle.
         ///  The value must be at least 1.
         ///  See glRenderbufferStorage.
         /// </summary>
@@ -2025,7 +2025,7 @@ namespace Bridge.WebGL
 
         /// <summary>
         /// The command is trying to render to or read from the framebuffer while the currently bound framebuffer is not framebuffer complete (i.e. the return value from glCheckFramebufferStatus is not GL_FRAMEBUFFER_COMPLETE).
-        /// The offending command is ignored and has no other side effect than to set the error flag.                    
+        /// The offending command is ignored and has no other side effect than to set the error flag.
         /// </summary>
         [Name(false)]
         public readonly int INVALID_FRAMEBUFFER_OPERATION;
@@ -2035,14 +2035,14 @@ namespace Bridge.WebGL
         #region WebGL-specific enums
 
         /// <summary>
-        /// Flips the source data along its vertical axis when texImage2D or texSubImage2D are called when param is true. The initial value for param is false. 
+        /// Flips the source data along its vertical axis when texImage2D or texSubImage2D are called when param is true. The initial value for param is false.
         /// See pixelStorei.
         /// </summary>
         [Name(false)]
         public readonly int UNPACK_FLIP_Y_WEBGL;
 
         /// <summary>
-        /// Multiplies the alpha channel, if it exists, into the other color channels during the data transfer when texImage2D or texSubImage2D are called when param is true. The initial value for param is false. 
+        /// Multiplies the alpha channel, if it exists, into the other color channels during the data transfer when texImage2D or texSubImage2D are called when param is true. The initial value for param is false.
         /// See pixelStorei.
         /// </summary>
         [Name(false)]
@@ -2062,7 +2062,7 @@ namespace Bridge.WebGL
         public readonly int UNPACK_COLORSPACE_CONVERSION_WEBGL;
 
         /// <summary>
-        /// If set to BROWSER_DEFAULT_WEBGL, then the browser's default colorspace conversion is applied during subsequent texImage2D and texSubImage2D calls taking HTMLImageElement. The precise conversions may be specific to both the browser and file type. If set to NONE, no colorspace conversion is applied. The initial value is BROWSER_DEFAULT_WEBGL. 
+        /// If set to BROWSER_DEFAULT_WEBGL, then the browser's default colorspace conversion is applied during subsequent texImage2D and texSubImage2D calls taking HTMLImageElement. The precise conversions may be specific to both the browser and file type. If set to NONE, no colorspace conversion is applied. The initial value is BROWSER_DEFAULT_WEBGL.
         /// See pixelStorei.
         /// </summary>
         [Name(false)]

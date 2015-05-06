@@ -350,7 +350,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Remove an event handler. 
+        /// Remove an event handler.
         /// </summary>
         /// <param name="events">An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).</param>
         /// <param name="selector">A selector which should match the one originally passed to .on() when attaching event handlers.</param>
@@ -477,7 +477,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-        
+
         /// <summary>
         /// Attach an event handler function for one or more events to the selected elements.
         /// </summary>
@@ -859,7 +859,7 @@ namespace Bridge.jQuery2
 
         /// <summary>
         /// Execute all handlers attached to an element for an event.
-        /// 
+        ///
         /// The .triggerHandler() method behaves similarly to .trigger(), with the following exceptions:
         ///     - The .triggerHandler() method does not cause the default behavior of an event to occur (such as a form submission).
         ///     - While .trigger() will operate on all elements matched by the jQuery object, .triggerHandler() only affects the first matched element.
@@ -875,7 +875,7 @@ namespace Bridge.jQuery2
 
         /// <summary>
         /// Execute all handlers attached to an element for an event.
-        /// 
+        ///
         /// The .triggerHandler() method behaves similarly to .trigger(), with the following exceptions:
         ///     - The .triggerHandler() method does not cause the default behavior of an event to occur (such as a form submission).
         ///     - While .trigger() will operate on all elements matched by the jQuery object, .triggerHandler() only affects the first matched element.
@@ -891,7 +891,7 @@ namespace Bridge.jQuery2
 
         /// <summary>
         /// Execute all handlers attached to an element for an event.
-        /// 
+        ///
         /// The .triggerHandler() method behaves similarly to .trigger(), with the following exceptions:
         ///     - The .triggerHandler() method does not cause the default behavior of an event to occur (such as a form submission).
         ///     - While .trigger() will operate on all elements matched by the jQuery object, .triggerHandler() only affects the first matched element.
@@ -908,7 +908,7 @@ namespace Bridge.jQuery2
 
         /// <summary>
         /// Execute all handlers attached to an element for an event.
-        /// 
+        ///
         /// The .triggerHandler() method behaves similarly to .trigger(), with the following exceptions:
         ///     - The .triggerHandler() method does not cause the default behavior of an event to occur (such as a form submission).
         ///     - While .trigger() will operate on all elements matched by the jQuery object, .triggerHandler() only affects the first matched element.
@@ -1026,8 +1026,8 @@ namespace Bridge.jQuery2
         public virtual jQuery Unbind(object e)
         {
             return null;
-        }     
-   
+        }
+
         /// <summary>
         /// Remove all event handlers that have been bound by .delegate()
         /// </summary>
@@ -1127,5 +1127,5 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-    }  
+    }
 }

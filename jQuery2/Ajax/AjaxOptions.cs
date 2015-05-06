@@ -50,7 +50,7 @@ namespace Bridge.jQuery2
         public virtual string ContentType { get; set; }
 
         /// <summary>
-        /// This object will be made the context of all Ajax-related callbacks. By default, the context is an object that represents the ajax settings used in the call ($.ajaxSettings merged with the settings passed to $.ajax). 
+        /// This object will be made the context of all Ajax-related callbacks. By default, the context is an object that represents the ajax settings used in the call ($.ajaxSettings merged with the settings passed to $.ajax).
         /// </summary>
         public virtual object Context { get; set; }
 

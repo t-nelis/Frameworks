@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 
 namespace Bridge.jQuery2
-{    
+{
     public partial class jQuery
     {
         /// <summary>
@@ -28,7 +28,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Reduce the set of matched elements to those that match the selector or pass the function's test. 
+        /// Reduce the set of matched elements to those that match the selector or pass the function's test.
         /// </summary>
         /// <param name="function">A function used as a test for each element in the set. this is the current DOM element.</param>
         /// <returns></returns>
@@ -38,7 +38,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Reduce the set of matched elements to those that match the selector or pass the function's test. 
+        /// Reduce the set of matched elements to those that match the selector or pass the function's test.
         /// </summary>
         /// <param name="function">A function used as a test for each element in the set. this is the current DOM element.</param>
         /// <returns></returns>
@@ -48,7 +48,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Reduce the set of matched elements to those that match the selector or pass the function's test. 
+        /// Reduce the set of matched elements to those that match the selector or pass the function's test.
         /// </summary>
         /// <param name="element">One or more DOM elements to match the current set of elements against.</param>
         /// <returns></returns>
@@ -58,7 +58,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Reduce the set of matched elements to those that match the selector or pass the function's test. 
+        /// Reduce the set of matched elements to those that match the selector or pass the function's test.
         /// </summary>
         /// <param name="elements">One or more DOM elements to match the current set of elements against.</param>
         /// <returns></returns>
@@ -68,7 +68,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Reduce the set of matched elements to those that match the selector or pass the function's test. 
+        /// Reduce the set of matched elements to those that match the selector or pass the function's test.
         /// </summary>
         /// <param name="selection">An existing jQuery object to match the current set of elements against.</param>
         /// <returns></returns>
@@ -125,7 +125,7 @@ namespace Bridge.jQuery2
         {
             return false;
         }
-        
+
         /// <summary>
         /// Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
         /// </summary>
@@ -203,8 +203,8 @@ namespace Bridge.jQuery2
         public virtual jQuery Slice(int start)
         {
             return null;
-        }        
-        
+        }
+
         /// <summary>
         /// Reduce the set of matched elements to a subset specified by a range of indices.
         /// </summary>

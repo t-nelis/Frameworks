@@ -120,7 +120,7 @@ namespace Bridge.jQuery2
         ///         };
         ///     }
         /// });
-        /// 
+        ///
         /// where:
         ///     options are the request options
         ///     originalOptions are the options as provided to the ajax method, unmodified and, thus, without defaults from ajaxSettings
@@ -160,7 +160,7 @@ namespace Bridge.jQuery2
         ///         };
         ///     }
         /// });
-        /// 
+        ///
         /// where:
         ///     options are the request options
         ///     originalOptions are the options as provided to the ajax method, unmodified and, thus, without defaults from ajaxSettings

@@ -13,7 +13,7 @@ namespace Bridge.WebGL
     [Ignore]
     public partial class WebGLRenderingContext : IWebGLRenderingContext
     {
-        /// <summary>   
+        /// <summary>
         /// The Canvas element associated with this context. May be null!
         /// </summary>
         public virtual CanvasElement Canvas { get; private set; }

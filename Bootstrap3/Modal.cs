@@ -8,7 +8,7 @@ namespace Bridge.Bootstrap3
     {
         /// <summary>
         /// Either toggles, shows or hides a modal. Depends on the "operation" parameter which might be "toggle", "show" or "hide".
-        /// Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs). 
+        /// Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs).
         /// </summary>
         /// <param name="instance">The jQuery object with a modal or modals</param>
         /// <param name="options">The options</param>
@@ -21,7 +21,7 @@ namespace Bridge.Bootstrap3
 
         /// <summary>
         /// Either toggles, shows or hides a modal. Depends on the "operation" parameter which might be "toggle", "show" or "hide".
-        /// Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs). 
+        /// Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs).
         /// </summary>
         /// <param name="instance">The jQuery object with a modal or modals</param>
         /// <param name="operation">The operation to be done. Either "toggle", "show" or "hide.</param>
@@ -34,7 +34,7 @@ namespace Bridge.Bootstrap3
 
         /// <summary>
         /// Either toggles, shows or hides a modal. Depends on the "operation" parameter which might be "toggle", "show" or "hide".
-        /// Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs). 
+        /// Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs).
         /// </summary>
         /// <param name="instance">The jQuery object with a modal or modals</param>
         /// <param name="operation">The operation to be done. Either "toggle", "show" or "hide.</param>
@@ -76,7 +76,7 @@ namespace Bridge.Bootstrap3
         public static jQuery ModalToggle(this jQuery instance)
         {
             return null;
-        } 
+        }
     }
 
     /// <summary>
@@ -84,7 +84,7 @@ namespace Bridge.Bootstrap3
     /// </summary>
     [Ignore]
     [Enum(Emit.StringNameLowerCase)]
-    [Name("String")] 
+    [Name("String")]
     public enum ModalOperation
     {
         /// <summary>
@@ -172,6 +172,6 @@ namespace Bridge.Bootstrap3
         /// This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the relatedTarget property of the event.
         /// </summary>
         [Name("shown.bs.modal")]
-        Shown        
+        Shown
     }
 }

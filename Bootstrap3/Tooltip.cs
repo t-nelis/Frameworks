@@ -130,6 +130,6 @@ namespace Bridge.Bootstrap3
         /// This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).
         /// </summary>
         [Name("shown.bs.tooltip")]
-        Shown        
+        Shown
     }
 }

@@ -32,7 +32,7 @@ namespace Bridge.Bootstrap3
 
         /// <summary>
         /// Does something with a dropdown. Actually, the only operation is supported at this point - "toggle".
-        /// </summary>        
+        /// </summary>
         /// <param name="instance">The jQuery object with a dropdown or dropdowns</param>
         /// <param name="operation">The operation. Only "toggle" is supported.</param>
         /// <returns>The jQuery object</returns>

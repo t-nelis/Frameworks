@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 
 namespace Bridge.jQuery2
-{    
+{
     public partial class jQuery
     {
         /// <summary>
@@ -34,8 +34,8 @@ namespace Bridge.jQuery2
         public virtual jQuery Closest(string selector)
         {
             return null;
-        }     
-        
+        }
+
         /// <summary>
         /// For each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.
         /// </summary>
@@ -172,8 +172,8 @@ namespace Bridge.jQuery2
         public virtual jQuery NextUntil(jQuery element)
         {
             return null;
-        }  
-        
+        }
+
         /// <summary>
         /// Get all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed.
         /// </summary>

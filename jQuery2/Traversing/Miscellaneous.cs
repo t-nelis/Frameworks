@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 
 namespace Bridge.jQuery2
-{    
+{
     public partial class jQuery
     {
         /// <summary>
@@ -96,7 +96,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Iterate over a jQuery object, executing a function for each matched element. 
+        /// Iterate over a jQuery object, executing a function for each matched element.
         /// A function takes the two arguments: the index of the element and the element itself.
         /// Return false to break out of each() loops early.
         /// </summary>
@@ -108,7 +108,7 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
-        /// Iterate over a jQuery object, executing a function for each matched element. 
+        /// Iterate over a jQuery object, executing a function for each matched element.
         /// A function takes the two arguments: the index of the element and the element itself.
         /// Return false to break out of each() loops early.
         /// </summary>

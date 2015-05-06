@@ -29,13 +29,13 @@ namespace Bridge.QUnit
         public object Current;
 
         /// <summary>
-        /// By default, the HTML Reporter will show all the tests results. Enabling this option will make it show only the failing tests, hiding all that pass. 
+        /// By default, the HTML Reporter will show all the tests results. Enabling this option will make it show only the failing tests, hiding all that pass.
         /// This can also be managed by the HTML interface.
         /// </summary>
         public bool Hidepassed;
 
         /// <summary>
-        /// Specify a single module to run by declaring its name. By default, QUnit will run all the loaded modules when this property is not specified. 
+        /// Specify a single module to run by declaring its name. By default, QUnit will run all the loaded modules when this property is not specified.
         /// This property value must match (case insensitive) the module name or QUnit won't run any module.
         /// Prior to version 1.16.0, this property was called module.
         /// </summary>

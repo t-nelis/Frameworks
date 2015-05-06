@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 
 namespace Bridge.jQuery2
-{    
+{
     public partial class jQuery
     {
         [Template("$()")]
@@ -16,7 +16,7 @@ namespace Bridge.jQuery2
         public jQuery(object obj)
         {
         }
-        
+
         [Template("$({0}, {1})")]
         public jQuery(object obj, object context)
         {

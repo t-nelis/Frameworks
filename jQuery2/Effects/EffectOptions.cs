@@ -65,7 +65,7 @@ namespace Bridge.jQuery2
         public virtual Action<Promise, bool> Done { get; set; }
 
         /// <summary>
-        /// A function to be called when the animation fails to complete (its Promise object is rejected). 
+        /// A function to be called when the animation fails to complete (its Promise object is rejected).
         /// </summary>
         public virtual Action<Promise, bool> Fail { get; set; }
 

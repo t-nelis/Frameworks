@@ -7,7 +7,7 @@ namespace Bridge.Bootstrap3
     public static partial class Bootstrap
     {
         /// <summary>
-        /// Enables the collapse functionality. 
+        /// Enables the collapse functionality.
         /// </summary>
         /// <param name="instance">The jQuery object</param>
         /// <returns>The jQuery object</returns>
@@ -129,7 +129,7 @@ namespace Bridge.Bootstrap3
         /// Toggles a collapsible element to shown or hidden.
         /// </summary>
         Toggle
-    }    
+    }
 
     /// <summary>
     /// Collapse events
@@ -140,7 +140,7 @@ namespace Bridge.Bootstrap3
     public enum CollapseEvent
     {
         /// <summary>
-        /// This event is fired immediately when the hide method has been called. 
+        /// This event is fired immediately when the hide method has been called.
         /// </summary>
         [Name("hide.bs.collapse")]
         Hide,

@@ -162,8 +162,8 @@ namespace Bridge.Bootstrap3
         /// <summary>
         /// Cycles to the previous item.
         /// </summary>
-        Prev        
-    }    
+        Prev
+    }
 
     /// <summary>
     /// Carousel events.
@@ -186,6 +186,6 @@ namespace Bridge.Bootstrap3
         /// This event fires immediately when the slide instance method is invoked.
         /// </summary>
         [Name("slide.bs.carousel")]
-        Slide        
+        Slide
     }
 }

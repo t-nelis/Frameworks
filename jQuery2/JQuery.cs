@@ -4,7 +4,7 @@ using System.Collections;
 namespace Bridge.jQuery2
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [Ignore]
     [Constructor("$")]
@@ -21,11 +21,11 @@ namespace Bridge.jQuery2
         public static readonly jQuery Document;
 
         [Template("$()")]
-        public static readonly jQuery Basic;        
+        public static readonly jQuery Basic;
 
-        IEnumerator IEnumerable.GetEnumerator() 
-        { 
-            return null; 
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return null;
         }
     }
 }
