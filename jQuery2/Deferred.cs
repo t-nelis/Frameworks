@@ -321,13 +321,6 @@ namespace Bridge.jQuery2
         }
 
         #region IPromise
-        /// <summary>
-        /// Adds a fulfilledHandler to be called for completion of a promise.
-        /// </summary>
-        /// <param name="fulfilledHandler">The fulfilledHandler is called when the promise is fulfilled</param>
-        void IPromise.Then(Delegate fulfilledHandler)
-        {
-        }
 
         /// <summary>
         /// Adds a fulfilledHandler, errorHandler to be called for completion of a promise.
