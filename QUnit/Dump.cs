@@ -23,7 +23,7 @@ namespace Bridge.QUnit
         }
 
         /// <summary>
-        /// Representing how deep the elements should be parsed by <Dump(object data)>.
+        /// Representing how deep the elements should be parsed by Dump(object data).
         /// </summary>
         public int MaxDepth;
     }

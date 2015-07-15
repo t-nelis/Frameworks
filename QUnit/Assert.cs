@@ -105,7 +105,6 @@ namespace Bridge.QUnit
         /// </summary>
         /// <param name="actual">Object or Expression being tested</param>
         /// <param name="expected">Known comparison value</param>
-        /// <param name="message">A short description of the assertion</param>
         public virtual void NotPropEqual(object actual, object expected)
         {
         }
@@ -140,10 +139,26 @@ namespace Bridge.QUnit
         }
 
         /// <summary>
+        /// A boolean check, inverse of ok() and CommonJS's assert.ok(), and equivalent to JUnit's assertFalse(). Passes if the first argument is falsy.
+        /// </summary>
+        /// <param name="state">Expression being tested</param>
+        public virtual void NotOk(object state)
+        {
+        }
+
+        /// <summary>
+        /// A boolean check, inverse of ok() and CommonJS's assert.ok(), and equivalent to JUnit's assertFalse(). Passes if the first argument is falsy.
+        /// </summary>
+        /// <param name="state">Expression being tested</param>
+        /// <param name="message">A short description of the assertion</param>
+        public virtual void NotOk(object state, string message)
+        {
+        }
+
+        /// <summary>
         /// A boolean check, equivalent to CommonJS's assert.ok() and JUnit's assertTrue(). Passes if the first argument is truthy.
         /// </summary>
         /// <param name="state">Expression being tested</param>
-        /// <param name="expected">Known comparison value</param>
         public virtual void Ok(object state)
         {
         }
@@ -152,7 +167,6 @@ namespace Bridge.QUnit
         /// A boolean check, equivalent to CommonJS's assert.ok() and JUnit's assertTrue(). Passes if the first argument is truthy.
         /// </summary>
         /// <param name="state">Expression being tested</param>
-        /// <param name="expected">Known comparison value</param>
         /// <param name="message">A short description of the assertion</param>
         public virtual void Ok(object state, string message)
         {
