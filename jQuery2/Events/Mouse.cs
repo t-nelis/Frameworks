@@ -38,6 +38,16 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Bind an event handler to the "click" JavaScript event.
         /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Click(Action<Event> handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "click" JavaScript event.
+        /// </summary>
         /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
