@@ -114,7 +114,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="function">A function to execute for each matched element.</param>
         /// <returns>The jQuery object</returns>
-        public virtual jQuery Each(Action function)
+        public virtual jQuery Each(Action<int, Element> function)
         {
             return null;
         }
