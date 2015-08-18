@@ -167,7 +167,7 @@ namespace Bridge.jQuery2
     [Constructor("{}")]
     public class CssHooks
     {
-        public CssHook this[string name]
+        public new virtual CssHook this[string name]
         {
             get
             {
