@@ -1,0 +1,6 @@
+{
+    output: "Bridge\\output",
+	outputBy: "Project",
+	fileName: "bridge.collections.js",
+	injectScriptToAssembly: true
+}
