@@ -10,8 +10,8 @@ namespace Bridge.jQuery2
         ///  A constructor function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
         /// </summary>
         /// <returns>A Deferred object</returns>
-        [Template("$.Deferred")]
-        public static Deferred Deffered()
+        [Template("$.Deferred()")]
+        public static Deferred Deferred()
         {
             return null;
         }
@@ -22,7 +22,7 @@ namespace Bridge.jQuery2
         /// <param name="beforeStart">A function that is called just before the constructor returns. </param>
         /// <returns></returns>
         [Template("$.Deferred({0})")]
-        public static Deferred Deffered(Delegate beforeStart)
+        public static Deferred Deferred(Delegate beforeStart)
         {
             return null;
         }
@@ -33,7 +33,7 @@ namespace Bridge.jQuery2
         /// <param name="beforeStart">A function that is called just before the constructor returns. </param>
         /// <returns></returns>
         [Template("$.Deferred({0})")]
-        public static Deferred Deffered(Action<Deferred> beforeStart)
+        public static Deferred Deferred(Action<Deferred> beforeStart)
         {
             return null;
         }
@@ -77,6 +77,7 @@ namespace Bridge.jQuery2
     [Ignore]
     [Name("Object")]
     public class Deferred : IPromise
+    [Constructor("$.Deferred")]
     {
         /// <summary>
         /// Add handlers to be called when the Deferred object is either resolved or rejected.
