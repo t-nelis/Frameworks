@@ -1581,7 +1581,6 @@ Bridge.define('System.Collections.Generic.Stack$1', function (T) { return {
     _array: null,
     _size: 0,
     _version: 0,
-    _syncRoot: null,
     constructor: function () {
         this._array = Bridge.Array.init(0, null);
     },

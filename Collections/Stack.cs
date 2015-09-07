@@ -19,7 +19,6 @@ namespace System.Collections.Generic
         private T[] _array;     // Storage for stack elements
         private int _size;           // Number of items in the stack.
         private int _version;        // Used to keep enumerator in sync w/ collection.
-        private Object _syncRoot;
 
         private const int DefaultCapacity = 4;
 
