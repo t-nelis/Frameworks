@@ -56,6 +56,7 @@
     <Compile Include="Events\Mouse.cs" />
     <Compile Include="Events\Keyboard.cs" />
     <Compile Include="Events\Form.cs" />
+    <Compile Include="IDeferred.cs" />
     <Compile Include="Internals.cs" />
     <Compile Include="Utilities.cs" />
     <Compile Include="Promise.cs" />

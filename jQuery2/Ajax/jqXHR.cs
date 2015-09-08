@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Bridge.jQuery2
 {
     [Ignore]
-    public partial class jqXHR : XMLHttpRequest, IPromise
+    public partial class jqXHR : XMLHttpRequest, IPromise, IDeferred
     {
         /// <summary>
         /// Add handlers to be called when the Deferred object is either resolved or rejected.
@@ -51,6 +51,16 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved.
+        /// </summary>
+        /// <param name="doneCallbacks">A function, or array of functions, that is called when the Deferred is resolved or rejected.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual jqXHR Done(params Action<object, string, jqXHR>[] doneCallbacks)
+        {
+            return null;
+        }
+
+        /// <summary>
         /// Add handlers to be called when the Deferred object is rejected.
         /// </summary>
         /// <param name="failCallbacks">A function, or array of functions, that are called when the Deferred is rejected.</param>
@@ -66,6 +76,16 @@ namespace Bridge.jQuery2
         /// <param name="failCallbacks">A function, or array of functions, that are called when the Deferred is rejected.</param>
         /// <returns>The Deferred object</returns>
         public virtual Deferred Fail(params Action[] failCallbacks)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is rejected.
+        /// </summary>
+        /// <param name="failCallbacks">A function, or array of functions, that are called when the Deferred is rejected.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual jqXHR Fail(params Action<jqXHR, string, string>[] failCallbacks)
         {
             return null;
         }
@@ -185,45 +205,15 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-
+        
         /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved.
-        /// </summary>
-        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
-        /// <returns>A Promise object</returns>
-        public virtual Promise Then(Delegate doneFilter)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved.
-        /// </summary>
-        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
-        /// <returns>A Promise object</returns>
-        public virtual Promise Then(Action doneFilter)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved or rejected.
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
         /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
         /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
         /// <returns>A Promise object</returns>
-        public virtual Promise Then(Delegate doneFilter, Delegate failFilter)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved or rejected.
-        /// </summary>
-        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
-        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
-        /// <returns>A Promise object</returns>
-        public virtual Promise Then(Action doneFilter, Action failFilter)
+        public virtual Promise Then(Delegate doneFilter, Delegate failFilter = null, Delegate progressFilter = null)
         {
             return null;
         }
@@ -235,7 +225,19 @@ namespace Bridge.jQuery2
         /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
         /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
         /// <returns>A Promise object</returns>
-        public virtual Promise Then(Delegate doneFilter, Delegate failFilter, Delegate progressFilter)
+        public virtual Promise Then(Action doneFilter, Action failFilter = null, Action progressFilter = null)
+        {
+            return null;
+        }
+        
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual Promise Then(Action<object, string, jqXHR> doneFilter, Action<jqXHR, string, string> failFilter = null, Action progressFilter = null)
         {
             return null;
         }
@@ -247,9 +249,9 @@ namespace Bridge.jQuery2
         /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
         /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
         /// <returns>A Promise object</returns>
-        public virtual Promise Then(Action doneFilter, Action failFilter, Action progressFilter)
+        public virtual S Then<S>(Func<object, string, jqXHR, S> doneFilter, Action<jqXHR, string, string> failFilter = null, Action progressFilter = null) where S : IDeferred
         {
-            return null;
+            return default(S);
         }
 
         #region IPromise
