@@ -11,12 +11,16 @@
 **
 **
 =============================================================================*/
+
+using Bridge;
+
 namespace System.Collections
 {
 
     using System;
     // A vector of bits.  Use this to store bits efficiently, without having to do bit 
     // shifting yourself.
+    [Namespace("Bridge.Collections")]
     public sealed class BitArray : ICollection, ICloneable
     {
         /*=========================================================================

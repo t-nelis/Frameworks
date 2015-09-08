@@ -1,5 +1,8 @@
+using Bridge;
+
 namespace System.Collections.Generic
 {
+    [Namespace("Bridge.Collections")]
     internal static class HashHelpers
     {
         private const Int32 HashPrime = 101;

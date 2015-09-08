@@ -1,5 +1,8 @@
+using Bridge;
+
 namespace System.Collections.Generic
 {
+    [Namespace("Bridge.Collections")]
     internal sealed class BitHelper
     {
         private const byte MarkedBitFlag = 1;
