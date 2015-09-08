@@ -8,6 +8,7 @@ using Bridge;
 
 namespace System.Collections.Generic
 {
+    [Namespace("Bridge.Collections")]
     public class HashSet<T> : ICollection<T>, ISet<T>
     {
         private const int Lower31BitMask = 0x7FFFFFFF;
