@@ -10,8 +10,28 @@ namespace Bridge.jQuery2
         ///  A constructor function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
         /// </summary>
         /// <returns>A Deferred object</returns>
-        [Template("$.Deferred")]
-        public static Deferred Deffered()
+        [Template("$.Deferred()")]
+        public static Deferred Deferred()
+        {
+            return null;
+        }
+
+        /// <summary>
+        ///  A constructor function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
+        /// </summary>
+        /// <returns>A Deferred object</returns>
+        [Template("$.Deferred()")]
+        public static Deferred<T> Deferred<T>()
+        {
+          return null;
+        }
+
+        /// <summary>
+        ///  A constructor function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
+        /// </summary>
+        /// <returns>A Deferred object</returns>
+        [Template("$.Deferred()")]
+        public static Deferred<T1, T2> Deferred<T1, T2>()
         {
             return null;
         }
@@ -22,7 +42,7 @@ namespace Bridge.jQuery2
         /// <param name="beforeStart">A function that is called just before the constructor returns. </param>
         /// <returns></returns>
         [Template("$.Deferred({0})")]
-        public static Deferred Deffered(Delegate beforeStart)
+        public static Deferred Deferred(Delegate beforeStart)
         {
             return null;
         }
@@ -33,7 +53,7 @@ namespace Bridge.jQuery2
         /// <param name="beforeStart">A function that is called just before the constructor returns. </param>
         /// <returns></returns>
         [Template("$.Deferred({0})")]
-        public static Deferred Deffered(Action<Deferred> beforeStart)
+        public static Deferred Deferred(Action<Deferred> beforeStart)
         {
             return null;
         }
@@ -44,6 +64,39 @@ namespace Bridge.jQuery2
         /// <param name="deferreds">One or more Deferred objects, or plain JavaScript objects.</param>
         /// <returns>A Promise object</returns>
         public static Promise When(params object[] deferreds)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events.
+        /// </summary>
+        /// <param name="deferred">One Deferred object</param>
+        /// <returns>A Promise object</returns>
+        public static Deferred<T> When<T>(Deferred<T> deferred)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events.
+        /// </summary>
+        /// <param name="deferred1">A Deferred object</param>
+        /// <param name="deferred2">A Deferred object</param>
+        /// <returns>A Promise object</returns>
+        public static Deferred<T1, T2> When<T1, T2>(Deferred<T1> deferred1, Deferred<T2> deferred2)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events.
+        /// </summary>
+        /// <param name="deferred1">A Deferred object</param>
+        /// <param name="deferred2">A Deferred object</param>
+        /// <param name="deferred3">A Deferred object</param>
+        /// <returns>A Promise object</returns>
+        public static Deferred<T1, T2, T3> When<T1, T2, T3>(Deferred<T1> deferred1, Deferred<T2> deferred2, Deferred<T3> deferred3)
         {
             return null;
         }
@@ -76,7 +129,8 @@ namespace Bridge.jQuery2
     /// </summary>
     [Ignore]
     [Name("Object")]
-    public class Deferred : IPromise
+    [Constructor("$.Deferred")]
+    public class Deferred : IPromise, IDeferred
     {
         /// <summary>
         /// Add handlers to be called when the Deferred object is either resolved or rejected.
@@ -139,6 +193,16 @@ namespace Bridge.jQuery2
         }
 
         /// <summary>
+        /// Add handlers to be called when the Deferred object is rejected.
+        /// </summary>
+        /// <param name="failCallbacks">A function, or array of functions, that are called when the Deferred is rejected.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual Deferred Fail(params Action<object>[] failCallbacks)
+        {
+          return null;
+        }
+
+        /// <summary>
         /// Call the progressCallbacks on a Deferred object with the given args.
         /// </summary>
         /// <param name="arguments">Optional arguments that are passed to the progressCallbacks.</param>
@@ -177,6 +241,16 @@ namespace Bridge.jQuery2
         public virtual Deferred Progress(params Action[] progressCallbacks)
         {
             return null;
+        }
+
+        /// <summary>
+        /// Add handlers to be called when the Deferred object generates progress notifications.
+        /// </summary>
+        /// <param name="progressCallbacks">A function, or array of functions, to be called when the Deferred generates progress notifications. </param>
+        /// <returns>The Deferred object</returns>
+        public virtual Deferred Progress(params Action<object>[] progressCallbacks)
+        {
+          return null;
         }
 
         /// <summary>
@@ -253,45 +327,15 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-
+        
         /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved.
-        /// </summary>
-        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
-        /// <returns>A Promise object</returns>
-        public virtual Promise Then(Delegate doneFilter)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved.
-        /// </summary>
-        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
-        /// <returns>A Promise object</returns>
-        public virtual Promise Then(Action doneFilter)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved or rejected.
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
         /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
         /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
         /// <returns>A Promise object</returns>
-        public virtual Promise Then(Delegate doneFilter, Delegate failFilter)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved or rejected.
-        /// </summary>
-        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
-        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
-        /// <returns>A Promise object</returns>
-        public virtual Promise Then(Action doneFilter, Action failFilter)
+        public virtual Promise Then(Delegate doneFilter, Delegate failFilter = null, Delegate progressFilter = null)
         {
             return null;
         }
@@ -303,19 +347,7 @@ namespace Bridge.jQuery2
         /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
         /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
         /// <returns>A Promise object</returns>
-        public virtual Promise Then(Delegate doneFilter, Delegate failFilter, Delegate progressFilter)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
-        /// </summary>
-        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
-        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
-        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
-        /// <returns>A Promise object</returns>
-        public virtual Promise Then(Action doneFilter, Action failFilter, Action progressFilter)
+        public virtual Promise Then(Action doneFilter, Action failFilter = null, Action progressFilter = null)
         {
             return null;
         }
@@ -332,5 +364,207 @@ namespace Bridge.jQuery2
         }
 
         #endregion
+    }
+
+    /// <summary>
+    /// The Deferred object is a chainable utility object created by calling the jQuery.Deferred() method. It can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
+    /// The Deferred object is chainable, similar to the way a jQuery object is chainable, but it has its own methods. After creating a Deferred object, you can use any of the methods below by either chaining directly from the object creation or saving the object in a variable and invoking one or more methods on that variable.
+    /// </summary>
+    [Ignore]
+    [Name("Object")]
+    [Constructor("$.Deferred")]
+    public class Deferred<T> : Deferred
+    {
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved.
+        /// </summary>
+        /// <param name="doneCallbacks">A function, or array of functions, that is called when the Deferred is resolved or rejected.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual Deferred<T> Done(params Action<T>[] doneCallbacks)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Resolve a Deferred object and call any doneCallbacks with the given args.
+        /// </summary>
+        /// <param name="argument">Argument that is passed to the doneCallbacks.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual Deferred<T> Resolve(T argument)
+        {
+            return null;
+        }
+        
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual Promise Then(Action<T> doneFilter, Action failFilter = null, Action progressFilter = null)
+        {
+            return null;
+        }
+        
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual Promise Then(Func<T, object> doneFilter, Action failFilter = null, Action progressFilter = null)
+        {
+            return null;
+        }
+        
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual S Then<S>(Func<T, S> doneFilter, Action failFilter = null, Action progressFilter = null) where S : IDeferred
+        {
+            return default(S);
+        }
+    }
+
+    /// <summary>
+    /// The Deferred object is a chainable utility object created by calling the jQuery.Deferred() method. It can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
+    /// The Deferred object is chainable, similar to the way a jQuery object is chainable, but it has its own methods. After creating a Deferred object, you can use any of the methods below by either chaining directly from the object creation or saving the object in a variable and invoking one or more methods on that variable.
+    /// </summary>
+    [Ignore]
+    [Name("Object")]
+    [Constructor("$.Deferred")]
+    public class Deferred<T1, T2> : Deferred
+    {
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved.
+        /// </summary>
+        /// <param name="doneCallbacks">A function, or array of functions, that is called when the Deferred is resolved or rejected.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual Deferred<T1, T2> Done(params Action<T1, T2>[] doneCallbacks)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Resolve a Deferred object and call any doneCallbacks with the given args.
+        /// </summary>
+        /// <param name="argument">Argument that is passed to the doneCallbacks.</param>
+        /// <param name="argument2">Argument that is passed to the doneCallbacks.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual Deferred<T1, T2> Resolve(T1 argument, T2 argument2)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual Promise Then(Action<T1, T2> doneFilter, Action failFilter = null, Action progressFilter = null)
+        {
+            return null;
+        }
+        
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual Promise Then(Func<T1, T2, object> doneFilter, Action failFilter = null, Action progressFilter = null)
+        {
+            return null;
+        }
+
+
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual S Then<S>(Func<T1, T2, S> doneFilter, Action failFilter = null, Action progressFilter = null) where S : IDeferred
+        {
+            return default(S);
+        }
+    }
+
+    /// <summary>
+    /// The Deferred object is a chainable utility object created by calling the jQuery.Deferred() method. It can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
+    /// The Deferred object is chainable, similar to the way a jQuery object is chainable, but it has its own methods. After creating a Deferred object, you can use any of the methods below by either chaining directly from the object creation or saving the object in a variable and invoking one or more methods on that variable.
+    /// </summary>
+    [Ignore]
+    [Name("Object")]
+    [Constructor("$.Deferred")]
+    public class Deferred<T1, T2, T3> : Deferred
+    {
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved.
+        /// </summary>
+        /// <param name="doneCallbacks">A function, or array of functions, that is called when the Deferred is resolved or rejected.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual Deferred<T1, T2, T3> Done(params Action<T1, T2, T3>[] doneCallbacks)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Resolve a Deferred object and call any doneCallbacks with the given args.
+        /// </summary>
+        /// <param name="argument">Argument that is passed to the doneCallbacks.</param>
+        /// <param name="argument2">Argument that is passed to the doneCallbacks.</param>
+        /// <param name="argument3">Argument that is passed to the doneCallbacks.</param>
+        /// <returns>The Deferred object</returns>
+        public virtual Deferred<T1, T2, T3> Resolve(T1 argument, T2 argument2, T3 argument3)
+        {
+            return null;
+        }
+        
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual Promise Then(Action<T1, T2, T3> doneFilter, Action failFilter = null, Action progressFilter = null)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual Promise Then(Func<T1, T2, T3, object> doneFilter, Action failFilter = null, Action progressFilter = null)
+        {
+            return null;
+        }
+        
+        /// <summary>
+        /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+        /// </summary>
+        /// <param name="doneFilter">A function that is called when the Deferred is resolved.</param>
+        /// <param name="failFilter">An optional function that is called when the Deferred is rejected.</param>
+        /// <param name="progressFilter">An optional function that is called when progress notifications are sent to the Deferred.</param>
+        /// <returns>A Promise object</returns>
+        public virtual S Then<S>(Func<T1, T2, T3, S> doneFilter, Action failFilter = null, Action progressFilter = null) where S : IDeferred
+        {
+            return default(S);
+        }
     }
 }
