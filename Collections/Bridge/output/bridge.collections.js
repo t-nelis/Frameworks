@@ -1,5 +1,6 @@
 ﻿/* global Bridge */
 
+"use strict";
 Bridge.define('Bridge.Collections.BitArray', {
     inherits: [Bridge.ICollection,Bridge.ICloneable],
     statics: {
