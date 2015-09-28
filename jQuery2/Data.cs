@@ -1,7 +1,5 @@
-﻿using Bridge;
 using Bridge.Html5;
 using System;
-using System.Collections.Generic;
 
 namespace Bridge.jQuery2
 {
@@ -267,14 +265,18 @@ namespace Bridge.jQuery2
         /// Execute the next function on the queue for the matched element.
         /// </summary>
         /// <param name="element"></param>
-        public static void Dequeue(Element element) { }
+        public static void Dequeue(Element element)
+        {
+        }
 
         /// <summary>
         /// Execute the next function on the queue for the matched element.
         /// </summary>
         /// <param name="element"></param>
         /// <param name="queueName"></param>
-        public static void Dequeue(Element element, string queueName) { }
+        public static void Dequeue(Element element, string queueName)
+        {
+        }
 
         /// <summary>
         /// Determine whether an element has any jQuery data associated with it.

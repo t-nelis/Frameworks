@@ -1,7 +1,4 @@
-﻿using Bridge;
-using Bridge.Html5;
 using System;
-using System.Collections.Generic;
 
 namespace Bridge.jQuery2
 {
@@ -88,6 +85,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
+
         /// <summary>
         /// Perform a custom animation of a set of CSS properties.
         /// </summary>
@@ -100,7 +98,6 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-
 
         /// <summary>
         /// Perform a custom animation of a set of CSS properties.
@@ -228,6 +225,5 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-
     }
 }

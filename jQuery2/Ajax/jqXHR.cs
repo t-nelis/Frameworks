@@ -1,8 +1,5 @@
-﻿using Bridge;
 using Bridge.Html5;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Bridge.jQuery2
@@ -265,6 +262,6 @@ namespace Bridge.jQuery2
         {
         }
 
-        #endregion
+        #endregion IPromise
     }
 }

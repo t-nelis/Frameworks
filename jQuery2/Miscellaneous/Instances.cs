@@ -1,5 +1,3 @@
-﻿using Bridge;
-
 namespace Bridge.jQuery2
 {
     public partial class jQuery

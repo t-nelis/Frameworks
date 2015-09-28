@@ -1,6 +1,3 @@
-﻿using System;
-using Bridge;
-
 namespace Bridge.QUnit
 {
     /// <summary>

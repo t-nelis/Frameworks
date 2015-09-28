@@ -1,5 +1,4 @@
-﻿using System;
-using Bridge;
+using System;
 
 namespace Bridge.QUnit
 {
@@ -60,7 +59,8 @@ namespace Bridge.QUnit
         /// </summary>
         /// <param name="number">Number of assertions in this test.</param>
         public virtual void Expect(int number)
-        { }
+        {
+        }
 
         /// <summary>
         /// An inverted deep recursive comparison, working on primitive types, arrays, objects, regular expressions, dates and functions.

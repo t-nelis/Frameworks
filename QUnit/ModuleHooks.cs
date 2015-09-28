@@ -1,5 +1,4 @@
-﻿using System;
-using Bridge;
+using System;
 
 namespace Bridge.QUnit
 {
@@ -14,11 +13,19 @@ namespace Bridge.QUnit
         /// <summary>
         /// Runs before each test
         /// </summary>
-        public Action BeforeEach { get; set; }
+        public Action BeforeEach
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Runs after each test
         /// </summary>
-        public Action AfterEach { get; set; }
+        public Action AfterEach
+        {
+            get;
+            set;
+        }
     }
 }

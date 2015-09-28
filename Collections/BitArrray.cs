@@ -1,4 +1,4 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
+// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 /*=============================================================================
@@ -16,8 +16,8 @@ using Bridge;
 
 namespace System.Collections
 {
-
     using System;
+
     // A vector of bits.  Use this to store bits efficiently, without having to do bit
     // shifting yourself.
     [Namespace("Bridge.Collections")]
@@ -29,6 +29,7 @@ namespace System.Collections
         **
         ** Exceptions: ArgumentException if length < 0.
         =========================================================================*/
+
         public BitArray(int length)
             : this(length, false)
         {
@@ -40,6 +41,7 @@ namespace System.Collections
         **
         ** Exceptions: ArgumentOutOfRangeException if length < 0.
         =========================================================================*/
+
         public BitArray(int length, bool defaultValue)
         {
             if (length < 0)
@@ -67,6 +69,7 @@ namespace System.Collections
         **
         ** Exceptions: ArgumentException if bytes == null.
         =========================================================================*/
+
         public BitArray(byte[] bytes)
         {
             if (bytes == null)
@@ -133,7 +136,6 @@ namespace System.Collections
             }
 
             _version = 0;
-
         }
 
         /*=========================================================================
@@ -144,6 +146,7 @@ namespace System.Collections
         **
         ** Exceptions: ArgumentException if values == null.
         =========================================================================*/
+
         public BitArray(int[] values)
         {
             if (values == null)
@@ -169,6 +172,7 @@ namespace System.Collections
         **
         ** Exceptions: ArgumentException if bits == null.
         =========================================================================*/
+
         public BitArray(BitArray bits)
         {
             if (bits == null)
@@ -203,6 +207,7 @@ namespace System.Collections
         ** Exceptions: ArgumentOutOfRangeException if index < 0 or
         **             index >= GetLength().
         =========================================================================*/
+
         public bool Get(int index)
         {
             if (index < 0 || index >= Length)
@@ -219,6 +224,7 @@ namespace System.Collections
         ** Exceptions: ArgumentOutOfRangeException if index < 0 or
         **             index >= GetLength().
         =========================================================================*/
+
         public void Set(int index, bool value)
         {
             if (index < 0 || index >= Length)
@@ -241,6 +247,7 @@ namespace System.Collections
         /*=========================================================================
         ** Sets all the bit values to value.
         =========================================================================*/
+
         public void SetAll(bool value)
         {
             int fillValue = value ? unchecked(((int)0xffffffff)) : 0;
@@ -259,6 +266,7 @@ namespace System.Collections
         ** Exceptions: ArgumentException if value == null or
         **             value.Length != this.Length.
         =========================================================================*/
+
         public BitArray And(BitArray value)
         {
             if (value == null)
@@ -282,6 +290,7 @@ namespace System.Collections
         ** Exceptions: ArgumentException if value == null or
         **             value.Length != this.Length.
         =========================================================================*/
+
         public BitArray Or(BitArray value)
         {
             if (value == null)
@@ -305,6 +314,7 @@ namespace System.Collections
         ** Exceptions: ArgumentException if value == null or
         **             value.Length != this.Length.
         =========================================================================*/
+
         public BitArray Xor(BitArray value)
         {
             if (value == null)
@@ -327,6 +337,7 @@ namespace System.Collections
         ** off/false. Off/false bit values are turned on/true. The current instance
         ** is updated and returned.
         =========================================================================*/
+
         public BitArray Not()
         {
             int ints = GetArrayLength(m_length, BitsPerInt32);
@@ -419,6 +430,7 @@ namespace System.Collections
 
         // XPerY=n means that n Xs can be stored in 1 Y.
         private const int BitsPerInt32 = 32;
+
         private const int BytesPerInt32 = 4;
         private const int BitsPerByte = 8;
 
@@ -458,7 +470,8 @@ namespace System.Collections
 
             public virtual bool MoveNext()
             {
-                if (version != bitarray._version) throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+                if (version != bitarray._version)
+                    throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
                 if (index < (bitarray.Count - 1))
                 {
                     index++;
@@ -485,7 +498,8 @@ namespace System.Collections
 
             public void Reset()
             {
-                if (version != bitarray._version) throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+                if (version != bitarray._version)
+                    throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
                 index = -1;
             }
         }
@@ -495,5 +509,4 @@ namespace System.Collections
         private int _version;
         private const int _ShrinkThreshold = 256;
     }
-
 }

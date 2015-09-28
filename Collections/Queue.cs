@@ -1,7 +1,6 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
+// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-using System;
 using Bridge;
 
 namespace System.Collections.Generic
@@ -57,7 +56,10 @@ namespace System.Collections.Generic
 
         public int Count
         {
-            get { return _size; }
+            get
+            {
+                return _size;
+            }
         }
 
         // Removes all Objects from the queue.
@@ -98,7 +100,8 @@ namespace System.Collections.Generic
             }
 
             int numToCopy = (arrayLen - arrayIndex < _size) ? (arrayLen - arrayIndex) : _size;
-            if (numToCopy == 0) return;
+            if (numToCopy == 0)
+                return;
 
             int firstPart = (_array.Length - _head < numToCopy) ? _array.Length - _head : numToCopy;
             Array.Copy(_array, _head, array, arrayIndex, firstPart);
@@ -295,7 +298,8 @@ namespace System.Collections.Generic
 
             public bool MoveNext()
             {
-                if (_version != _q._version) throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+                if (_version != _q._version)
+                    throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
 
                 if (_index == -2)
                     return false;
@@ -338,7 +342,8 @@ namespace System.Collections.Generic
 
             void System.Collections.IEnumerator.Reset()
             {
-                if (_version != _q._version) throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+                if (_version != _q._version)
+                    throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
                 _index = -1;
                 _currentElement = default(T);
             }

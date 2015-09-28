@@ -15,6 +15,7 @@ namespace System.Collections.Generic
             _array = bitArray;
             _length = length;
         }
+
         internal void MarkBit(int bitPosition)
         {
             int bitArrayIndex = bitPosition / IntSize;
@@ -24,6 +25,7 @@ namespace System.Collections.Generic
                 _array[bitArrayIndex] |= flag;
             }
         }
+
         internal bool IsMarked(int bitPosition)
         {
             int bitArrayIndex = bitPosition / IntSize;
@@ -34,6 +36,7 @@ namespace System.Collections.Generic
             }
             return false;
         }
+
         internal static int ToIntArrayLength(int n)
         {
             return n > 0 ? ((n - 1) / IntSize + 1) : 0;

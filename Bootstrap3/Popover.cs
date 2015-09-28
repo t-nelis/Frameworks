@@ -1,7 +1,5 @@
-﻿using System;
-using Bridge;
-using Bridge.Html5;
 using Bridge.jQuery2;
+using System;
 
 namespace Bridge.Bootstrap3
 {

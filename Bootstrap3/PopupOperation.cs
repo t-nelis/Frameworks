@@ -1,5 +1,3 @@
-﻿using Bridge;
-
 namespace Bridge.Bootstrap3
 {
     /// <summary>

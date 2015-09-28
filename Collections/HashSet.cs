@@ -1,9 +1,6 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
+// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-
-using System;
-using System.Collections;
 using Bridge;
 
 namespace System.Collections.Generic
@@ -20,10 +17,14 @@ namespace System.Collections.Generic
         private int _freeList;
         private IEqualityComparer<T> _comparer;
         private int _version;
+
         #region Constructors
+
         public HashSet()
             : this(EqualityComparer<T>.Default)
-        { }
+        {
+        }
+
         public HashSet(IEqualityComparer<T> comparer)
         {
             if (comparer == null)
@@ -36,9 +37,12 @@ namespace System.Collections.Generic
             _freeList = -1;
             _version = 0;
         }
+
         public HashSet(IEnumerable<T> collection)
             : this(collection, EqualityComparer<T>.Default)
-        { }
+        {
+        }
+
         public HashSet(IEnumerable<T> collection, IEqualityComparer<T> comparer)
             : this(comparer)
         {
@@ -60,12 +64,16 @@ namespace System.Collections.Generic
                 TrimExcess();
             }
         }
-        #endregion
+
+        #endregion Constructors
+
         #region ICollection<T> methods
+
         void ICollection<T>.Add(T item)
         {
             AddIfNotPresent(item);
         }
+
         public void Clear()
         {
             if (_lastIndex > 0)
@@ -89,7 +97,6 @@ namespace System.Collections.Generic
 
         public void ArrayClear(Array array, int index, int length)
         {
-
         }
 
         public bool Contains(T item)
@@ -107,10 +114,12 @@ namespace System.Collections.Generic
             }
             return false;
         }
+
         public void CopyTo(T[] array, int arrayIndex)
         {
             CopyTo(array, arrayIndex, _count);
         }
+
         public bool Remove(T item)
         {
             if (_buckets != null)
@@ -150,30 +159,43 @@ namespace System.Collections.Generic
             }
             return false;
         }
+
         public int Count
         {
-            get { return _count; }
+            get
+            {
+                return _count;
+            }
         }
-        #endregion
+
+        #endregion ICollection<T> methods
+
         #region IEnumerable methods
+
         public Enumerator GetEnumerator()
         {
             return new Enumerator(this);
         }
+
         IEnumerator<T> IEnumerable<T>.GetEnumerator()
         {
             return new Enumerator(this);
         }
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return new Enumerator(this);
         }
-        #endregion
+
+        #endregion IEnumerable methods
+
         #region HashSet methods
+
         public bool Add(T item)
         {
             return AddIfNotPresent(item);
         }
+
         public void UnionWith(IEnumerable<T> other)
         {
             if (other == null)
@@ -185,6 +207,7 @@ namespace System.Collections.Generic
                 AddIfNotPresent(item);
             }
         }
+
         public void IntersectWith(IEnumerable<T> other)
         {
             if (other == null)
@@ -212,6 +235,7 @@ namespace System.Collections.Generic
             }
             IntersectWithEnumerable(other);
         }
+
         public void ExceptWith(IEnumerable<T> other)
         {
             if (other == null)
@@ -232,6 +256,7 @@ namespace System.Collections.Generic
                 Remove(element);
             }
         }
+
         public void SymmetricExceptWith(IEnumerable<T> other)
         {
             if (other == null)
@@ -258,6 +283,7 @@ namespace System.Collections.Generic
                 SymmetricExceptWithEnumerable(other);
             }
         }
+
         public bool IsSubsetOf(IEnumerable<T> other)
         {
             if (other == null)
@@ -283,6 +309,7 @@ namespace System.Collections.Generic
                 return (result.uniqueCount == _count && result.unfoundCount >= 0);
             }
         }
+
         public bool IsProperSubsetOf(IEnumerable<T> other)
         {
             if (other == null)
@@ -309,6 +336,7 @@ namespace System.Collections.Generic
             ElementCount result = CheckUniqueAndUnfoundElements(other, false);
             return (result.uniqueCount == _count && result.unfoundCount > 0);
         }
+
         public bool IsSupersetOf(IEnumerable<T> other)
         {
             if (other == null)
@@ -333,6 +361,7 @@ namespace System.Collections.Generic
             }
             return ContainsAllElements(other);
         }
+
         public bool IsProperSupersetOf(IEnumerable<T> other)
         {
             if (other == null)
@@ -363,6 +392,7 @@ namespace System.Collections.Generic
             ElementCount result = CheckUniqueAndUnfoundElements(other, true);
             return (result.uniqueCount < _count && result.unfoundCount == 0);
         }
+
         public bool Overlaps(IEnumerable<T> other)
         {
             if (other == null)
@@ -382,6 +412,7 @@ namespace System.Collections.Generic
             }
             return false;
         }
+
         public bool SetEquals(IEnumerable<T> other)
         {
             if (other == null)
@@ -411,7 +442,12 @@ namespace System.Collections.Generic
                 return (result.uniqueCount == _count && result.unfoundCount == 0);
             }
         }
-        public void CopyTo(T[] array) { CopyTo(array, 0, _count); }
+
+        public void CopyTo(T[] array)
+        {
+            CopyTo(array, 0, _count);
+        }
+
         public void CopyTo(T[] array, int arrayIndex, int count)
         {
             if (array == null)
@@ -440,6 +476,7 @@ namespace System.Collections.Generic
                 }
             }
         }
+
         public int RemoveWhere(Func<T, bool> match)
         {
             if (match == null)
@@ -463,6 +500,7 @@ namespace System.Collections.Generic
             }
             return numRemoved;
         }
+
         public IEqualityComparer<T> Comparer
         {
             get
@@ -470,6 +508,7 @@ namespace System.Collections.Generic
                 return _comparer;
             }
         }
+
         public void TrimExcess()
         {
             if (_count == 0)
@@ -501,14 +540,18 @@ namespace System.Collections.Generic
                 _freeList = -1;
             }
         }
-        #endregion
+
+        #endregion HashSet methods
+
         #region Helper methods
+
         private void Initialize(int capacity)
         {
             int size = HashHelpers.GetPrime(capacity);
             _buckets = new int[size];
             _slots = new Slot[size];
         }
+
         private void IncreaseCapacity()
         {
             int newSize = HashHelpers.ExpandPrime(_count);
@@ -518,6 +561,7 @@ namespace System.Collections.Generic
             }
             SetCapacity(newSize, false);
         }
+
         private void SetCapacity(int newSize, bool forceNewHashCodes)
         {
             Slot[] newSlots = new Slot[newSize];
@@ -548,6 +592,7 @@ namespace System.Collections.Generic
             _slots = newSlots;
             _buckets = newBuckets;
         }
+
         private bool AddIfNotPresent(T value)
         {
             if (_buckets == null)
@@ -600,6 +645,7 @@ SetCapacity(_buckets.Length, true);
 #endif
             return true;
         }
+
         private bool ContainsAllElements(IEnumerable<T> other)
         {
             foreach (T element in other)
@@ -611,6 +657,7 @@ SetCapacity(_buckets.Length, true);
             }
             return true;
         }
+
         private bool IsSubsetOfHashSetWithSameEC(HashSet<T> other)
         {
             foreach (T item in this)
@@ -622,6 +669,7 @@ SetCapacity(_buckets.Length, true);
             }
             return true;
         }
+
         private void IntersectWithHashSetWithSameEC(HashSet<T> other)
         {
             for (int i = 0; i < _lastIndex; i++)
@@ -636,6 +684,7 @@ SetCapacity(_buckets.Length, true);
                 }
             }
         }
+
         private void IntersectWithEnumerable(IEnumerable<T> other)
         {
             int originalLastIndex = _lastIndex;
@@ -659,6 +708,7 @@ SetCapacity(_buckets.Length, true);
                 }
             }
         }
+
         private int InternalIndexOf(T item)
         {
             int hashCode = InternalGetHashCode(item);
@@ -671,6 +721,7 @@ SetCapacity(_buckets.Length, true);
             }
             return -1;
         }
+
         private void SymmetricExceptWithUniqueHashSet(HashSet<T> other)
         {
             foreach (T item in other)
@@ -681,6 +732,7 @@ SetCapacity(_buckets.Length, true);
                 }
             }
         }
+
         private void SymmetricExceptWithEnumerable(IEnumerable<T> other)
         {
             int originalLastIndex = _lastIndex;
@@ -715,6 +767,7 @@ SetCapacity(_buckets.Length, true);
                 }
             }
         }
+
         private bool AddOrGetLocation(T value, out int location)
         {
             int hashCode = InternalGetHashCode(value);
@@ -752,6 +805,7 @@ SetCapacity(_buckets.Length, true);
             location = index;
             return true;
         }
+
         private ElementCount CheckUniqueAndUnfoundElements(IEnumerable<T> other, bool returnIfUnfound)
         {
             ElementCount result;
@@ -798,12 +852,14 @@ SetCapacity(_buckets.Length, true);
             result.unfoundCount = unfoundCount;
             return result;
         }
+
         internal T[] ToArray()
         {
             T[] newArray = new T[Count];
             CopyTo(newArray);
             return newArray;
         }
+
         internal static bool HashSetEquals(HashSet<T> set1, HashSet<T> set2, IEqualityComparer<T> comparer)
         {
             if (set1 == null)
@@ -850,10 +906,12 @@ SetCapacity(_buckets.Length, true);
                 return true;
             }
         }
+
         private static bool AreEqualityComparersEqual(HashSet<T> set1, HashSet<T> set2)
         {
             return set1.Comparer.Equals(set2.Comparer);
         }
+
         private int InternalGetHashCode(T item)
         {
             if (item == null)
@@ -862,24 +920,29 @@ SetCapacity(_buckets.Length, true);
             }
             return _comparer.GetHashCode(item) & Lower31BitMask;
         }
-        #endregion
+
+        #endregion Helper methods
+
         internal struct ElementCount
         {
             internal int uniqueCount;
             internal int unfoundCount;
         }
+
         internal struct Slot
         {
             internal int hashCode;
             internal T value;
             internal int next;
         }
+
         public struct Enumerator : IEnumerator<T>
         {
             private HashSet<T> _set;
             private int _index;
             private int _version;
             private T _current;
+
             internal Enumerator(HashSet<T> set)
             {
                 _set = set;
@@ -887,9 +950,11 @@ SetCapacity(_buckets.Length, true);
                 _version = set._version;
                 _current = default(T);
             }
+
             public void Dispose()
             {
             }
+
             public bool MoveNext()
             {
                 if (_version != _set._version)
@@ -930,6 +995,7 @@ SetCapacity(_buckets.Length, true);
                     return Current;
                 }
             }
+
             void System.Collections.IEnumerator.Reset()
             {
                 if (_version != _set._version)

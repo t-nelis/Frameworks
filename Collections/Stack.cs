@@ -1,4 +1,4 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
+// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 /*=============================================================================
@@ -8,7 +8,7 @@
 **
 **
 =============================================================================*/
-using System;
+
 using Bridge;
 
 namespace System.Collections.Generic
@@ -51,7 +51,10 @@ namespace System.Collections.Generic
 
         public int Count
         {
-            get { return _size; }
+            get
+            {
+                return _size;
+            }
         }
 
         // Removes all Objects from the Stack.
@@ -249,7 +252,8 @@ namespace System.Collections.Generic
             public bool MoveNext()
             {
                 bool retval;
-                if (_version != _stack._version) throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+                if (_version != _stack._version)
+                    throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
                 if (_index == -2)
                 {  // First call to enumerator.
                     _index = _stack._size - 1;
@@ -275,8 +279,10 @@ namespace System.Collections.Generic
             {
                 get
                 {
-                    if (_index == -2) throw new InvalidOperationException("Enumeration has not started. Call MoveNext.");
-                    if (_index == -1) throw new InvalidOperationException("Enumeration already finished.");
+                    if (_index == -2)
+                        throw new InvalidOperationException("Enumeration has not started. Call MoveNext.");
+                    if (_index == -1)
+                        throw new InvalidOperationException("Enumeration already finished.");
                     return _currentElement;
                 }
             }
@@ -285,15 +291,18 @@ namespace System.Collections.Generic
             {
                 get
                 {
-                    if (_index == -2) throw new InvalidOperationException("Enumeration has not started. Call MoveNext.");
-                    if (_index == -1) throw new InvalidOperationException("Enumeration already finished.");
+                    if (_index == -2)
+                        throw new InvalidOperationException("Enumeration has not started. Call MoveNext.");
+                    if (_index == -1)
+                        throw new InvalidOperationException("Enumeration already finished.");
                     return _currentElement;
                 }
             }
 
             void System.Collections.IEnumerator.Reset()
             {
-                if (_version != _stack._version) throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+                if (_version != _stack._version)
+                    throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
                 _index = -2;
                 _currentElement = default(T);
             }

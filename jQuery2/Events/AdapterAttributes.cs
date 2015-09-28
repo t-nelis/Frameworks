@@ -1,12 +1,10 @@
-﻿using Bridge;
-
 namespace Bridge.jQuery2
 {
     [Ignore]
     public enum JqueryEventTarget
     {
         [Template("{0}")]
-        Raw=0,
+        Raw = 0,
 
         [Template("'{0}'")]
         Value

@@ -1,4 +1,3 @@
-﻿using Bridge;
 using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
@@ -121,19 +120,31 @@ namespace Bridge.Bootstrap3
         /// The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.
         /// Defaults to 5000.
         /// </summary>
-        public virtual int Interval { get; set; }
+        public virtual int Interval
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.
         /// Defaults to "hover".
         /// </summary>
-        public virtual string Pause { get; set; }
+        public virtual string Pause
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Whether the carousel should cycle continuously or have hard stops.
         /// Defaults to true.
         /// </summary>
-        public virtual bool Wrap { get; set; }
+        public virtual bool Wrap
+        {
+            get;
+            set;
+        }
     }
 
     /// <summary>
