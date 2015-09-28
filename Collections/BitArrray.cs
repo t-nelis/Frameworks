@@ -4,7 +4,7 @@
 /*=============================================================================
 **
 **
-** 
+**
 **
 **
 ** Purpose: The BitArray class manages a compact array of bit values.
@@ -18,7 +18,7 @@ namespace System.Collections
 {
 
     using System;
-    // A vector of bits.  Use this to store bits efficiently, without having to do bit 
+    // A vector of bits.  Use this to store bits efficiently, without having to do bit
     // shifting yourself.
     [Namespace("Bridge.Collections")]
     public sealed class BitArray : ICollection, ICloneable
@@ -74,7 +74,7 @@ namespace System.Collections
                 throw new ArgumentNullException("bytes");
             }
             // this value is chosen to prevent overflow when computing m_length.
-            // m_length is of type int32 and is exposed as a property, so 
+            // m_length is of type int32 and is exposed as a property, so
             // type of m_length can't be changed to accommodate.
             if (bytes.Length > Int32.MaxValue / BitsPerByte)
             {
@@ -417,20 +417,20 @@ namespace System.Collections
             return new BitArrayEnumeratorSimple(this);
         }
 
-        // XPerY=n means that n Xs can be stored in 1 Y. 
+        // XPerY=n means that n Xs can be stored in 1 Y.
         private const int BitsPerInt32 = 32;
         private const int BytesPerInt32 = 4;
         private const int BitsPerByte = 8;
 
         /// <summary>
-        /// Used for conversion between different representations of bit array. 
-        /// Returns (n+(div-1))/div, rearranged to avoid arithmetic overflow. 
-        /// For example, in the bit to int case, the straightforward calc would 
-        /// be (n+31)/32, but that would cause overflow. So instead it's 
+        /// Used for conversion between different representations of bit array.
+        /// Returns (n+(div-1))/div, rearranged to avoid arithmetic overflow.
+        /// For example, in the bit to int case, the straightforward calc would
+        /// be (n+31)/32, but that would cause overflow. So instead it's
         /// rearranged to ((n-1)/32) + 1, with special casing for 0.
-        /// 
+        ///
         /// Usage:
-        /// GetArrayLength(77, BitsPerInt32): returns how many ints must be 
+        /// GetArrayLength(77, BitsPerInt32): returns how many ints must be
         /// allocated to store 77 bits.
         /// </summary>
         /// <param name="n"></param>

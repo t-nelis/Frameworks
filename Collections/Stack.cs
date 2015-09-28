@@ -201,7 +201,7 @@ namespace System.Collections.Generic
         }
 
         // Pushes an item to the top of the stack.
-        // 
+        //
         public void Push(T item)
         {
             if (_size == _array.Length)

@@ -918,7 +918,7 @@ SetCapacity(_buckets.Length, true);
                     return _current;
                 }
             }
-            
+
             Object System.Collections.IEnumerator.Current
             {
                 get

@@ -6,7 +6,7 @@ using Bridge;
 
 namespace System.Collections.Generic
 {
-    // A simple Queue of generic objects.  Internally it is implemented as a 
+    // A simple Queue of generic objects.  Internally it is implemented as a
     // circular buffer, so Enqueue can be O(n).  Dequeue is O(1).
     [Namespace("Bridge.Collections")]
     public class Queue<T> : IEnumerable<T>, System.Collections.ICollection
@@ -161,7 +161,7 @@ namespace System.Collections.Generic
         }
 
         // Returns the object at the head of the queue. The object remains in the
-        // queue. If the queue is empty, this method throws an 
+        // queue. If the queue is empty, this method throws an
         // InvalidOperationException.
         public T Peek()
         {
@@ -253,8 +253,8 @@ namespace System.Collections.Generic
         // Increments the index wrapping it if necessary.
         private int MoveNext(int index)
         {
-            // It is tempting to use the remainder operator here but it is actually much slower 
-            // than a simple comparison and a rarely taken branch.   
+            // It is tempting to use the remainder operator here but it is actually much slower
+            // than a simple comparison and a rarely taken branch.
             int tmp = index + 1;
             return (tmp == _array.Length) ? 0 : tmp;
         }

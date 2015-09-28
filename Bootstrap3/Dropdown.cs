@@ -83,7 +83,7 @@ namespace Bridge.Bootstrap3
         Show,
 
         /// <summary>
-        ///  	This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete). The toggling anchor element is available as the relatedTarget property of the event.
+        ///      This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete). The toggling anchor element is available as the relatedTarget property of the event.
         /// </summary>
         [Name("shown.bs.dropdown")]
         Shown,
