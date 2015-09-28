@@ -12,6 +12,9 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\Bridge\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>782700a4</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,16 +46,6 @@
     <AdditionalExplicitAssemblyReferences />
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Bridge\Bridge\Bridge.csproj">
-      <Project>{de78b8b7-c0f5-415b-a70b-02194433f450}</Project>
-      <Name>Bridge</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Bridge\Html5\Bridge.Html5.csproj">
-      <Project>{99decd28-d3e3-4ea7-acae-ab5dfc9913bd}</Project>
-      <Name>Bridge.Html5</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="ActiveInfo.cs" />
     <Compile Include="Buffer.cs" />
     <Compile Include="ContextAttributes.cs" />
@@ -68,8 +61,30 @@
     <Compile Include="Texture.cs" />
     <Compile Include="UniformLocation.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Bridge, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Bridge\packages\Bridge.1.9.0\lib\net40\Bridge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Bridge.Html5, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Bridge\packages\Bridge.1.9.0\lib\net40\Bridge.Html5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent />
   </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\..\Bridge\packages\Bridge.1.9.0\build\Bridge.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\Bridge\packages\Bridge.1.9.0\build\Bridge.targets'))" />
+  </Target>
+  <Import Project="..\..\Bridge\packages\Bridge.1.9.0\build\Bridge.targets" Condition="Exists('..\..\Bridge\packages\Bridge.1.9.0\build\Bridge.targets')" />
 </Project>

@@ -1,4 +1,3 @@
-﻿using Bridge;
 using Bridge.Html5;
 using System;
 using System.Collections.Generic;
@@ -82,11 +81,11 @@ namespace Bridge.jQuery2
         }
 
         /// TODO: Conflict with non-static jQuery Html(string htmlString) Method
-        //[Template("$({0})")]
-        //public static jQuery Html(string html)
-        //{
-        //    return null;
-        //}
+        // [Template("$({0})")]
+        // public static jQuery Html(string html)
+        // {
+        //     return null;
+        // }
 
         [Template("$({0}, {1})")]
         public static jQuery Html(string html, DocumentInstance ownerDocument)
