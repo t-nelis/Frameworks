@@ -23,10 +23,10 @@ Bridge.define('Bridge.Collections.BitArray', {
          * @private
          * @this Bridge.Collections.BitArray
          * @memberof Bridge.Collections.BitArray
-         * @param   {number}    n
+         * @param   {number}    n      
          * @param   {number}    div    use a conversion constant, e.g. BytesPerInt32 to get
          how many ints are required to store n bytes
-         * @return  {number}
+         * @return  {number}           
          */
         getArrayLength: function (n, div) {
             return n > 0 ? ((Bridge.Int.div((n - 1), div)) + 1) : 0;
@@ -300,7 +300,7 @@ Bridge.define('Bridge.Collections.BitArrayEnumeratorSimple', {
             this.currentElement = this.bitarray.get(this.index);
             return true;
         }
-        else
+        else 
             this.index = this.bitarray.getCount();
 
         return false;
@@ -360,7 +360,7 @@ Bridge.define('Bridge.Collections.EnumerableHelpers', {
          * @static
          * @this Bridge.Collections.EnumerableHelpers
          * @memberof Bridge.Collections.EnumerableHelpers
-         * @param   {Function}                T
+         * @param   {Function}                T         
          * @param   {Bridge.IEnumerable$1}    source    The enumerable to convert.
          * @return  {Array.<T>}                         The resulting array.
          */
@@ -378,7 +378,7 @@ Bridge.define('Bridge.Collections.EnumerableHelpers', {
          * @static
          * @this Bridge.Collections.EnumerableHelpers
          * @memberof Bridge.Collections.EnumerableHelpers
-         * @param   {Function}                T
+         * @param   {Function}                T         
          * @param   {Bridge.IEnumerable$1}    source    The enumerable to convert.
          * @param   {System.Int32&}           length    The number of items stored in the resulting array, 0-indexed.
          * @return  {Array.<T>}                         The resulting array.  The length of the array may be greater than <b />,
@@ -498,7 +498,7 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
             if (set1 === null) {
                 return (set2 === null);
             }
-            else
+            else 
                 if (set2 === null) {
                     return false;
                 }
@@ -1437,7 +1437,7 @@ Bridge.define('Bridge.Collections.Queue$1', function (T) { return {
                 if (this._array[index] === null)
                     return true;
             }
-            else
+            else 
                 if (this._array[index] !== null && c.equals(this._array[index], item)) {
                     return true;
                 }
@@ -1513,7 +1513,7 @@ Bridge.define('Bridge.Collections.Enumerator', function (T) { return {
         if (this._index < 0) {
             if (this._index === -1)
                 throw new Bridge.InvalidOperationException("Enumeration has not started. Call MoveNext.");
-            else
+            else 
                 throw new Bridge.InvalidOperationException("Enumeration already finished.");
         }
         return this._currentElement;
@@ -1613,7 +1613,7 @@ Bridge.define('Bridge.Collections.Stack$1', function (T) { return {
                 if (this._array[count] === null)
                     return true;
             }
-            else
+            else 
                 if (this._array[count] !== null && c.equals(this._array[count], item)) {
                     return true;
                 }
@@ -1771,7 +1771,7 @@ Bridge.define('Bridge.Collections.Enumerator', function (T) { return {
         retval = (--this._index >= 0);
         if (retval)
             this._currentElement = this._stack._array[this._index];
-        else
+        else 
             this._currentElement = Bridge.getDefaultValue(T);
         return retval;
     },
