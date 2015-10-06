@@ -118,7 +118,7 @@ namespace Bridge.AngularJS
         /// <param name="filterFactory">
         /// Factory function for creating new instance of filter.
         /// </param>
-        public void Filter(string name, Action filterFactory)
+        public void Filter(string name, Func<Func<string, string>> filterFactory)
         {
         }
 
