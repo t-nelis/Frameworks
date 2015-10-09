@@ -45,6 +45,8 @@
     <Compile Include="Animation.cs" />
     <Compile Include="Route.cs" />
     <Compile Include="Directives.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="Services\CacheFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Bridge\Bridge\Bridge.csproj">

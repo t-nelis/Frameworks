@@ -42,7 +42,7 @@ namespace Bridge.AngularJS
         /// <param name="providerFunction">
         /// Function for creating new instance of the service.
         /// </param>
-        public void Factory(string name, Action providerFunction)
+        public void Factory<T>(string name, T providerFunction)
         {
         }
 
