@@ -1315,7 +1315,37 @@ namespace Bridge.WebGL
         ///     Uint8Array when used without extensions.
         ///     Float32Array when using the OES_texture_float extension .
         /// </param>
-        public virtual void ReadPixels(int x, int y, int width, int height, int format, int type, ArrayBuffer pixels) { }
+        public virtual void ReadPixels(int x, int y, int width, int height, int format, int type, Uint8Array pixels) { }
+
+        /// <summary>
+        /// Reads pixel data into an ArrayBufferView object from a rectangular area in the color buffer of the active frame buffer.
+        /// If an error is generated, no change is made to data object referenced by the pixels parameter.
+        ///
+        /// Errors:
+        ///
+        ///     gl.INVALID_ENUM                        If format or type aren't accepted values.
+        ///
+        ///     gl.INVALID_VALUE                    If height or width are negative numbers.
+        ///                                         If pixels is null.
+        ///
+        ///     gl.INVALID_OPERATION                If format isn't gl.RGBA and type isn't
+        ///     gl.UNSIGNED_BYTE                    If pixels isn't large enough for the pixel data.
+        ///
+        ///     gl.INVALID_FRAMEBUFFER_OPERATION    If the currently bound frame buffer isn't complete or the render frame buffer is invalid.
+        /// </summary>
+        /// <param name="x">Horizontal coordinate of the first pixel to read in the lower left corner of rectangle. </param>
+        /// <param name="y">Vertical coordinate of the first pixel to read in the lower left corner of rectangle. </param>
+        /// <param name="width">Width of the rectangle.</param>
+        /// <param name="height">Height of the rectangle.</param>
+        /// <param name="format">Format of the pixel data. For example, gl.RGBA.</param>
+        /// <param name="type">Describes the type of data being read:
+        ///    gl.UNSIGNED_BYTE
+        ///    gl.FLOAT         Call getExtension("gl.OES_texture_float") first to enable. This creates 128bit-per-pixel textures instead of 32bit-per-pixel for the image. </param>
+        /// <param name="pixels">Object to read data into. One of the following types:
+        ///     Uint8Array when used without extensions.
+        ///     Float32Array when using the OES_texture_float extension .
+        /// </param>
+        public virtual void ReadPixels(int x, int y, int width, int height, int format, int type, Float32Array pixels) { }
 
         /// <summary>
         /// Creates or replaces the data store for the currently bound WebGLRenderbuffer object.
