@@ -1,4 +1,3 @@
-﻿using Bridge;
 using System;
 
 namespace Bridge.jQuery2
@@ -34,7 +33,9 @@ namespace Bridge.jQuery2
     [Name("Object")]
     public class Callbacks
     {
-        private Callbacks () { }
+        private Callbacks()
+        {
+        }
 
         /// <summary>
         /// Add a callback or a collection of callbacks to a callback list.

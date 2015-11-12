@@ -1,5 +1,3 @@
-﻿using Bridge;
-using Bridge.Html5;
 using System;
 
 namespace Bridge.jQuery2
@@ -31,6 +29,16 @@ namespace Bridge.jQuery2
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
         public virtual jQuery Blur(Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "blur" JavaScript event
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Blur(Action<jQueryFocusEvent> handler)
         {
             return null;
         }
@@ -89,6 +97,16 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Bind an event handler to the "change" JavaScript event
         /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Change(Action<jQueryUiEvent> handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "change" JavaScript event
+        /// </summary>
         /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
@@ -140,6 +158,16 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Bind an event handler to the "focus" JavaScript event
         /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Focus(Action<jQueryFocusEvent> handler)
+        {
+          return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "focus" JavaScript event
+        /// </summary>
         /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
@@ -184,6 +212,17 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Bind an event handler to the "focusin" JavaScript event
         /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("focusin({0})")]
+        public virtual jQuery FocusIn(Action<jQueryFocusEvent> handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "focusin" JavaScript event
+        /// </summary>
         /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
@@ -201,6 +240,63 @@ namespace Bridge.jQuery2
         /// <returns>The jQuery instance</returns>
         [Template("focusin({0},{1})")]
         public virtual jQuery FocusIn(object eventData, Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "focusout" JavaScript event.
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("focusout({0})")]
+        public virtual jQuery FocusOut(Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "focusout" JavaScript event.
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("focusout({0})")]
+        public virtual jQuery FocusOut(Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "focusout" JavaScript event.
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("focusout({0})")]
+        public virtual jQuery FocusOut(Action<jQueryFocusEvent> handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "focusout" JavaScript event.
+        /// </summary>
+        /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("focusout({0},{1})")]
+        public virtual jQuery FocusOut(object eventData, Delegate handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "focusout" JavaScript event.
+        /// </summary>
+        /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("focusout({0},{1})")]
+        public virtual jQuery FocusOut(object eventData, Action handler)
         {
             return null;
         }
@@ -230,6 +326,16 @@ namespace Bridge.jQuery2
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
         public virtual jQuery Select(Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "select" JavaScript event
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Select(Action<jQueryUiEvent> handler)
         {
             return null;
         }
@@ -281,6 +387,16 @@ namespace Bridge.jQuery2
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
         public virtual jQuery Submit(Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "submit" JavaScript event
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Submit(Action<jQueryUiEvent> handler)
         {
             return null;
         }

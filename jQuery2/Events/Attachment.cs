@@ -1,5 +1,3 @@
-﻿using Bridge;
-using Bridge.Html5;
 using System;
 
 namespace Bridge.jQuery2
@@ -524,6 +522,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
+
         /// <summary>
         /// Attach an event handler function for one or more events to the selected elements.
         /// </summary>

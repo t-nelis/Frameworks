@@ -1,5 +1,3 @@
-﻿using Bridge;
-using Bridge.Html5;
 using System;
 
 namespace Bridge.jQuery2
@@ -40,7 +38,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
-        public virtual jQuery Click(Action<Event> handler)
+        public virtual jQuery Click(Action<jQueryMouseEvent> handler)
         {
             return null;
         }
@@ -102,6 +100,17 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Bind an event handler to the "dblclick" JavaScript event.
         /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("dblclick({0})")]
+        public virtual jQuery DblClick(Action<jQueryMouseEvent> handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "dblclick" JavaScript event.
+        /// </summary>
         /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
@@ -139,6 +148,16 @@ namespace Bridge.jQuery2
         /// <param name="handler">A function to execute when the mouse pointer enters or leaves the element.</param>
         /// <returns>The jQuery instance</returns>
         public virtual jQuery Hover(Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind a single handler to the matched elements, to be executed when the mouse pointer enters or leaves the elements.
+        /// </summary>
+        /// <param name="handler">A function to execute when the mouse pointer enters or leaves the element.</param>
+        /// <returns>The jQuery instance</returns>
+        public virtual jQuery Hover(Action<jQueryMouseEvent> handler)
         {
             return null;
         }
@@ -193,6 +212,17 @@ namespace Bridge.jQuery2
         /// <returns>The jQuery instance</returns>
         [Template("mousedown({0})")]
         public virtual jQuery MouseDown(Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "mousedown" JavaScript event.
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("mousedown({0})")]
+        public virtual jQuery MouseDown(Action<jQueryMouseEvent> handler)
         {
             return null;
         }
@@ -256,6 +286,17 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Bind an event handler to the "mouseenter" JavaScript event.
         /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("mouseenter({0})")]
+        public virtual jQuery MouseEnter(Action<jQueryMouseEvent> handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "mouseenter" JavaScript event.
+        /// </summary>
         /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
@@ -305,6 +346,17 @@ namespace Bridge.jQuery2
         /// <returns>The jQuery instance</returns>
         [Template("mouseleave({0})")]
         public virtual jQuery MouseLeave(Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "mouseleave" JavaScript event.
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("mouseleave({0})")]
+        public virtual jQuery MouseLeave(Action<jQueryMouseEvent> handler)
         {
             return null;
         }
@@ -368,6 +420,17 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Bind an event handler to the "mousemove" JavaScript event.
         /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("mousemove({0})")]
+        public virtual jQuery MouseMove(Action<jQueryMouseEvent> handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "mousemove" JavaScript event.
+        /// </summary>
         /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
@@ -419,6 +482,17 @@ namespace Bridge.jQuery2
         public virtual jQuery MouseOut(Action handler)
         {
             return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "mouseout" JavaScript event.
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("mouseout({0})")]
+        public virtual jQuery MouseOut(Action<jQueryMouseEvent> handler)
+        {
+          return null;
         }
 
         /// <summary>
@@ -480,6 +554,17 @@ namespace Bridge.jQuery2
         /// <summary>
         /// Bind an event handler to the "mouseover" JavaScript event.
         /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("mouseover({0})")]
+        public virtual jQuery MouseOver(Action<jQueryMouseEvent> handler)
+        {
+          return null;
+        }
+        
+        /// <summary>
+        /// Bind an event handler to the "mouseover" JavaScript event.
+        /// </summary>
         /// <param name="eventData">An object containing data that will be passed to the event handler.</param>
         /// <param name="handler">A function to execute each time the event is triggered.</param>
         /// <returns>The jQuery instance</returns>
@@ -529,6 +614,17 @@ namespace Bridge.jQuery2
         /// <returns>The jQuery instance</returns>
         [Template("mouseup({0})")]
         public virtual jQuery MouseUp(Action handler)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Bind an event handler to the "mouseup" JavaScript event.
+        /// </summary>
+        /// <param name="handler">A function to execute each time the event is triggered.</param>
+        /// <returns>The jQuery instance</returns>
+        [Template("mouseup({0})")]
+        public virtual jQuery MouseUp(Action<jQueryMouseEvent> handler)
         {
             return null;
         }

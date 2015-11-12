@@ -1,4 +1,3 @@
-﻿using Bridge;
 using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
@@ -98,13 +97,21 @@ namespace Bridge.Bootstrap3
         /// If selector then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this dependent on the panel class)
         /// Defaults to no parent.
         /// </summary>
-        public virtual string Parent { get; set; }
+        public virtual string Parent
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Toggles the collapsible element on invocation
         /// Defaults to true.
         /// </summary>
-        public virtual bool Toggle { get; set; }
+        public virtual bool Toggle
+        {
+            get;
+            set;
+        }
     }
 
     /// <summary>

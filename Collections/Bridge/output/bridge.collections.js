@@ -1,6 +1,7 @@
 ﻿/* global Bridge */
 
 "use strict";
+
 Bridge.define('Bridge.Collections.BitArray', {
     inherits: [Bridge.ICollection,Bridge.ICloneable],
     statics: {
@@ -9,13 +10,13 @@ Bridge.define('Bridge.Collections.BitArray', {
         BitsPerByte: 8,
         _ShrinkThreshold: 256,
         /**
-         * Used for conversion between different representations of bit array. 
-         Returns (n+(div-1))/div, rearranged to avoid arithmetic overflow. 
-         For example, in the bit to int case, the straightforward calc would 
-         be (n+31)/32, but that would cause overflow. So instead it's 
+         * Used for conversion between different representations of bit array.
+         Returns (n+(div-1))/div, rearranged to avoid arithmetic overflow.
+         For example, in the bit to int case, the straightforward calc would
+         be (n+31)/32, but that would cause overflow. So instead it's
          rearranged to ((n-1)/32) + 1, with special casing for 0.
          Usage:
-         GetArrayLength(77, BitsPerInt32): returns how many ints must be 
+         GetArrayLength(77, BitsPerInt32): returns how many ints must be
          allocated to store 77 bits.
          *
          * @static
@@ -58,7 +59,7 @@ Bridge.define('Bridge.Collections.BitArray', {
             throw new Bridge.ArgumentNullException("bytes");
         }
         // this value is chosen to prevent overflow when computing m_length.
-        // m_length is of type int32 and is exposed as a property, so 
+        // m_length is of type int32 and is exposed as a property, so
         // type of m_length can't be changed to accommodate.
         if (bytes.length > 268435455) {
             throw new Bridge.ArgumentException(Bridge.String.format("The input array length must not exceed Int32.MaxValue / {0}. Otherwise BitArray.Length would exceed Int32.MaxValue.", Bridge.Collections.BitArray.BitsPerByte), "bytes");
@@ -403,15 +404,15 @@ Bridge.define('Bridge.Collections.EnumerableHelpers', {
                                 var MaxArrayLength = 2146435071;
 
                                 // This is the same growth logic as in List<T>:
-                                // If the array is currently empty, we make it a default size.  Otherwise, we attempt to 
+                                // If the array is currently empty, we make it a default size.  Otherwise, we attempt to
                                 // double the size of the array.  Doubling will overflow once the size of the array reaches
-                                // 2^30, since doubling to 2^31 is 1 larger than Int32.MaxValue.  In that case, we instead 
-                                // constrain the length to be MaxArrayLength (this overflow check works because of of the 
-                                // cast to uint).  Because a slightly larger constant is used when T is one byte in size, we 
-                                // could then end up in a situation where arr.Length is MaxArrayLength or slightly larger, such 
-                                // that we constrain newLength to be MaxArrayLength but the needed number of elements is actually 
-                                // larger than that.  For that case, we then ensure that the newLength is large enough to hold 
-                                // the desired capacity.  This does mean that in the very rare case where we've grown to such a 
+                                // 2^30, since doubling to 2^31 is 1 larger than Int32.MaxValue.  In that case, we instead
+                                // constrain the length to be MaxArrayLength (this overflow check works because of of the
+                                // cast to uint).  Because a slightly larger constant is used when T is one byte in size, we
+                                // could then end up in a situation where arr.Length is MaxArrayLength or slightly larger, such
+                                // that we constrain newLength to be MaxArrayLength but the needed number of elements is actually
+                                // larger than that.  For that case, we then ensure that the newLength is large enough to hold
+                                // the desired capacity.  This does mean that in the very rare case where we've grown to such a
                                 // large size, each new element added after MaxArrayLength will end up doing a resize.
                                 var newLength = count << 1;
                                 if (Bridge.cast(newLength, Bridge.Int) > MaxArrayLength) {
@@ -1483,8 +1484,8 @@ Bridge.define('Bridge.Collections.Queue$1', function (T) { return {
         this._version++;
     },
     moveNext: function (index) {
-        // It is tempting to use the remainder operator here but it is actually much slower 
-        // than a simple comparison and a rarely taken branch.   
+        // It is tempting to use the remainder operator here but it is actually much slower
+        // than a simple comparison and a rarely taken branch.
         var tmp = index + 1;
         return (tmp === this._array.length) ? 0 : tmp;
     },

@@ -1,4 +1,3 @@
-﻿using Bridge;
 using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
@@ -64,13 +63,21 @@ namespace Bridge.Bootstrap3
         /// <summary>
         /// The string selector of the target.
         /// </summary>
-        public virtual string Target { get; set; }
+        public virtual string Target
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Pixels to offset from top when calculating position of scroll.
         /// Defaults to 10.
         /// </summary>
-        public virtual int Offset { get; set; }
+        public virtual int Offset
+        {
+            get;
+            set;
+        }
     }
 
     /// <summary>

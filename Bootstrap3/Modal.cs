@@ -1,4 +1,3 @@
-﻿using Bridge;
 using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
@@ -115,25 +114,41 @@ namespace Bridge.Bootstrap3
         /// It might be the boolean or the string 'static'
         /// Defaults to true.
         /// </summary>
-        public virtual Any<bool, string> Backdrop { get; set; }
+        public virtual Any<bool, string> Backdrop
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Closes the modal when escape key is pressed.
         /// Defaults to true.
         /// </summary>
-        public virtual bool Keyboard { get; set; }
+        public virtual bool Keyboard
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Shows the modal when initialized.
         /// Defaults to true.
         /// </summary>
-        public virtual bool Show { get; set; }
+        public virtual bool Show
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// If a remote URL is provided, content will be loaded one time via jQuery's load method and injected into the .modal-content div.
         /// Defaults to false.
         /// </summary>
-        public virtual Any<bool, string> Path { get; set; }
+        public virtual Any<bool, string> Path
+        {
+            get;
+            set;
+        }
     }
 
     /// <summary>

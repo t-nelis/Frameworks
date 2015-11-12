@@ -175,7 +175,7 @@ namespace Bridge.WebGL
         public readonly int ALWAYS;
 
         /// <summary>
-        ///  	Passed to depthFunction() or stencilFunction() to specify depth or stencil tests will pass if the new depth value is less than the stored value.
+        ///      Passed to depthFunction() or stencilFunction() to specify depth or stencil tests will pass if the new depth value is less than the stored value.
         /// </summary>
         [Name(false)]
         public readonly int LESS;
@@ -412,7 +412,7 @@ namespace Bridge.WebGL
         public readonly int BLEND;
 
         /// <summary>
-        ///  	Passed to enable()/disable() to turn on/off dithering. Can also be used with getParameter to find the current dithering method.
+        ///      Passed to enable()/disable() to turn on/off dithering. Can also be used with getParameter to find the current dithering method.
         /// </summary>
         [Name(false)]
         public readonly int DITHER;

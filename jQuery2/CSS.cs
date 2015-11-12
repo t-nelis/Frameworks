@@ -1,7 +1,5 @@
-﻿using Bridge;
 using Bridge.Html5;
 using System;
-using System.Collections.Generic;
 
 namespace Bridge.jQuery2
 {
@@ -184,7 +182,9 @@ namespace Bridge.jQuery2
     [Constructor("{}")]
     public class Point
     {
-        private Point() { }
+        private Point()
+        {
+        }
 
         public readonly int Top;
 

@@ -1,7 +1,6 @@
-﻿using System;
-using Bridge;
 using Bridge.Html5;
 using Bridge.jQuery2;
+using System;
 
 namespace Bridge.Bootstrap3
 {
@@ -42,12 +41,20 @@ namespace Bridge.Bootstrap3
         /// <summary>
         /// Bottom offset
         /// </summary>
-        public virtual int Bottom  { get; set; }
+        public virtual int Bottom
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Top offset
         /// </summary>
-        public virtual int Top  { get; set; }
+        public virtual int Top
+        {
+            get;
+            set;
+        }
     }
 
     /// <summary>
@@ -61,13 +68,21 @@ namespace Bridge.Bootstrap3
         /// Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and bottom directions. To provide a unique, bottom and top offset just provide an object offset: { top: 10 } or offset: { top: 10, bottom: 5 }. Use a function when you need to dynamically calculate an offset.
         /// Defaults to 10.
         /// </summary>
-        public virtual Any<int, AffixOffset, Delegate, Func<AffixOffset>> Offset  { get; set; }
+        public virtual Any<int, AffixOffset, Delegate, Func<AffixOffset>> Offset
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Specifies the target element of the affix. Either a selector string, a DOM element or a jQuery object.
         /// Defaults to the window object.
         /// </summary>
-        public virtual Any<string, Element, jQuery> Target { get; set; }
+        public virtual Any<string, Element, jQuery> Target
+        {
+            get;
+            set;
+        }
     }
 
     /// <summary>

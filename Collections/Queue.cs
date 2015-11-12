@@ -1,12 +1,11 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
+// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-using System;
 using Bridge;
 
 namespace System.Collections.Generic
 {
-    // A simple Queue of generic objects.  Internally it is implemented as a 
+    // A simple Queue of generic objects.  Internally it is implemented as a
     // circular buffer, so Enqueue can be O(n).  Dequeue is O(1).
     [Namespace("Bridge.Collections")]
     public class Queue<T> : IEnumerable<T>, System.Collections.ICollection
@@ -57,7 +56,10 @@ namespace System.Collections.Generic
 
         public int Count
         {
-            get { return _size; }
+            get
+            {
+                return _size;
+            }
         }
 
         // Removes all Objects from the queue.
@@ -98,7 +100,8 @@ namespace System.Collections.Generic
             }
 
             int numToCopy = (arrayLen - arrayIndex < _size) ? (arrayLen - arrayIndex) : _size;
-            if (numToCopy == 0) return;
+            if (numToCopy == 0)
+                return;
 
             int firstPart = (_array.Length - _head < numToCopy) ? _array.Length - _head : numToCopy;
             Array.Copy(_array, _head, array, arrayIndex, firstPart);
@@ -161,7 +164,7 @@ namespace System.Collections.Generic
         }
 
         // Returns the object at the head of the queue. The object remains in the
-        // queue. If the queue is empty, this method throws an 
+        // queue. If the queue is empty, this method throws an
         // InvalidOperationException.
         public T Peek()
         {
@@ -253,8 +256,8 @@ namespace System.Collections.Generic
         // Increments the index wrapping it if necessary.
         private int MoveNext(int index)
         {
-            // It is tempting to use the remainder operator here but it is actually much slower 
-            // than a simple comparison and a rarely taken branch.   
+            // It is tempting to use the remainder operator here but it is actually much slower
+            // than a simple comparison and a rarely taken branch.
             int tmp = index + 1;
             return (tmp == _array.Length) ? 0 : tmp;
         }
@@ -295,7 +298,8 @@ namespace System.Collections.Generic
 
             public bool MoveNext()
             {
-                if (_version != _q._version) throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+                if (_version != _q._version)
+                    throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
 
                 if (_index == -2)
                     return false;
@@ -338,7 +342,8 @@ namespace System.Collections.Generic
 
             void System.Collections.IEnumerator.Reset()
             {
-                if (_version != _q._version) throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
+                if (_version != _q._version)
+                    throw new InvalidOperationException("Collection was modified; enumeration operation may not execute.");
                 _index = -1;
                 _currentElement = default(T);
             }

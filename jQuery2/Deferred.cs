@@ -1,4 +1,3 @@
-﻿using Bridge;
 using System;
 using System.Threading.Tasks;
 
@@ -23,7 +22,7 @@ namespace Bridge.jQuery2
         [Template("$.Deferred()")]
         public static Deferred<T> Deferred<T>()
         {
-          return null;
+            return null;
         }
 
         /// <summary>
@@ -199,7 +198,7 @@ namespace Bridge.jQuery2
         /// <returns>The Deferred object</returns>
         public virtual Deferred Fail(params Action<object>[] failCallbacks)
         {
-          return null;
+            return null;
         }
 
         /// <summary>
@@ -250,7 +249,7 @@ namespace Bridge.jQuery2
         /// <returns>The Deferred object</returns>
         public virtual Deferred Progress(params Action<object>[] progressCallbacks)
         {
-          return null;
+            return null;
         }
 
         /// <summary>
@@ -327,7 +326,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-        
+
         /// <summary>
         /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
@@ -363,7 +362,7 @@ namespace Bridge.jQuery2
         {
         }
 
-        #endregion
+        #endregion IPromise
     }
 
     /// <summary>
@@ -394,7 +393,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-        
+
         /// <summary>
         /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
@@ -406,7 +405,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-        
+
         /// <summary>
         /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
@@ -418,7 +417,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-        
+
         /// <summary>
         /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
@@ -473,7 +472,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-        
+
         /// <summary>
         /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
@@ -485,7 +484,6 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-
 
         /// <summary>
         /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
@@ -530,7 +528,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-        
+
         /// <summary>
         /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>
@@ -554,7 +552,7 @@ namespace Bridge.jQuery2
         {
             return null;
         }
-        
+
         /// <summary>
         /// Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
         /// </summary>

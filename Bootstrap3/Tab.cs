@@ -1,4 +1,3 @@
-﻿using Bridge;
 using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
@@ -71,7 +70,7 @@ namespace Bridge.Bootstrap3
         Show,
 
         /// <summary>
-        ///  	This event fires on tab show after a tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.
+        ///      This event fires on tab show after a tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.
         /// </summary>
         [Name("shown.bs.tab")]
         Shown

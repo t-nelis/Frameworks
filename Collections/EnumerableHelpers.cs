@@ -49,15 +49,15 @@ namespace System.Collections.Generic
                             const int MaxArrayLength = 0x7FEFFFFF;
 
                             // This is the same growth logic as in List<T>:
-                            // If the array is currently empty, we make it a default size.  Otherwise, we attempt to 
+                            // If the array is currently empty, we make it a default size.  Otherwise, we attempt to
                             // double the size of the array.  Doubling will overflow once the size of the array reaches
-                            // 2^30, since doubling to 2^31 is 1 larger than Int32.MaxValue.  In that case, we instead 
-                            // constrain the length to be MaxArrayLength (this overflow check works because of of the 
-                            // cast to uint).  Because a slightly larger constant is used when T is one byte in size, we 
-                            // could then end up in a situation where arr.Length is MaxArrayLength or slightly larger, such 
-                            // that we constrain newLength to be MaxArrayLength but the needed number of elements is actually 
-                            // larger than that.  For that case, we then ensure that the newLength is large enough to hold 
-                            // the desired capacity.  This does mean that in the very rare case where we've grown to such a 
+                            // 2^30, since doubling to 2^31 is 1 larger than Int32.MaxValue.  In that case, we instead
+                            // constrain the length to be MaxArrayLength (this overflow check works because of of the
+                            // cast to uint).  Because a slightly larger constant is used when T is one byte in size, we
+                            // could then end up in a situation where arr.Length is MaxArrayLength or slightly larger, such
+                            // that we constrain newLength to be MaxArrayLength but the needed number of elements is actually
+                            // larger than that.  For that case, we then ensure that the newLength is large enough to hold
+                            // the desired capacity.  This does mean that in the very rare case where we've grown to such a
                             // large size, each new element added after MaxArrayLength will end up doing a resize.
                             int newLength = count << 1;
                             if ((uint)newLength > MaxArrayLength)
