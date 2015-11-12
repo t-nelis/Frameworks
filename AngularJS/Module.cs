@@ -105,7 +105,37 @@ namespace Bridge.AngularJS
         /// <param name="animationFactory">
         /// Factory function for creating new instance of an animation.
         /// </param>
+        public void Animation<T>(string name, Func<Animation<T>> animationFactory)
+        {
+        }
+
+        /// <summary>
+        /// Defines an animation hook that can be later used with $animate
+        /// service and directives that use this service.
+        /// </summary>
+        /// <remarks>>
+        /// Animations take effect only if the ngAnimate module is loaded.
+        /// </remarks>
+        /// <param name="name">Animantion name.</param>
+        /// <param name="animationFactory">
+        /// Factory function for creating new instance of an animation.
+        /// </param>
         public void Animation(string name, Func<Animation> animationFactory)
+        {
+        }
+
+        /// <summary>
+        /// Defines an animation hook that can be later used with $animate
+        /// service and directives that use this service.
+        /// </summary>
+        /// <remarks>>
+        /// Animations take effect only if the ngAnimate module is loaded.
+        /// </remarks>
+        /// <param name="name">Animantion name.</param>
+        /// <param name="animationFactory">
+        /// Factory function for creating new instance of an animation.
+        /// </param>
+        public void Animation(string name, Func<Bridge.AngularJS.jQuery.Animation> animationFactory)
         {
         }
 

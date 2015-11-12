@@ -85,6 +85,10 @@
       <Project>{99decd28-d3e3-4ea7-acae-ab5dfc9913bd}</Project>
       <Name>Bridge.Html5</Name>
     </ProjectReference>
+    <ProjectReference Include="..\jQuery2\Bridge.jQuery2.csproj">
+      <Project>{bccfb816-2f7f-4693-a16b-2bc0a7b39085}</Project>
+      <Name>Bridge.jQuery2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
@@ -94,8 +98,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="jqLite\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

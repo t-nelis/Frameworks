@@ -4,7 +4,31 @@ using System;
 
 namespace Bridge.AngularJS
 {
-    public class Animate
+    /// <summary>
+    /// The $animate service exposes a series of DOM utility methods that
+    /// provide support for animation hooks. The default behavior is the
+    /// application of DOM operations, however, when an animation is detected
+    /// (and animations are enabled), $animate will do the heavy lifting to
+    /// ensure that animation runs with the triggered DOM operation.
+    /// </summary>
+    /// <remarks>
+    /// By default $animate doesn't trigger any animations. This is because the
+    /// ngAnimate module isn't included and only when it is active then the
+    /// animation hooks that $animate triggers will be functional. Once active
+    /// then all structural ng- directives will trigger animations as they
+    /// perform their DOM-related operations (enter, leave and move). Other
+    /// directives such as ngClass, ngShow, ngHide and ngMessages also provide
+    /// support for animations. It is recommended that the $animate service is
+    /// always used when executing DOM-related procedures within directives.
+    /// </remarks>
+    /// <seealso cref="Bridge.AngularJS.jqLite.Animate"/>
+    /// <seealso cref="Bridge.AngularJS.jQuery.Animate"/>
+    /// <typeparam name="jQueryT">
+    /// One of either jQuery or jqLite to define the implementation of jQuery
+    /// being used. Note that what defines if jqLite or jQuery is being used is
+    /// including or not jQuery before AngularJS in the HTML file.
+    /// </typeparam>
+    public class Animate<jQueryT>
     {
         /// <summary>
         /// Event Phase (Start or Close)
@@ -30,8 +54,8 @@ namespace Bridge.AngularJS
         /// with the params: Element (HTML DOM Element) and phase which can be
         /// either 'start' or 'close'.
         /// </param>
-        public void On(string eventName, Element container,
-            Action<Element, Phase> callback)
+        public void On(string eventName, jQueryT container,
+            Action<jQueryT, Phase> callback)
         {
             return;
         }
@@ -48,7 +72,7 @@ namespace Bridge.AngularJS
         /// The container element the event listener was placed on.
         /// </param>
         /// <param name="callback">Callback.</param>
-        public void Off(string eventName, Element container = default(Element),
+        public void Off(string eventName, jQueryT container = default(jQueryT),
             Action callback = default(Action))
         {
             return;
@@ -68,7 +92,7 @@ namespace Bridge.AngularJS
         /// The host parent element that will be associated with the external
         /// element.
         /// </param>
-        public void Pin(Element childElement, Element parentElement)
+        public void Pin(jQueryT childElement, jQueryT parentElement)
         {
             return;
         }
@@ -85,7 +109,7 @@ namespace Bridge.AngularJS
         /// Whether or not the animations will be enabled for the element.
         /// </param>
         /// <returns>Whether or not animations are enabled.</returns>
-        public bool Enabled(Element element = default(Element), 
+        public bool Enabled(jQueryT element = default(jQueryT), 
             bool enabled = default(bool))
         {
             return default(bool);
@@ -125,8 +149,8 @@ namespace Bridge.AngularJS
         /// </param>
         /// <typeparam name="T">The underlying promise type.</typeparam>
         /// <returns>The animation callback promise.</returns>
-        public Promise<T> Enter<T>(Element element, Element parent,
-            Element after = default(Element), object options = default(object))
+        public Promise<T> Enter<T>(jQueryT element, jQueryT parent,
+            jQueryT after = default(jQueryT), object options = default(object))
         {
             return default(Promise<T>);
         }
@@ -154,8 +178,8 @@ namespace Bridge.AngularJS
         /// </param>
         /// <typeparam name="T">The underlying promise type.</typeparam>
         /// <returns>The animation callback promise.</returns>
-        public Promise<T> Move<T>(Element element, Element parent,
-            Element after = default(Element),
+        public Promise<T> Move<T>(jQueryT element, jQueryT parent,
+            jQueryT after = default(jQueryT),
             object options = default(object))
         {
             return default(Promise<T>);
@@ -175,7 +199,7 @@ namespace Bridge.AngularJS
         /// </param>
         /// <typeparam name="T">The underlying promise type.</typeparam>
         /// <returns>The animation callback promise.</returns>
-        public Promise<T> Leave<T>(Element element,
+        public Promise<T> Leave<T>(jQueryT element,
             object options = default(object))
         {
             return default(Promise<T>);
@@ -204,12 +228,41 @@ namespace Bridge.AngularJS
         /// element.
         /// </param>
         /// <typeparam name="T">The underlying promise type.</typeparam>
-        public Promise<T> AddClass<T>(Element element, string className,
+        public Promise<T> AddClass<T>(jQueryT element, string className,
             object options = default(object))
         {
             return default(Promise<T>);
         }
 
+        /// <summary>
+        /// Triggers a removeClass animation surrounding the removal of the
+        /// provided CSS class(es). Upon execution, the removeClass operation
+        /// will only be handled after the next digest and it will not trigger
+        /// an animation if element does not contain the CSS class or if the
+        /// class is added at a later step. Note that class-based animations
+        /// are treated differently compared to structural animations (like
+        /// enter, move and leave) since the CSS classes may be
+        /// added/removed at different points depending if CSS or JavaScript
+        /// animations are used.
+        /// </summary>
+        /// <typeparam name="T">The underlying promise type.</typeparam>
+        /// <param name="element">
+        /// The element which the CSS classes will be applied to.
+        /// </param>
+        /// <param name="className">
+        /// The CSS class(es) that will be added (multiple classes are
+        /// separated via spaces)
+        /// </param>
+        /// <param name="options">
+        /// An optional collection of options/styles that will be applied to
+        /// the element.
+        /// </param>
+        /// <returns></returns>
+        public Promise<T> RemoveClass<T>(jQueryT element, string className,
+            object options = default(object))
+        {
+            return default(Promise<T>);
+        }
         /// <summary>
         /// Performs both the addition and removal of a CSS classes on an
         /// element and (during the process) triggers an animation surrounding
@@ -238,7 +291,7 @@ namespace Bridge.AngularJS
         /// element.
         /// </param>
         /// <typeparam name="T">The animation callback promise.</typeparam>
-        public Promise<T> SetClass<T>(Element element, string add,
+        public Promise<T> SetClass<T>(jQueryT element, string add,
             string remove, object options = default(object))
         {
             return default(Promise<T>);
@@ -275,12 +328,66 @@ namespace Bridge.AngularJS
         /// the element.
         /// </remarks>
         [Name("animate")]
-        public Promise<T> AnimateIt<T>(Element element, object from, object to,
+        public Promise<T> AnimateIt<T>(jQueryT element, object from, object to,
             string className = default(string),
             object options = default(object))
         {
             return default(Promise<T>);
         }
     }
+
+    /// <summary>
+    /// The $animate service exposes a series of DOM utility methods that
+    /// provide support for animation hooks. The default behavior is the
+    /// application of DOM operations, however, when an animation is detected
+    /// (and animations are enabled), $animate will do the heavy lifting to
+    /// ensure that animation runs with the triggered DOM operation.
+    /// </summary>
+    /// <remarks>
+    /// By default $animate doesn't trigger any animations. This is because the
+    /// ngAnimate module isn't included and only when it is active then the
+    /// animation hooks that $animate triggers will be functional. Once active
+    /// then all structural ng- directives will trigger animations as they
+    /// perform their DOM-related operations (enter, leave and move). Other
+    /// directives such as ngClass, ngShow, ngHide and ngMessages also provide
+    /// support for animations. It is recommended that the $animate service is
+    /// always used when executing DOM-related procedures within directives.
+    /// </remarks>
+    /// <seealso cref="Bridge.AngularJS.Animate"/>
+    /// <seealso cref="Bridge.AngularJS.jQuery.Animate"/>
+    [Ignore]
+    [ObjectLiteral]
+    public class Animate : Animate<jqLite>
+    {
+    }
 }
 
+namespace Bridge.AngularJS.jQuery
+{
+    using jQuery = Bridge.jQuery2.jQuery;
+
+    /// <summary>
+    /// The $animate service exposes a series of DOM utility methods that
+    /// provide support for animation hooks. The default behavior is the
+    /// application of DOM operations, however, when an animation is detected
+    /// (and animations are enabled), $animate will do the heavy lifting to
+    /// ensure that animation runs with the triggered DOM operation.
+    /// </summary>
+    /// <remarks>
+    /// By default $animate doesn't trigger any animations. This is because the
+    /// ngAnimate module isn't included and only when it is active then the
+    /// animation hooks that $animate triggers will be functional. Once active
+    /// then all structural ng- directives will trigger animations as they
+    /// perform their DOM-related operations (enter, leave and move). Other
+    /// directives such as ngClass, ngShow, ngHide and ngMessages also provide
+    /// support for animations. It is recommended that the $animate service is
+    /// always used when executing DOM-related procedures within directives.
+    /// </remarks>
+    /// <seealso cref="Bridge.AngularJS.Animate"/>
+    /// <seealso cref="Bridge.AngularJS.jqLite.Animate"/>
+    [Ignore]
+    [ObjectLiteral]
+    public class Animate : Bridge.AngularJS.Animate<jQuery>
+    {
+    }
+}
