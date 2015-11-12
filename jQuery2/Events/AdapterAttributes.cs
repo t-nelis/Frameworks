@@ -16,6 +16,7 @@ namespace Bridge.jQuery2
     public abstract class AdapterAttribute : Bridge.AdapterAttribute
     {
         public const string Format = "$({1}).on('{0}', this.{2});";
+        public const string FormatScope = "$({1}).on('{0}', $.proxy(this.{2}, this));";
     }
 
     [Ignore]
