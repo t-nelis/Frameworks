@@ -2,7 +2,7 @@ using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
 {
-    [Ignore]
+    [External]
     public static partial class Bootstrap
     {
         /// <summary>
@@ -56,7 +56,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Possible operations on a dropdown
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum DropdownOperation
@@ -70,7 +70,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Events of a dropdown
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum DropdownEvent

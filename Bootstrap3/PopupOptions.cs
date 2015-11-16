@@ -6,7 +6,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Tooltip/popover delay
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class PopupDelay
     {
@@ -32,7 +32,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Tooltip/popover placement
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum PopupPlacement
@@ -59,7 +59,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Tooltip/popover trigger
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum PopupTrigger
@@ -103,7 +103,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Tooltip/popover viewport
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class PopupViewport
     {
@@ -129,7 +129,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// A base class for a tooltip and a popover options
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class PopupOptions
     {
@@ -232,7 +232,7 @@ namespace Bridge.Bootstrap3
         }
     }
 
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class TooltipOptions : PopupOptions
     {
@@ -260,7 +260,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Popover options
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class PopoverOptions : PopupOptions
     {

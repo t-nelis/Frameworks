@@ -2,7 +2,7 @@ using System;
 
 namespace Bridge.jQuery2
 {
-    [Ignore]
+    [External]
     public interface IDeferred
     {
         Deferred Always(params Action[] alwaysCallbacks);

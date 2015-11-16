@@ -1,6 +1,6 @@
 namespace Bridge.QUnit
 {
-    [Ignore]
+    [External]
     [Name("QUnit")]
     public partial class QUnit
     {

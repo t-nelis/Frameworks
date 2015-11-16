@@ -2,7 +2,7 @@ using System;
 
 namespace Bridge.QUnit
 {
-    [Ignore]
+    [External]
     public class Assert
     {
         /// <summary>

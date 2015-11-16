@@ -3,7 +3,7 @@ namespace Bridge.QUnit
     /// <summary>
     /// Configuration for QUnit
     /// </summary>
-    [Ignore]
+    [External]
     public class Configuration
     {
         /// <summary>

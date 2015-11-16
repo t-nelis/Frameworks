@@ -2,7 +2,7 @@ using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
 {
-    [Ignore]
+    [External]
     public static partial class Bootstrap
     {
         /// <summary>
@@ -44,7 +44,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Possible operations on a tab
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum TabOperation
@@ -58,7 +58,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Tab events
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum TabEvent

@@ -8,7 +8,7 @@ namespace Bridge.jQuery2
         public static readonly Fx Fx;
     }
 
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class Fx
     {

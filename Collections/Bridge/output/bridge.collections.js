@@ -26,7 +26,7 @@ Bridge.define('Bridge.Collections.BitArray', {
          * @param   {number}    n      
          * @param   {number}    div    use a conversion constant, e.g. BytesPerInt32 to get
          how many ints are required to store n bytes
-         * @return  {number}           
+         * @return  {number}
          */
         getArrayLength: function (n, div) {
             return n > 0 ? ((Bridge.Int.div((n - 1), div)) + 1) : 0;
@@ -36,7 +36,7 @@ Bridge.define('Bridge.Collections.BitArray', {
     m_length: 0,
     _version: 0,
     constructor$3: function (length) {
-        this.constructor$4(length, false);
+        Bridge.Collections.BitArray.prototype.constructor$4.call(this, length, false);
 
     },
     constructor$4: function (length, defaultValue) {
@@ -106,7 +106,6 @@ Bridge.define('Bridge.Collections.BitArray', {
         }
 
         this._version = 0;
-
     },
     constructor$5: function (values) {
         if (values === null) {
@@ -548,7 +547,7 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
     _comparer: null,
     _version: 0,
     constructor: function () {
-        this.constructor$3(new Bridge.EqualityComparer$1(T)());
+        Bridge.Collections.HashSet$1(T).prototype.constructor$3.call(this, new Bridge.EqualityComparer$1(T)());
 
     },
     constructor$3: function (comparer) {
@@ -562,11 +561,11 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
         this._version = 0;
     },
     constructor$1: function (collection) {
-        this.constructor$2(collection, new Bridge.EqualityComparer$1(T)());
+        Bridge.Collections.HashSet$1(T).prototype.constructor$2.call(this, collection, new Bridge.EqualityComparer$1(T)());
 
     },
     constructor$2: function (collection, comparer) {
-        this.constructor$3(comparer);
+        Bridge.Collections.HashSet$1(T).prototype.constructor$3.call(this, comparer);
 
         if (collection === null) {
             throw new Bridge.ArgumentNullException("collection");
@@ -611,7 +610,6 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
         this._version++;
     },
     arrayClear: function (array, index, length) {
-
     },
     contains: function (item) {
         if (this._buckets !== null) {
@@ -776,7 +774,7 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
             return this.isSubsetOfHashSetWithSameEC(otherAsSet);
         }
         else  {
-            var result = this.checkUniqueAndUnfoundElements.$clone()(other, false);
+            var result = this.checkUniqueAndUnfoundElements(other, false);
             return (result.uniqueCount === this._count && result.unfoundCount >= 0);
         }
     },
@@ -797,7 +795,7 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
                 return this.isSubsetOfHashSetWithSameEC(otherAsSet);
             }
         }
-        var result = this.checkUniqueAndUnfoundElements.$clone()(other, false);
+        var result = this.checkUniqueAndUnfoundElements(other, false);
         return (result.uniqueCount === this._count && result.unfoundCount > 0);
     },
     isSupersetOf: function (other) {
@@ -838,7 +836,7 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
                 return this.containsAllElements(otherAsSet);
             }
         }
-        var result = this.checkUniqueAndUnfoundElements.$clone()(other, true);
+        var result = this.checkUniqueAndUnfoundElements(other, true);
         return (result.uniqueCount < this._count && result.unfoundCount === 0);
     },
     overlaps: function (other) {
@@ -876,7 +874,7 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
                     return false;
                 }
             }
-            var result = this.checkUniqueAndUnfoundElements.$clone()(other, true);
+            var result = this.checkUniqueAndUnfoundElements(other, true);
             return (result.uniqueCount === this._count && result.unfoundCount === 0);
         }
     },
@@ -956,10 +954,10 @@ Bridge.define('Bridge.Collections.HashSet$1', function (T) { return {
             }
         }
         var newBuckets = Bridge.Array.init(newSize, 0);
-        for (var i11 = 0; i11 < this._lastIndex; i11++) {
-            var bucket = newSlots[i11].hashCode % newSize;
-            newSlots[i11].next = newBuckets[bucket] - 1;
-            newBuckets[bucket] = i11 + 1;
+        for (var i2 = 0; i2 < this._lastIndex; i2++) {
+            var bucket = newSlots[i2].hashCode % newSize;
+            newSlots[i2].next = newBuckets[bucket] - 1;
+            newBuckets[bucket] = i2 + 1;
         }
         this._slots = newSlots;
         this._buckets = newBuckets;
@@ -1806,3 +1804,5 @@ Bridge.define('Bridge.Collections.Enumerator', function (T) { return {
         return s;
     }
 }; });
+
+Bridge.init();

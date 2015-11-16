@@ -5,7 +5,7 @@ namespace Bridge.jQuery2
     /// <summary>
     ///
     /// </summary>
-    [Ignore]
+    [External]
     [Constructor("$")]
     [Name("$")]
     public partial class jQuery : IEnumerable

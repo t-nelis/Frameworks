@@ -2,7 +2,7 @@ using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
 {
-    [Ignore]
+    [External]
     public static partial class Bootstrap
     {
         /// <summary>
@@ -112,7 +112,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Carousel options
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class CarouselOptions
     {
@@ -150,7 +150,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Carousel operations
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum CarouselOperation
@@ -182,7 +182,7 @@ namespace Bridge.Bootstrap3
     ///     - direction: The direction in which the carousel is sliding (either "left" or "right").
     ///     - relatedTarget: The DOM element that is being slid into place as the active item.
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum CarouselEvent

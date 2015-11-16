@@ -1,6 +1,6 @@
 namespace Bridge.jQuery2
 {
-    [Ignore]
+    [External]
     public enum JqueryEventTarget
     {
         [Template("{0}")]
@@ -10,14 +10,14 @@ namespace Bridge.jQuery2
         Value
     }
 
-    [Ignore]
+    [External]
     public abstract class AdapterAttribute : Bridge.AdapterAttribute
     {
         public const string Format = "$({1}).on('{0}', this.{2});";
         public const string FormatScope = "$({1}).on('{0}', $.proxy(this.{2}, this));";
     }
 
-    [Ignore]
+    [External]
     public class jQueryEventAttribute : AdapterAttribute
     {
         public const bool IsCommonEvent = true;
@@ -27,7 +27,7 @@ namespace Bridge.jQuery2
         }
     }
 
-    [Ignore]
+    [External]
     public class ClickAttribute : AdapterAttribute
     {
         public const string Event = "click";

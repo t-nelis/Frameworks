@@ -3,7 +3,7 @@ using System;
 
 namespace Bridge.jQuery2
 {
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public partial class AjaxOptions
     {

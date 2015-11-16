@@ -3,7 +3,7 @@ namespace Bridge.QUnit
     /// <summary>
     ///  Advanced and extensible data dumping for JavaScript.
     /// </summary>
-    [Ignore]
+    [External]
     public class Dump
     {
         /// <summary>
