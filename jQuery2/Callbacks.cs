@@ -29,7 +29,7 @@ namespace Bridge.jQuery2
     /// <summary>
     /// The jQuery.Callbacks() function, introduced in version 1.7, returns a multi-purpose object that provides a powerful way to manage callback lists. It supports adding, removing, firing, and disabling callbacks.
     /// </summary>
-    [Ignore]
+    [External]
     [Name("Object")]
     public class Callbacks
     {

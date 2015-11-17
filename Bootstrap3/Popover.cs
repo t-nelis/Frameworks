@@ -3,7 +3,7 @@ using System;
 
 namespace Bridge.Bootstrap3
 {
-    [Ignore]
+    [External]
     public static partial class Bootstrap
     {
         /// <summary>
@@ -101,7 +101,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Popover events
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum PopoverEvent

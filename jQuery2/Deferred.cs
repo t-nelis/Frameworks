@@ -126,7 +126,7 @@ namespace Bridge.jQuery2
     /// The Deferred object is a chainable utility object created by calling the jQuery.Deferred() method. It can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
     /// The Deferred object is chainable, similar to the way a jQuery object is chainable, but it has its own methods. After creating a Deferred object, you can use any of the methods below by either chaining directly from the object creation or saving the object in a variable and invoking one or more methods on that variable.
     /// </summary>
-    [Ignore]
+    [External]
     [Name("Object")]
     [Constructor("$.Deferred")]
     public class Deferred : IPromise, IDeferred
@@ -369,7 +369,7 @@ namespace Bridge.jQuery2
     /// The Deferred object is a chainable utility object created by calling the jQuery.Deferred() method. It can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
     /// The Deferred object is chainable, similar to the way a jQuery object is chainable, but it has its own methods. After creating a Deferred object, you can use any of the methods below by either chaining directly from the object creation or saving the object in a variable and invoking one or more methods on that variable.
     /// </summary>
-    [Ignore]
+    [External]
     [Name("Object")]
     [Constructor("$.Deferred")]
     public class Deferred<T> : Deferred
@@ -435,7 +435,7 @@ namespace Bridge.jQuery2
     /// The Deferred object is a chainable utility object created by calling the jQuery.Deferred() method. It can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
     /// The Deferred object is chainable, similar to the way a jQuery object is chainable, but it has its own methods. After creating a Deferred object, you can use any of the methods below by either chaining directly from the object creation or saving the object in a variable and invoking one or more methods on that variable.
     /// </summary>
-    [Ignore]
+    [External]
     [Name("Object")]
     [Constructor("$.Deferred")]
     public class Deferred<T1, T2> : Deferred
@@ -502,7 +502,7 @@ namespace Bridge.jQuery2
     /// The Deferred object is a chainable utility object created by calling the jQuery.Deferred() method. It can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
     /// The Deferred object is chainable, similar to the way a jQuery object is chainable, but it has its own methods. After creating a Deferred object, you can use any of the methods below by either chaining directly from the object creation or saving the object in a variable and invoking one or more methods on that variable.
     /// </summary>
-    [Ignore]
+    [External]
     [Name("Object")]
     [Constructor("$.Deferred")]
     public class Deferred<T1, T2, T3> : Deferred

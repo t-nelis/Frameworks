@@ -1,4 +1,4 @@
-using Bridge.Html5;
+﻿using Bridge.Html5;
 
 namespace Bridge.jQuery2
 {
@@ -31,7 +31,7 @@ namespace Bridge.jQuery2
     /// <summary>
     /// jQuery’s event system normalizes the event object according to W3C standards. The event object is guaranteed to be passed to the event handler. Most properties from the original event are copied over and normalized to the new event object.
     /// </summary>
-    [Ignore]
+    [External]
     [Name("jQuery.Event")]
     public class jQueryEvent
     {
@@ -172,7 +172,7 @@ namespace Bridge.jQuery2
         }
     }
 
-    [Ignore]
+    [External]
     [Name("jQuery.Event")]
     public class jQueryUiEvent : jQueryEvent
     {
@@ -213,7 +213,7 @@ namespace Bridge.jQuery2
         public int PageY;
     }
 
-    [Ignore]
+    [External]
     [Name("jQuery.Event")]
     public class jQueryFocusEvent : jQueryUiEvent
     {
@@ -242,7 +242,7 @@ namespace Bridge.jQuery2
         public readonly Element RelatedTarget;
     }
 
-    [Ignore]
+    [External]
     [Name("jQuery.Event")]
     public class jQueryKeyboardEvent : jQueryUiEvent
     {
@@ -315,7 +315,7 @@ namespace Bridge.jQuery2
         public readonly int Which;
     }
 
-    [Ignore]
+    [External]
     [Name("jQuery.Event")]
     public class jQueryMouseEvent : jQueryUiEvent
     {

@@ -2,7 +2,7 @@ using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
 {
-    [Ignore]
+    [External]
     public static partial class Bootstrap
     {
         /// <summary>
@@ -89,7 +89,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Collapse options
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class CollapseOptions
     {
@@ -117,7 +117,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Collapse operations
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum CollapseOperation
@@ -141,7 +141,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Collapse events
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum CollapseEvent

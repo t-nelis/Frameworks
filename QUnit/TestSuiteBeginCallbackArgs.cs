@@ -1,6 +1,6 @@
 namespace Bridge.QUnit
 {
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class TestSuiteBeginCallbackArgs
     {

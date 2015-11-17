@@ -2,7 +2,7 @@ using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
 {
-    [Ignore]
+    [External]
     public static partial class Bootstrap
     {
         /// <summary>
@@ -56,7 +56,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Possible operations on an alert
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum AlertOperation
@@ -70,7 +70,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Alert events
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum AlertEvents

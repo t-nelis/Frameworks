@@ -151,7 +151,7 @@ namespace Bridge.jQuery2
         }
     }
 
-    [Ignore]
+    [External]
     [Name("Object")]
     [Constructor("{}")]
     public class CssHook
@@ -160,7 +160,7 @@ namespace Bridge.jQuery2
         public Action<Element, object> Set;
     }
 
-    [Ignore]
+    [External]
     [Name("Object")]
     [Constructor("{}")]
     public class CssHooks
@@ -177,7 +177,7 @@ namespace Bridge.jQuery2
         }
     }
 
-    [Ignore]
+    [External]
     [Name("Object")]
     [Constructor("{}")]
     public class Point

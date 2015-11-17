@@ -3,7 +3,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Operations on a tooltip/popover
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum PopupOperation

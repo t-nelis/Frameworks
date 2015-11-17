@@ -6,7 +6,7 @@ namespace Bridge.QUnit
     /// You can specify code to run before and after each test using the hooks argument, and also to create properties that will be shared on the context of each test.
     /// Any additional properties on the hooks object will be added to that context.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ModuleHooks
     {

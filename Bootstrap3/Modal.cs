@@ -2,7 +2,7 @@ using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
 {
-    [Ignore]
+    [External]
     public static partial class Bootstrap
     {
         /// <summary>
@@ -81,7 +81,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Possible operations on a modal
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum ModalOperation
@@ -105,7 +105,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Modal options
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ModalOptions
     {
@@ -154,7 +154,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Events of a modal
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum ModalEvent

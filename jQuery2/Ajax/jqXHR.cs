@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Bridge.jQuery2
 {
-    [Ignore]
+    [External]
     public partial class jqXHR : XMLHttpRequest, IPromise, IDeferred
     {
         /// <summary>

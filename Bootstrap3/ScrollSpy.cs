@@ -2,7 +2,7 @@ using Bridge.jQuery2;
 
 namespace Bridge.Bootstrap3
 {
-    [Ignore]
+    [External]
     public static partial class Bootstrap
     {
         /// <summary>
@@ -56,7 +56,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// ScrollSpy options
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ScrollSpyOptions
     {
@@ -83,7 +83,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// Possible operations on a scrollspy
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum ScrollSpyOperation
@@ -97,7 +97,7 @@ namespace Bridge.Bootstrap3
     /// <summary>
     /// ScrollSpy events
     /// </summary>
-    [Ignore]
+    [External]
     [Enum(Emit.StringNameLowerCase)]
     [Name("String")]
     public enum ScrollSpyEvent
