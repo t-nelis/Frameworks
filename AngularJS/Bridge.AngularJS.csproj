@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Bridge.AngularJS.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,6 +36,60 @@
     <AdditionalExplicitAssemblyReferences />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Directives\App.cs" />
+    <Compile Include="Directives\Bind.cs" />
+    <Compile Include="Directives\BindHtml.cs" />
+    <Compile Include="Directives\BindTemplate.cs" />
+    <Compile Include="Directives\Blur.cs" />
+    <Compile Include="Directives\Change.cs" />
+    <Compile Include="Directives\Checked.cs" />
+    <Compile Include="Directives\Class.cs" />
+    <Compile Include="Directives\ClassEven.cs" />
+    <Compile Include="Directives\ClassOdd.cs" />
+    <Compile Include="Directives\Click.cs" />
+    <Compile Include="Directives\Cloak.cs" />
+    <Compile Include="Directives\Controller.cs" />
+    <Compile Include="Directives\Copy.cs" />
+    <Compile Include="Directives\Csp.cs" />
+    <Compile Include="Directives\Cut.cs" />
+    <Compile Include="Directives\Dblclick.cs" />
+    <Compile Include="Directives\Disabled.cs" />
+    <Compile Include="Directives\Focus.cs" />
+    <Compile Include="Directives\Form.cs" />
+    <Compile Include="Directives\Hide.cs" />
+    <Compile Include="Directives\Href.cs" />
+    <Compile Include="Directives\If.cs" />
+    <Compile Include="Directives\Include.cs" />
+    <Compile Include="Directives\Init.cs" />
+    <Compile Include="Directives\Jq.cs" />
+    <Compile Include="Directives\Keydown.cs" />
+    <Compile Include="Directives\Keypress.cs" />
+    <Compile Include="Directives\Keyup.cs" />
+    <Compile Include="Directives\List.cs" />
+    <Compile Include="Directives\Model.cs" />
+    <Compile Include="Directives\ModelOptions.cs" />
+    <Compile Include="Directives\Mousedown.cs" />
+    <Compile Include="Directives\Mouseenter.cs" />
+    <Compile Include="Directives\Mouseleave.cs" />
+    <Compile Include="Directives\Mousemove.cs" />
+    <Compile Include="Directives\Mouseover.cs" />
+    <Compile Include="Directives\Mouseup.cs" />
+    <Compile Include="Directives\NonBindlable.cs" />
+    <Compile Include="Directives\Open.cs" />
+    <Compile Include="Directives\Options.cs" />
+    <Compile Include="Directives\Paste.cs" />
+    <Compile Include="Directives\Pluralize.cs" />
+    <Compile Include="Directives\Readonly.cs" />
+    <Compile Include="Directives\Repeat.cs" />
+    <Compile Include="Directives\Selected.cs" />
+    <Compile Include="Directives\Show.cs" />
+    <Compile Include="Directives\Src.cs" />
+    <Compile Include="Directives\Srcset.cs" />
+    <Compile Include="Directives\Style.cs" />
+    <Compile Include="Directives\Submit.cs" />
+    <Compile Include="Directives\Switch.cs" />
+    <Compile Include="Directives\Transclude.cs" />
+    <Compile Include="Directives\Value.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repeat.cs" />
     <Compile Include="Services\Http.cs" />
@@ -44,7 +99,6 @@
     <Compile Include="Auto.cs" />
     <Compile Include="Animation.cs" />
     <Compile Include="Route.cs" />
-    <Compile Include="Directives.cs" />
     <Compile Include="Resource.cs" />
     <Compile Include="Services\CacheFactory.cs" />
     <Compile Include="Services\Animate.cs" />
