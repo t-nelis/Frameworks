@@ -3,6 +3,10 @@ using System;
 
 namespace Bridge.AngularJS.Route
 {
+    /// <summary>
+    /// ngRoute-specific directives extension methods for Bridge.HTML5
+    /// Element class.
+    /// </summary>
     [Ignore]
     public static class Directives
     {
@@ -34,6 +38,9 @@ namespace Bridge.AngularJS.Route
         }
     }
 
+    /// <summary>
+    /// Route Provider of ngRoute.
+    /// </summary>
     [Ignore]
     public class RouteProvider
     {
@@ -71,11 +78,9 @@ namespace Bridge.AngularJS.Route
         }
     }
 
-    [Ignore]
-    public static class Route
-    {
-    }
-
+    /// <summary>
+    /// Mapping information structure for use with Route Provider.
+    /// </summary>
     [Ignore]
     [ObjectLiteral]
     public class MappingInformation
@@ -171,6 +176,9 @@ namespace Bridge.AngularJS.Route
         public bool CaseInsensitiveMatch = false;
     }
 
+    /// <summary>
+    /// Structure for dependency mapping.
+    /// </summary>
     [Ignore]
     [ObjectLiteral]
     public class ResolveMap

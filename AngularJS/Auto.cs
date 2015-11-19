@@ -2,10 +2,16 @@
 
 namespace Bridge.AngularJS
 {
+    /// <summary>
+    /// Module name instance.
+    /// </summary>
     [Ignore]
     [Name("auto")]
     public class Auto
     {
+        /// <summary>
+        /// Auto module instance's constructor.
+        /// </summary>
         public Auto()
         {
         }
@@ -317,6 +323,11 @@ namespace Bridge.AngularJS.Services
         }
     }
 
+    /// <summary>
+    /// The $injector is used to retrieve object instances as defined by
+    /// provider, instantiate types, invoke methods, and load modules.
+    /// This is an overload for a base object type.
+    /// </summary>
     [Ignore]
     public class Injector : Injector<object>
     { }

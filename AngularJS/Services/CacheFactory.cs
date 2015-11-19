@@ -2,12 +2,6 @@
 
 namespace Bridge.AngularJS.Services
 {
-    [Ignore]
-    public static class CacheFactory
-    {
-        //public static
-    }
-
     /// <summary>
     /// A cache object used to store and retrieve data, primarily used by $http
     /// and the 'script' directive to cache templates and other data.

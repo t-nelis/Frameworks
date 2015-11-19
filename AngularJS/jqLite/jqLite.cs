@@ -76,8 +76,8 @@ namespace Bridge.AngularJS
         /// Get the descendants of each element in the current set of matched
         /// elements, filtered by a selector, jQuery object, or element.
         /// </summary>
-        /// <param name="selector">
-        /// A string containing a selector expression to match elements against.
+        /// <param name="tagName">
+        /// A string containing the tag name.
         /// </param>
         /// <remarks>
         /// Limitations for jqLite version:

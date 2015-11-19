@@ -31,43 +31,31 @@ namespace Bridge.AngularJS
     [ObjectLiteral]
     public class Animation<T>
     {
-        // Function which returns a function to cancel animation
+        /// <summary>
+        /// Function which returns another function, which purpose is to cancel animation
+        /// </summary>
         public Func<T, Action, Action<T>> EventName;
 
         /// <summary>
-        /// The event triggered when the animation is added to a CSS class.
-        /// </summary>
-        /// <typeparam name="T">
-        /// The element being added.
-        /// </typeparam>
-        /// <typeparam name="string">
-        /// The target CSS class name.
-        /// </typeparam>
-        /// <typeparam name="Action">
-        /// The done() callback.
-        /// </typeparam>
-        /// <typeparam name="Action<bool>">
-        /// The abort action, where the 'bool' parameter is whether it is an
+        /// The event triggered when the animation is added to a CSS class
+        /// where the Func&lt;&gt; parameters are:
+        /// "T": The element being added.
+        /// "string": The target CSS class name.
+        /// "Action": The done() callback.
+        /// "Action&lt;bool&gt;": The abort action, where the 'bool' parameter is whether it is an
         /// animation cancel request (true) or not (false).
-        /// </typeparam>
+        /// </summary>
         public Func<T, string, Action, Action<bool>> AddClass;
 
         /// <summary>
-        /// The event triggered when the animation is removed from a CSS class.
-        /// </summary>
-        /// <typeparam name="T">
-        /// The element being added.
-        /// </typeparam>
-        /// <typeparam name="string">
-        /// The target CSS class name.
-        /// </typeparam>
-        /// <typeparam name="Action">
-        /// The done() callback.
-        /// </typeparam>
-        /// <typeparam name="Action<bool>">
-        /// The abort action, where the 'bool' parameter is whether it is an
+        /// The event triggered when the animation is removed from a CSS class
+        /// where the Func&lt;&gt; parameters are:
+        /// "T": The element being added.
+        /// "string": The target CSS class name.
+        /// "Action": The done() callback.
+        /// "Action&lt;bool&gt;": The abort action, where the 'bool' parameter is whether it is an
         /// animation cancel request (true) or not (false).
-        /// </typeparam>
+        /// </summary>
         public Func<T, string, Action, Action<bool>> RemoveClass;
     }
 
@@ -84,7 +72,7 @@ namespace Bridge.AngularJS
     /// For instance, AddClass's third parameter in $animate is a list of
     /// options. Here, it is an Action, representing the done() callback.
     /// </remarks>
-    /// <seealso cref="Bridge.AngularJS.Animation<T>"/>
+    /// <seealso cref="Bridge.AngularJS.Animation&lt;T&gt;"/>
     /// <seealso cref="Bridge.AngularJS.jQuery.Animation"/>
     [Ignore]
     [ObjectLiteral]
@@ -111,7 +99,7 @@ namespace Bridge.AngularJS.jQuery
     /// options. Here, it is an Action, representing the done() callback.
     /// </remarks>
     /// <seealso cref="Bridge.AngularJS.Animation"/>
-    /// <seealso cref="Bridge.AngularJS.Animation<T>"/>
+    /// <seealso cref="Bridge.AngularJS.Animation&lt;T&gt;"/>
     [Ignore]
     [ObjectLiteral]
     public class Animation : Bridge.AngularJS.Animation<jQuery>

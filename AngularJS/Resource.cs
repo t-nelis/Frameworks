@@ -4,25 +4,60 @@ using System;
 
 namespace Bridge.AngularJS.Resource
 {
+    /// <summary>
+    /// Valid operations on a Resource
+    /// </summary>
     [Ignore]
     [ObjectLiteral]
     public class Resource
     {
+        /// <summary>
+        /// Get operation.
+        /// </summary>
         public ResourceQuery Get;
+
+        /// <summary>
+        /// Save operation.
+        /// </summary>
         public ResourceQuery Save;
+
+        /// <summary>
+        /// Query operation.
+        /// </summary>
         public ResourceQuery Query;
+
+        /// <summary>
+        /// Remove operation.
+        /// </summary>
         public ResourceQuery Remove;
+
+        /// <summary>
+        /// Delete operation.
+        /// </summary>
         public ResourceQuery Delete;
     }
 
+    /// <summary>
+    /// Resource Query fields.
+    /// </summary>
     [Ignore]
     [ObjectLiteral]
     public class ResourceQuery
     {
+        /// <summary>
+        /// Method name.
+        /// </summary>
         public string Method;
+
+        /// <summary>
+        /// Whether the resource is an Array.
+        /// </summary>
         public bool isArray;
     }
 
+    /// <summary>
+    /// Resource Service entities.
+    /// </summary>
     [Ignore]
     public static class Service
     {
@@ -77,17 +112,42 @@ namespace Bridge.AngularJS.Resource
 
     }
 
+    /// <summary>
+    /// Valid operations on Resources' actions.
+    /// </summary>
     [Ignore]
     [ObjectLiteral]
     public class ResourceActions
     {
+        /// <summary>
+        /// Get operation.
+        /// </summary>
         public ActionInfo Get;
+
+        /// <summary>
+        /// Save operation.
+        /// </summary>
         public ActionInfo Save;
+
+        /// <summary>
+        /// Remove operation.
+        /// </summary>
         public ActionInfo Query;
+
+        /// <summary>
+        /// Remove operation.
+        /// </summary>
         public ActionInfo Remove;
+
+        /// <summary>
+        /// Delete operation.
+        /// </summary>
         public ActionInfo Delete;
     }
 
+    /// <summary>
+    /// Information about resource' actions.
+    /// </summary>
     [Ignore]
     [ObjectLiteral]
     public class ActionInfo
@@ -175,10 +235,14 @@ namespace Bridge.AngularJS.Resource
         /// responseError. Both response and responseError interceptors get
         /// called with http response object.
         /// </summary>
-        /// <seealso cref="Bridge.AngularJS.Services.Interceptor"/>
+        /// <seealso cref="Bridge.AngularJS.Services.Interceptors"/>
         public Interceptors Interceptor;
     }
 
+    /// <summary>
+    /// Information about resource' actions.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     [Ignore]
     [ObjectLiteral]
     public class ActionInfo<T> : ActionInfo
@@ -189,6 +253,9 @@ namespace Bridge.AngularJS.Resource
         public new Promise<T> Timeout;
     }
 
+    /// <summary>
+    /// Options supported by a Resource.
+    /// </summary>
     [Ignore]
     [ObjectLiteral]
     public class ResourceOptions

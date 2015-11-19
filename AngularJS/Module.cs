@@ -2,6 +2,9 @@
 
 namespace Bridge.AngularJS
 {
+    /// <summary>
+    /// Module structure.
+    /// </summary>
     [Ignore]
     public class Module
     {
@@ -19,10 +22,6 @@ namespace Bridge.AngularJS
         #endregion
 
         #region Methods
-        public Module()
-        {
-        }
-
         /// <summary>
         /// Register a provider function with the $injector.
         /// </summary>
@@ -273,7 +272,7 @@ namespace Bridge.AngularJS
         /// <typeparam name="T">
         /// The type of the argument passed to the function.
         /// </typeparam>
-        /// <seealso cref="Provider Recipe"/>
+        /// <seealso cref="!:Provider Recipe"/>
         /// <remarks>
         /// Useful for service configuration.
         /// </remarks>

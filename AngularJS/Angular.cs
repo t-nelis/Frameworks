@@ -5,14 +5,13 @@ using System;
 
 namespace Bridge.AngularJS
 {
+    /// <summary>
+    /// Main AngularJS object/reference.
+    /// </summary>
     [Ignore]
     [Name("angular")]
     public class Angular
     {
-        public Angular()
-        {
-        }
-
         public static Action Bind(object self, Action fn,
             string[] args = default(string[]))
         {
@@ -121,37 +120,71 @@ namespace Bridge.AngularJS
             return default(bool);
         }
 
+        /// <summary>
+        /// Checks if value is considered a string.
+        /// </summary>
+        /// <typeparam name="T">Type of the structure.</typeparam>
+        /// <param name="value">Reference to the variable containing the data.</param>
+        /// <returns></returns>
         public static bool IsString<T>(T value)
         {
             return default(bool);
         }
 
+        /// <summary>
+        /// Checks if value is undefined.
+        /// </summary>
+        /// <typeparam name="T">Type of the value to test against.</typeparam>
+        /// <param name="value">Value reference.</param>
+        /// <returns></returns>
         public static bool IsUndefined<T>(T value)
         {
             return default(bool);
         }
 
+        /// <summary>
+        /// Convert string to lowercase.
+        /// </summary>
+        /// <param name="what"></param>
+        /// <returns></returns>
         public static string Lowercase(string what)
         {
             return default(string);
         }
 
+        /// <summary>
+        /// Define a module.
+        /// </summary>
+        /// <param name="name">Name of the Module.</param>
+        /// <returns></returns>
         [Template("{this}.module({name}, [])")]
         public static Module Module(string name)
         {
             return default(Module);
         }
 
+        /// <summary>
+        /// Define a module.
+        /// </summary>
+        /// <param name="name">Name of the Module.</param>
+        /// <param name="dependencies">List of modules which this module depends on.</param>
+        /// <returns>The module instance.</returns>
         public static Module Module(string name, string[] dependencies)
         {
             return default(Module);
         }
 
+        /// <summary>
+        /// Do nothing.
+        /// </summary>
         public static void Noop()
         {
             return;
         }
 
+        /// <summary>
+        /// Reload page with debug enabled.
+        /// </summary>
         public static void ReloadWithDebugInfo()
         {
             return;
@@ -165,6 +198,11 @@ namespace Bridge.AngularJS
             return default(string);
         }
 
+        /// <summary>
+        /// Convert string to uppercase.
+        /// </summary>
+        /// <param name="what"></param>
+        /// <returns></returns>
         public static string Uppercase(string what)
         {
             return default(string);

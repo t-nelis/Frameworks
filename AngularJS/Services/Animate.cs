@@ -21,7 +21,7 @@ namespace Bridge.AngularJS
     /// support for animations. It is recommended that the $animate service is
     /// always used when executing DOM-related procedures within directives.
     /// </remarks>
-    /// <seealso cref="Bridge.AngularJS.jqLite.Animate"/>
+    /// <seealso cref="Bridge.AngularJS.Animate"/>
     /// <seealso cref="Bridge.AngularJS.jQuery.Animate"/>
     /// <typeparam name="jQueryT">
     /// One of either jQuery or jqLite to define the implementation of jQuery
@@ -34,7 +34,18 @@ namespace Bridge.AngularJS
         /// Event Phase (Start or Close)
         /// </summary>
         [Enum(Emit.StringNameLowerCase)]
-        public enum Phase { Start, Close }
+        public enum Phase
+        {
+            /// <summary>
+            /// Starting point.
+            /// </summary>
+            Start,
+
+            /// <summary>
+            /// Closure point.
+            /// </summary>
+            Close
+        }
 
         /// <summary>
         /// Sets up an event listener to fire whenever the animation event
@@ -353,7 +364,7 @@ namespace Bridge.AngularJS
     /// support for animations. It is recommended that the $animate service is
     /// always used when executing DOM-related procedures within directives.
     /// </remarks>
-    /// <seealso cref="Bridge.AngularJS.Animate"/>
+    /// <seealso cref="Bridge.AngularJS.Animate&lt;T&gt;"/>
     /// <seealso cref="Bridge.AngularJS.jQuery.Animate"/>
     [Ignore]
     [ObjectLiteral]
@@ -383,8 +394,8 @@ namespace Bridge.AngularJS.jQuery
     /// support for animations. It is recommended that the $animate service is
     /// always used when executing DOM-related procedures within directives.
     /// </remarks>
+    /// <seealso cref="Bridge.AngularJS.Animate&lt;T&gt;"/>
     /// <seealso cref="Bridge.AngularJS.Animate"/>
-    /// <seealso cref="Bridge.AngularJS.jqLite.Animate"/>
     [Ignore]
     [ObjectLiteral]
     public class Animate : Bridge.AngularJS.Animate<jQuery>
