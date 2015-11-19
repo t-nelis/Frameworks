@@ -2,7 +2,7 @@
 
 namespace Bridge.AngularJS.Services
 {
-    [Ignore]
+    [External]
     public class Http<T>
     {
         public Http()
@@ -15,7 +15,7 @@ namespace Bridge.AngularJS.Services
         }
     }
 
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class Interceptors
     {

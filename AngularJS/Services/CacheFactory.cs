@@ -6,7 +6,7 @@ namespace Bridge.AngularJS.Services
     /// A cache object used to store and retrieve data, primarily used by $http
     /// and the 'script' directive to cache templates and other data.
     /// </summary>
-    [Ignore]
+    [External]
     public class Cache
     {
         /// <summary>
@@ -76,7 +76,7 @@ namespace Bridge.AngularJS.Services
     /// <summary>
     /// Cache info.
     /// </summary>
-    [Ignore]
+    [External]
     public class CacheInfo
     {
         /// <summary>

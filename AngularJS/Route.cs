@@ -7,7 +7,7 @@ namespace Bridge.AngularJS.Route
     /// ngRoute-specific directives extension methods for Bridge.HTML5
     /// Element class.
     /// </summary>
-    [Ignore]
+    [External]
     public static class Directives
     {
         /// <summary>
@@ -41,7 +41,7 @@ namespace Bridge.AngularJS.Route
     /// <summary>
     /// Route Provider of ngRoute.
     /// </summary>
-    [Ignore]
+    [External]
     public class RouteProvider
     {
         /// <summary>
@@ -81,7 +81,7 @@ namespace Bridge.AngularJS.Route
     /// <summary>
     /// Mapping information structure for use with Route Provider.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class MappingInformation
     {
@@ -179,7 +179,7 @@ namespace Bridge.AngularJS.Route
     /// <summary>
     /// Structure for dependency mapping.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ResolveMap
     {

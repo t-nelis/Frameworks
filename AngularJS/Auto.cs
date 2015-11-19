@@ -5,7 +5,7 @@ namespace Bridge.AngularJS
     /// <summary>
     /// Module name instance.
     /// </summary>
-    [Ignore]
+    [External]
     [Name("auto")]
     public class Auto
     {
@@ -25,7 +25,7 @@ namespace Bridge.AngularJS.Services
     /// provider, instantiate types, invoke methods, and load modules.
     /// </summary>
     /// <typeparam name="T">Expected type of the instance.</typeparam>
-    [Ignore]
+    [External]
     public class Injector<T>
     {
         /// <summary>
@@ -120,7 +120,7 @@ namespace Bridge.AngularJS.Services
     /// angular.Module.
     /// </summary>
     /// <typeparam name="T">Expected type of the instance.</typeparam>
-    [Ignore]
+    [External]
     public class Provide<T>
     {
         /// <summary>
@@ -328,7 +328,7 @@ namespace Bridge.AngularJS.Services
     /// provider, instantiate types, invoke methods, and load modules.
     /// This is an overload for a base object type.
     /// </summary>
-    [Ignore]
+    [External]
     public class Injector : Injector<object>
     { }
 
@@ -337,7 +337,7 @@ namespace Bridge.AngularJS.Services
     /// with the $injector. Many of these functions are also exposed on
     /// angular.Module.
     /// </summary>
-    [Ignore]
+    [External]
     public class Provide : Provide<object>
     { }
 }

@@ -8,7 +8,7 @@ namespace Bridge.AngularJS
     /// <summary>
     /// Main AngularJS object/reference.
     /// </summary>
-    [Ignore]
+    [External]
     [Name("angular")]
     public class Angular
     {

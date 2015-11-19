@@ -366,7 +366,7 @@ namespace Bridge.AngularJS
     /// </remarks>
     /// <seealso cref="Bridge.AngularJS.Animate&lt;T&gt;"/>
     /// <seealso cref="Bridge.AngularJS.jQuery.Animate"/>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class Animate : Animate<jqLite>
     {
@@ -396,7 +396,7 @@ namespace Bridge.AngularJS.jQuery
     /// </remarks>
     /// <seealso cref="Bridge.AngularJS.Animate&lt;T&gt;"/>
     /// <seealso cref="Bridge.AngularJS.Animate"/>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class Animate : Bridge.AngularJS.Animate<jQuery>
     {

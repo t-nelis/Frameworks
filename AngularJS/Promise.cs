@@ -3,7 +3,7 @@ using System;
 
 namespace Bridge.AngularJS
 {
-    [Ignore]
+    [External]
     public class Promise<T>
     {
         public Promise()

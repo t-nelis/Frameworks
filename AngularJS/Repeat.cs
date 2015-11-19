@@ -2,7 +2,7 @@
 
 namespace Bridge.AngularJS
 {
-    //[Ignore] set on main definition
+    //[External] set on main definition
     public static partial class Directives
     {
         /// <summary>

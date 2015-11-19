@@ -27,7 +27,7 @@ namespace Bridge.AngularJS
     /// <seealso cref="Bridge.AngularJS.Animation"/>
     /// <seealso cref="Bridge.AngularJS.jQuery.Animation"/>
     /// <typeparam name="T"></typeparam>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class Animation<T>
     {
@@ -74,7 +74,7 @@ namespace Bridge.AngularJS
     /// </remarks>
     /// <seealso cref="Bridge.AngularJS.Animation&lt;T&gt;"/>
     /// <seealso cref="Bridge.AngularJS.jQuery.Animation"/>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class Animation : Animation<jqLite>
     {
@@ -100,7 +100,7 @@ namespace Bridge.AngularJS.jQuery
     /// </remarks>
     /// <seealso cref="Bridge.AngularJS.Animation"/>
     /// <seealso cref="Bridge.AngularJS.Animation&lt;T&gt;"/>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class Animation : Bridge.AngularJS.Animation<jQuery>
     {

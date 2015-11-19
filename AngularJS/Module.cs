@@ -5,7 +5,7 @@ namespace Bridge.AngularJS
     /// <summary>
     /// Module structure.
     /// </summary>
-    [Ignore]
+    [External]
     public class Module
     {
         #region Fields

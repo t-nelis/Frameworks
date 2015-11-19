@@ -14,7 +14,7 @@ namespace Bridge.AngularJS
     /// All element references in Angular are always wrapped with either jQuery
     /// or jqLite. They are never raw DOM references.
     /// </remarks>
-    [Ignore]
+    [External]
     public partial class jqLite
     {
         #region Children() -- no selectors support

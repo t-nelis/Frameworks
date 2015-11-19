@@ -7,7 +7,7 @@ namespace Bridge.AngularJS.Resource
     /// <summary>
     /// Valid operations on a Resource
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class Resource
     {
@@ -40,7 +40,7 @@ namespace Bridge.AngularJS.Resource
     /// <summary>
     /// Resource Query fields.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ResourceQuery
     {
@@ -58,7 +58,7 @@ namespace Bridge.AngularJS.Resource
     /// <summary>
     /// Resource Service entities.
     /// </summary>
-    [Ignore]
+    [External]
     public static class Service
     {
         /// <summary>
@@ -115,7 +115,7 @@ namespace Bridge.AngularJS.Resource
     /// <summary>
     /// Valid operations on Resources' actions.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ResourceActions
     {
@@ -148,7 +148,7 @@ namespace Bridge.AngularJS.Resource
     /// <summary>
     /// Information about resource' actions.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ActionInfo
     {
@@ -243,7 +243,7 @@ namespace Bridge.AngularJS.Resource
     /// Information about resource' actions.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ActionInfo<T> : ActionInfo
     {
@@ -256,7 +256,7 @@ namespace Bridge.AngularJS.Resource
     /// <summary>
     /// Options supported by a Resource.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class ResourceOptions
     {
