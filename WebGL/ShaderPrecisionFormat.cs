@@ -3,7 +3,7 @@
     /// <summary>
     /// Provides the precision, rangeMin, and rangeMax properties returned by the getShaderPrecisionFormat method.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class WebGLShaderPrecisionFormat
     {
