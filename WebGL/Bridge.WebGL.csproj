@@ -14,7 +14,7 @@
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\Bridge\</SolutionDir>
     <RestorePackages>true</RestorePackages>
-    <NuGetPackageImportStamp>782700a4</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>e617fec6</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,12 +65,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Bridge, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\Bridge\packages\Bridge.1.9.0\lib\net40\Bridge.dll</HintPath>
+    <Reference Include="Bridge, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Bridge\packages\Bridge.1.10.0\lib\net40\Bridge.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Bridge.Html5, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\Bridge\packages\Bridge.1.9.0\lib\net40\Bridge.Html5.dll</HintPath>
+    <Reference Include="Bridge.Html5, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Bridge\packages\Bridge.1.10.0\lib\net40\Bridge.Html5.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -84,7 +84,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
-    <Error Condition="!Exists('..\..\Bridge\packages\Bridge.1.9.0\build\Bridge.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\Bridge\packages\Bridge.1.9.0\build\Bridge.targets'))" />
+    <Error Condition="!Exists('..\..\Bridge\packages\Bridge.1.10.0\build\Bridge.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\Bridge\packages\Bridge.1.10.0\build\Bridge.targets'))" />
   </Target>
-  <Import Project="..\..\Bridge\packages\Bridge.1.9.0\build\Bridge.targets" Condition="Exists('..\..\Bridge\packages\Bridge.1.9.0\build\Bridge.targets')" />
+  <Import Project="..\..\Bridge\packages\Bridge.1.10.0\build\Bridge.targets" Condition="Exists('..\..\Bridge\packages\Bridge.1.10.0\build\Bridge.targets')" />
 </Project>

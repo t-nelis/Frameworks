@@ -3,7 +3,7 @@
     /// <summary>
     /// A dictionary object of attributes used to initialize the context for the first time.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class WebGLContextAttributes
     {

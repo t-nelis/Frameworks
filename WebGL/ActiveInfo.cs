@@ -3,7 +3,7 @@
     /// <summary>
     /// Contains data returned by getActiveAttrib or getActiveUniform calls.
     /// </summary>
-    [Ignore]
+    [External]
     [ObjectLiteral]
     public class WebGLActiveInfo
     {

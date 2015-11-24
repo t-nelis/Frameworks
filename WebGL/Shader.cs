@@ -5,5 +5,6 @@
     /// The WebGLShader object does not define any members.
     /// Shaders are created using createShader.
     /// </summary>
+    [External]
     public class WebGLShader { }
 }

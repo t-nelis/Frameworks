@@ -10,6 +10,7 @@ namespace Bridge.WebGL
     ///     https://developer.mozilla.org/ru/docs/Web/API/WebGLRenderingContext
     ///     https://msdn.microsoft.com/en-us/library/ie/dn621085%28v=vs.85%29.aspx
     /// </summary>
+    [External]
     public partial class WebGLRenderingContext
     {
         #region Buffer mask constants
