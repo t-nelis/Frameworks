@@ -36,6 +36,7 @@
     <AdditionalExplicitAssemblyReferences />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Directives\Directives.cs" />
     <Compile Include="Directives\App.cs" />
     <Compile Include="Directives\Bind.cs" />
     <Compile Include="Directives\BindHtml.cs" />
