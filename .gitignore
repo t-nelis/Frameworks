@@ -112,3 +112,6 @@ UpgradeLog*.XML
 /DateTime/Build/*.js
 
 .DS_Store
+
+/Collections/Bridge/output/bridge.js
+/Collections/Bridge/output/bridge.min.js
