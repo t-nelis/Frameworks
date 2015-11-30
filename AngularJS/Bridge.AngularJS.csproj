@@ -91,7 +91,6 @@
     <Compile Include="Directives\Transclude.cs" />
     <Compile Include="Directives\Value.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repeat.cs" />
     <Compile Include="Services\AnchorScroll.cs" />
     <Compile Include="Services\AnimateCSS.cs" />
     <Compile Include="Services\Compile.cs" />
