@@ -220,13 +220,13 @@ namespace Bridge.AngularJS
         /// The sequence of string arguments to map the callback call.
         /// </param>
         [Template("[ {*paramMap}, {callback} ]")]
-        public static AngularMockUpFunction Fn(Delegate callback, params string[] paramMap)
+        public static AngularFn Fn(Delegate callback, params string[] paramMap)
         {
-             return default(AngularMockUpFunction);
+             return default(AngularFn);
         }
     }
 
-    public class AngularMockUpFunction
+    public class AngularFn
     {
 
     }

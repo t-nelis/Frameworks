@@ -247,11 +247,13 @@ namespace Bridge.AngularJS
         //      3. ['$scope', '$http', function ($scope, http)]
         
         /// <summary>
-        /// dummy
+        /// Set up the module's controller copying the specified object's
+        /// elements to its scope. Syntax sugar to use the array notation to
+        /// define the controller method.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="definition"></param>
-        public void Controller(string name, AngularMockUpFunction definition)
+        public void Controller(string name, AngularFn definition)
         {
         }
         #endregion
