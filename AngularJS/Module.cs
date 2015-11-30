@@ -245,6 +245,15 @@ namespace Bridge.AngularJS
         //      1. function($scope, $http)
         //      2. ['$scope', function($scope)]
         //      3. ['$scope', '$http', function ($scope, http)]
+        
+        /// <summary>
+        /// dummy
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="definition"></param>
+        public void Controller(string name, AngularMockUpFunction definition)
+        {
+        }
         #endregion
 
         #region Directive

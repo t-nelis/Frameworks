@@ -207,6 +207,28 @@ namespace Bridge.AngularJS
         {
             return default(string);
         }
+
+        /// <summary>
+        /// Outputs an list of paramMaps appended by the callback.
+        /// Angular.Fn((p1, p2) => { ... }, "par1", "par2"); results in
+        /// [ "par1", "par2", function(p1, p2) { ... } ]
+        /// </summary>
+        /// <param name="callback">
+        /// The callback function to be called with the mapped arguments.
+        /// </param>
+        /// <param name="paramMap">
+        /// The sequence of string arguments to map the callback call.
+        /// </param>
+        [Template("[ {*paramMap}, {callback} ]")]
+        public static AngularMockUpFunction Fn(Delegate callback, params string[] paramMap)
+        {
+             return default(AngularMockUpFunction);
+        }
+    }
+
+    public class AngularMockUpFunction
+    {
+
     }
 }
 
