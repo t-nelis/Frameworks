@@ -1,38 +1,30 @@
-﻿using Bridge.Html5;
-
-namespace Bridge.AngularJS
+﻿namespace Bridge.AngularJS
 {
     /// <summary>
     /// Extension methods for the ngModel directive.
     /// </summary>
-    public static class ModelDirectives
+    [External]
+    public partial class AngularElement
     {
         /// <summary>
         /// Gets the NG model name.
         /// </summary>
         /// <returns>The NG model name.</returns>
-        /// <param name="el">Element to get the ngModel name from</param>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngModel">
         /// Official JavaScript documentation.
         /// </see>
-        [Template("{el}.getAttribute('ng-model')")]
-        public static string GetNGModel(this Element el)
-        {
-            return null;
-        }
+        [Template("{this}.getAttribute('ng-model')")]
+        public extern string GetModel();
 
         /// <summary>
         /// Sets the NG model reference to the specified element.
         /// </summary>
-        /// <param name="el">Element to get the ngModel reference.</param>
         /// <param name="modelName">Name for the model applied.</param>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngModel">
         /// Official JavaScript documentation.
         /// </see>
-        [Template("{el}.setAttribute('ng-model', {modelName})")]
-        public static void SetNGModel(this Element el, string modelName)
-        {
-        }
+        [Template("{this}.setAttribute('ng-model', {modelName})")]
+        public extern void SetModel(string modelName);
         /// <summary>
         /// Drops the NG model attribute from the element.
         /// </summary>
@@ -42,9 +34,7 @@ namespace Bridge.AngularJS
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngModel">
         /// Official JavaScript documentation.
         /// </see>
-        [Template("{el}.removeAttribute('ng-model')")]
-        public static void RemoveNGModel(this Element el)
-        {
-        }
+        [Template("{this}.removeAttribute('ng-model')")]
+        public extern void RemoveModel();
     }
 }

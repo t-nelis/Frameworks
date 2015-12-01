@@ -1,46 +1,35 @@
-﻿using Bridge.Html5;
-
-namespace Bridge.AngularJS
+﻿namespace Bridge.AngularJS
 {
     /// <summary>
     /// Extension methods for the ngController directive.
     /// </summary>
-    public static class ControllerDirectives
+    [External]
+    public partial class AngularElement
     {
         /// <summary>
         /// Gets the current textual value of ng-app (ngApp) value of the
         /// element, if any.
         /// </summary>
-        /// <param name="el"></param>
         /// <returns></returns>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngController">Official JavaScript documentation.</see>
-        [Template("{el}.getAttribute('ng-controller')")]
-        public static string GetNGController(this Element el)
-        {
-            return default(string);
-        }
+        [Template("{this}.getAttribute('ng-controller')")]
+        public extern string GetController();
 
         /// <summary>
         /// Binds a controller to the HTML element. The controller's module must
         /// have this element into its scope or it will be ignored.
         /// </summary>
-        /// <param name="el">Element to be bound to the controller</param>
         /// <param name="value">The name of the controller</param>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngController">Official JavaScript documentation.</see>
-        [Template("{el}.setAttribute('ng-controller', {value})")]
-        public static void SetNGController(this Element el, string value)
-        {
-        }
+        [Template("{this}.setAttribute('ng-controller', {value})")]
+        public extern void SetController(string value);
 
         /// <summary>
         /// Drops the NG controller from the specified element.
         /// </summary>
-        /// <param name="el">Element to drop the ngController from.</param>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngController">Official JavaScript documentation.</see>
-        [Template("{el}.removeAttribute('ng-controller')")]
-        public static void RemoveNGController(this Element el)
-        {
-        }
+        [Template("{this}.removeAttribute('ng-controller')")]
+        public extern void RemoveController();
 
         // TODO: support instance of the controller referenced/cycled thru
         //       the module's controller list

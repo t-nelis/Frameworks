@@ -1,6 +1,4 @@
-﻿using Bridge.Html5;
-
-namespace Bridge.AngularJS
+﻿namespace Bridge.AngularJS
 {
     /// <summary>
     /// Use this directive to auto-bootstrap an AngularJS application. The
@@ -8,29 +6,25 @@ namespace Bridge.AngularJS
     /// typically placed near the root element of the page - e.g. on the &lt;body&gt;
     /// or &lt;html&gt; tags.
     /// </summary>
-    public static class AppDirectives
+    [External]
+    public partial class AngularElement
     {
         /// <summary>
         /// Gets the current textual value of ng-app (ngApp) value of the
         /// element, if any.
         /// </summary>
-        /// <param name="el"></param>
         /// <returns></returns>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngApp">
         /// Official JavaScript documentation.
         /// </see>
-        [Template("{el}.getAttribute('ng-app')")]
-        public static string GetNGApp(this Element el)
-        {
-            return default(string);
-        }
+        [Template("{this}.getAttribute('ng-app')")]
+        public extern string GetApp();
 
         /// <summary>
         /// Binds the module to the page's node. Its scope will extend to any
         /// node inside this, so as controllers will be available at this point
         /// and deeper and not outside it.
         /// </summary>
-        /// <param name="el">Element to be bound to the module/app</param>
         /// <param name="app">The instance of the module/app</param>
         /// <remarks>
         /// The name of the module/app filled in ng-app=[name] will be extracted
@@ -39,26 +33,21 @@ namespace Bridge.AngularJS
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngApp">
         /// Official JavaScript documentation.
         /// </see>
-        [Template("{el}.setAttribute('ng-app', {app:raw}.name)")]
-        public static void SetNGApp(this Element el, Module app)
-        {
-        }
+        [Template("{this}.setAttribute('ng-app', {app:raw}.name)")]
+        public extern void SetApp(Module app);
 
         /// <summary>
         /// Binds the module to the page's node. Its scope will extend to any
         /// node inside this, so as controllers will be available at this point
         /// and deeper and not outside it.
         /// </summary>
-        /// <param name="el">Element to be bound to the module/app</param>
         /// <param name="value">The name of the module/app</param>
         /// <remarks>Will add 'ng-app=value' to the element.</remarks>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngApp">
         /// Official JavaScript documentation.
         /// </see>
-        [Template("{el}.setAttribute('ng-app', {value})")]
-        public static void SetNGApp(this Element el, string value)
-        {
-        }
+        [Template("{this}.setAttribute('ng-app', {value})")]
+        public extern void SetApp(string value);
 
         /// <summary>
         /// Removes the binding of the module to the page's node if any.
@@ -66,10 +55,7 @@ namespace Bridge.AngularJS
         /// Official JavaScript documentation.
         /// </see>
         /// </summary>
-        /// <param name="el">Element to have the module unbound from</param>
-        [Template("{el}.removeAttribute('ng-app')")]
-        public static void RemoveNGApp(this Element el)
-        {
-        }
+        [Template("{this}.removeAttribute('ng-app')")]
+        public extern void RemoveApp();
     }
 }
