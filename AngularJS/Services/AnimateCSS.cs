@@ -5,7 +5,7 @@ namespace Bridge.AngularJS.Services
     /// By default, only when the ngAnimate is included, then the $animateCss
     /// service will actually perform animations.
     /// </summary>
-    /// <see cref="!:https://docs.angularjs.org/api/ngAnimate/service/$animateCss"/>
+    /// <see cref="!:https://docs.angularjs.org/api/ngAnimate/service/$animateCss">
     /// Official JavaScript Documentation.
     /// </see>
     [External]

@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$httpParamSerializerJQLike"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$httpParamSerializerJQLike">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$httpParamSerializerJQLike()")]

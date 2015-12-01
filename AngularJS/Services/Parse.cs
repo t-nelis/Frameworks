@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$parse"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$parse">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$parse()")]

@@ -28,9 +28,6 @@
         /// <summary>
         /// Drops the NG model attribute from the element.
         /// </summary>
-        /// <param name="el">
-        /// Element to have the ngModel attribute removed.
-        /// </param>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngModel">
         /// Official JavaScript documentation.
         /// </see>

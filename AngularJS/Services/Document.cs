@@ -6,7 +6,7 @@ namespace Bridge.AngularJS.Services
     /// The $document service. A jQuery or jqLite wrapper for the browser's
     /// window.document object.
     /// </summary>
-    /// <see cref="!:https://docs.angularjs.org/api/ng/service/$document"/>
+    /// <see cref="!:https://docs.angularjs.org/api/ng/service/$document">
     /// Official JavaScript Documentation
     /// </see>
     [External]

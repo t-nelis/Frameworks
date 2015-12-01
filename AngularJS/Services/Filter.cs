@@ -12,7 +12,7 @@ namespace Bridge.AngularJS.Services
         /// {{ expression [| filter_name[:parameter_value] ... ] }}
         /// </summary>
         /// <param name="name">Name of the filter function to retrieve.</param>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$filter"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$filter">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$filter({name})")]

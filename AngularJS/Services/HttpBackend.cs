@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$httpBackend"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$httpBackend">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$httpBackend()")]

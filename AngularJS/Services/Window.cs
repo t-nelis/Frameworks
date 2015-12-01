@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$window"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$window">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$window()")]

@@ -76,7 +76,7 @@ namespace Bridge.AngularJS.Services
             ///   components, which should not accidentally read or modify data
             ///   in the parent scope.
             /// </summary>
-            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile"/>
+            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile">
             /// Official JavaScript Documentation
             /// </see>
             public Any<object, bool, string> Scope;
@@ -98,9 +98,8 @@ namespace Bridge.AngularJS.Services
             /// to communicate with each other and augment each other's
             /// behavior.
             /// </summary>
-            /// <param name="?"></param>
             /// <returns></returns>
-            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile"/>
+            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile">
             /// Official JavaScript Documentation
             /// </see>
             public Delegate Controller;
@@ -140,7 +139,7 @@ namespace Bridge.AngularJS.Services
             /// <example>C (class)</example>
             /// <example>M (comment)</example>
             /// <example>EACM (all)</example>
-            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile"/>
+            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile">
             /// Official JavaScript Documentation
             /// </see>
             public string Restrict;
@@ -149,7 +148,7 @@ namespace Bridge.AngularJS.Services
             /// String representing the document type used by the markup in the
             /// template. AngularJS needs this information as those elements
             /// need to be created and cloned in a special way when they are
-            /// defined outside their usual containers like <svg> and <math>.
+            /// defined outside their usual containers like &lt;svg&gt; and &lt;math&gt;.
             /// Valid options are: html, svg, math. Default is html.
             /// </summary>
             public string TemplateNamespace;
@@ -163,7 +162,7 @@ namespace Bridge.AngularJS.Services
             /// is true).
             ///
             /// Value may be:
-            /// • A string. For example <div red-on-hover>{{delete_str}}</div>.
+            /// • A string. For example &lt;div red-on-hover&gt;{{delete_str}}&lt;/div&gt;.
             /// • A function which takes two arguments tElement and tAttrs
             ///   (described in the compile function api below) and returns a
             ///   string value.
@@ -174,7 +173,7 @@ namespace Bridge.AngularJS.Services
             /// This is similar to template but the template is loaded from the
             /// specified URL, asynchronously
             /// </summary>
-            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile"/>
+            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile">
             /// Official JavaScript Documentation
             /// </see>
             public string TemplateUrl;
@@ -202,7 +201,7 @@ namespace Bridge.AngularJS.Services
             /// Since most directives do not do template transformation, it is
             /// not used often.
             /// </summary>
-            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile"/>
+            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile">
             /// Official JavaScript Documentation
             /// </see>
             public Delegate Compile;
@@ -216,7 +215,7 @@ namespace Bridge.AngularJS.Services
             /// has been cloned. This is where most of the directive logic will
             /// be put.
             /// </summary>
-            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile"/>
+            /// <see cref="!:https://docs.angularjs.org/api/ng/service/$compile">
             /// Official JavaScript Documentation
             /// </see>
             public Delegate Link;

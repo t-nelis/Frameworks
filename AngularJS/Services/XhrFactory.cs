@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$xhrFactory"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$xhrFactory">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$xhrFactory()")]

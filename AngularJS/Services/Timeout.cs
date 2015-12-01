@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$timeout"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$timeout">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$timeout()")]

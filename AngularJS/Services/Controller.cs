@@ -19,7 +19,7 @@ namespace Bridge.AngularJS.Services
         /// </param>
         /// <param name="locals">Injection locals for Controller.</param>
         /// <returns>Instance of given controller.</returns>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$controller"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$controller">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$controller({constructor}, {locals})")]

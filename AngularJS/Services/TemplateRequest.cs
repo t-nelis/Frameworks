@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$templateRequest"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$templateRequest">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$templateRequest()")]

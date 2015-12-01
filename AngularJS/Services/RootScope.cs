@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$rootScope"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$rootScope">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$rootScope()")]

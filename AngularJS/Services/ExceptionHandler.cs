@@ -13,7 +13,7 @@ namespace Bridge.AngularJS.Services
         /// service. The default implementation simply delegates to $log.error
         /// which logs it into the browser console.
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$exceptionHandler"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$exceptionHandler">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$exceptionHandler({exception}, {cause})")]

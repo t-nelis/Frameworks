@@ -9,7 +9,7 @@ namespace Bridge.AngularJS.Services
         /// <summary>
         /// 
         /// </summary>
-        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$sce"/>
+        /// <see cref="!:https://docs.angularjs.org/api/ng/service/$sce">
         /// Official JavaScript Documentation
         /// </see>
         [Template("$sce()")]
