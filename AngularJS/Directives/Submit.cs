@@ -4,7 +4,7 @@
     /// Extension methods for the ngSubmit directive.
     /// </summary>
     [External]
-    public partial class AngularElement
+    public partial class AngularFormElement : AngularElement
     {
         /// <summary>
         /// Gets the current textual value of ng-submit (ngSubmit)

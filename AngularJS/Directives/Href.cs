@@ -4,7 +4,7 @@
     /// Extension methods for the ngHref directive.
     /// </summary>
     [External]
-    public partial class AngularElement
+    public partial class AngularAnchorElement : AngularElement
     {
         /// <summary>
         /// Gets the current textual value of ng-href (ngHref)

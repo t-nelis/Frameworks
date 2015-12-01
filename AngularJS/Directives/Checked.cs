@@ -4,7 +4,7 @@
     /// Extension methods for the ngChecked directive.
     /// </summary>
     [External]
-    public partial class AngularElement
+    public partial class AngularInputElement : AngularElement
     {
         /// <summary>
         /// Gets the current textual value of ng-checked (ngChecked)

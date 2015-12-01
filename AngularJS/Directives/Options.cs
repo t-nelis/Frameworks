@@ -4,7 +4,7 @@
     /// Extension methods for the ngOptions directive.
     /// </summary>
     [External]
-    public partial class AngularElement
+    public partial class AngularSelectElement : AngularInputElement
     {
         /// <summary>
         /// Gets the current textual value of ng-options (ngOptions)

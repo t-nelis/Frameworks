@@ -4,7 +4,7 @@
     /// Extension methods for the ngSrcset directive.
     /// </summary>
     [External]
-    public partial class AngularElement
+    public partial class AngularImageElement : AngularElement
     {
         /// <summary>
         /// Gets the current textual value of ng-srcset (ngSrcset)

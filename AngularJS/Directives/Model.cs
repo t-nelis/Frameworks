@@ -4,7 +4,7 @@
     /// Extension methods for the ngModel directive.
     /// </summary>
     [External]
-    public partial class AngularElement
+    public partial class AngularInputElement : AngularElement
     {
         /// <summary>
         /// Gets the NG model name.

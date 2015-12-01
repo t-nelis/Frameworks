@@ -4,7 +4,7 @@
     /// Extension methods for the ngCsp directive.
     /// </summary>
     [External]
-    public partial class AngularElement
+    public partial class AngularHtmlElement : AngularElement
     {
         /// <summary>
         /// Gets the current textual value of ng-csp (ngCsp)
@@ -18,15 +18,13 @@
         public extern string GetCsp();
         
         /// <summary>
-        /// Sets a textual value to the ng-csp (ngCsp)
-        /// directive on the element.
+        /// Sets the ng-csp (ngCsp) directive on the element.
         /// </summary>
-        /// <param name="value">Value to bind to the directive.</param>
         /// <see cref="!:https://docs.angularjs.org/api/ng/directive/ngCsp">
         /// Official JavaScript documentation.
         /// </see>
-        [Template("{this}.setAttribute('ng-csp', {value})")]
-        public extern void SetCsp(string value);
+        [Template("{this}.setAttribute('ng-csp')")]
+        public extern void SetCsp();
         
         /// <summary>
         /// Removes the ng-csp (ngCsp) directive definition

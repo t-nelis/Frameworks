@@ -4,7 +4,7 @@
     /// Extension methods for the ngDisabled directive.
     /// </summary>
     [External]
-    public partial class AngularElement
+    public partial class AngularInputElement : AngularElement
     {
         /// <summary>
         /// Sets the ng-disabled attribute for the element. This will make

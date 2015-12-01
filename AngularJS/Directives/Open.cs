@@ -3,8 +3,13 @@
     /// <summary>
     /// Extension methods for the ngOpen directive.
     /// </summary>
+    /// <remarks>
+    /// The &lt;details&gt; tag is currently in draft state and not supported
+    /// by all browsers, thus not available on Bridge.Html5.
+    /// Details: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+    /// </remarks>
     [External]
-    public partial class AngularElement
+    public partial class AngularDetailsElement : AngularElement
     {
         /// <summary>
         /// Gets the current textual value of ng-open (ngOpen)
