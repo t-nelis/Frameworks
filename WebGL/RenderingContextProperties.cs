@@ -16,16 +16,16 @@ namespace Bridge.WebGL
         /// <summary>
         /// The Canvas element associated with this context. May be null!
         /// </summary>
-        public virtual CanvasElement Canvas { get; private set; }
+        public readonly CanvasElement Canvas;
 
         /// <summary>
         /// Width of the current drawing buffer. Should match the width of the canvas element associated with this context.
         /// </summary>
-        public virtual int DrawingBufferWidth { get; private set; }
+        public readonly int DrawingBufferWidth;
 
         /// <summary>
         /// Height of the current drawing buffer. Should match the height of the canvas element associated with this context.
         /// </summary>
-        public virtual int DrawingBufferHeight { get; private set; }
+        public readonly int DrawingBufferHeight;
     }
 }
