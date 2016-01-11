@@ -7,7 +7,7 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="obj">An array or object to serialize.</param>
         /// <returns>A serialized representation of the passed object</returns>
-        [Template("&.param({0})")]
+        [Template("$.param({0})")]
         public static string Param(object obj)
         {
             return null;
@@ -19,7 +19,7 @@ namespace Bridge.jQuery2
         /// <param name="obj">An array or object to serialize.</param>
         /// <param name="traditional">A Boolean indicating whether to perform a traditional "shallow" serialization.</param>
         /// <returns>A serialized representation of the passed object</returns>
-        [Template("&.param({0},{1})")]
+        [Template("$.param({0},{1})")]
         public static string Param(object obj, bool traditional)
         {
             return null;
