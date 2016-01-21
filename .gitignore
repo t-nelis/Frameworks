@@ -115,3 +115,4 @@ UpgradeLog*.XML
 
 /Collections/Bridge/output/bridge.js
 /Collections/Bridge/output/bridge.min.js
+.vs/config/applicationhost.config
