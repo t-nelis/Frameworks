@@ -5,8 +5,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("Bridge.Bootstrap3")]
 [assembly: AssemblyDescription("Bootstrap version 3.x bindings for Bridge.NET.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Object.NET, Inc.")]
-[assembly: AssemblyCopyright("Copyright 2008-2015 Object.NET, Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

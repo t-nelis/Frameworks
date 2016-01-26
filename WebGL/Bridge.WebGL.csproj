@@ -53,6 +53,9 @@
     <Compile Include="ShaderPrecisionFormat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\.common\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Renderbuffer.cs" />
     <Compile Include="RenderingContextConstants.cs" />
     <Compile Include="RenderingContextMethods.cs" />

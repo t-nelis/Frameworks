@@ -5,8 +5,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("Bridge.WebGL")]
 [assembly: AssemblyDescription("WebGL (Web Graphics Library) version 1.x bindings for Bridge.NET.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Object.NET, Inc.")]
-[assembly: AssemblyCopyright("Copyright 2008-2015 Object.NET, Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

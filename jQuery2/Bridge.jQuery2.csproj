@@ -85,6 +85,9 @@
     <Compile Include="Miscellaneous\Instances.cs" />
     <Compile Include="Miscellaneous\Dom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\.common\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Traversing\Tree.cs" />
     <Compile Include="Traversing\Miscellaneous.cs" />
     <Compile Include="Traversing\Filtering.cs" />

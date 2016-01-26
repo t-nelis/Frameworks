@@ -24,6 +24,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.WebGL", "WebGL\Bridg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.AngularJS", "AngularJS\Bridge.AngularJS.csproj", "{CFD49E9D-FA2D-46A6-B50D-8D114F07C07C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".common", ".common", "{746A3210-494F-418D-8534-3FB8C1DD06D3}"
+	ProjectSection(SolutionItems) = preProject
+		.common\CommonAssemblyInfo.cs = .common\CommonAssemblyInfo.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
