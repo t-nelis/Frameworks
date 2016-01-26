@@ -1,6 +1,8 @@
 {
-    output: "Bridge\\output",
-    outputBy: "Project",
-    fileName: "bridge.collections.js",
-    injectScriptToAssembly: true
+  "output": "Bridge\\output",
+  "cleanOutputFolderBeforeBuild": true,
+  "outputBy": "Project",
+  "fileName": "bridge.collections.js",
+  "injectScriptToAssembly": true,
+  "loggerLevel": "Trace"
 }
