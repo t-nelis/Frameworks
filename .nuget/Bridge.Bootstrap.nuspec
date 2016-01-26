@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+      <id>Bridge.Bootstrap</id>
+      <version>0.0.0</version>
+      <title>Bridge.NET Bootstrap</title>
+      <authors>Object.NET, Inc.</authors>
+      <iconUrl>http://speed.bridge.net/identity/bridgedotnet-100x100.png</iconUrl>
+      <owners />
+      <licenseUrl>https://github.com/bridgedotnet/Bridge/blob/master/LICENSE</licenseUrl>
+      <projectUrl>http://bridge.net</projectUrl>
+      <requireLicenseAcceptance>false</requireLicenseAcceptance>
+      <description>Bootstrap installation into Bridge.NET projects.</description>
+      <summary>Bootstrap installation into Bridge.NET projects</summary>
+      <copyright>Copyright (c) 2008-2016, Object.NET, Inc. (http://object.net/). All rights reserved.</copyright>
+      <tags>bootstrap jquery bridge bridge.net bridge js javascript C# csharp mobile ios asp.net aspnet mvc aspnetmvc web transpiler compiler object.net</tags>
+      <dependencies>
+          <dependency id="Bridge.jQuery" version="2.8.0" />
+      </dependencies>
+      <frameworkAssemblies>
+      </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!--content-->
+    <file src="..\Bootstrap3\build\package\README.Bootstrap.txt" target="content\App_Readme\Bridge.NET\README.Bootstrap.txt"/>
+
+    <!--NET40-->
+    <file src="..\Bootstrap3\bin\Release\Bridge.Bootstrap3.dll" target="lib\net40\Bridge.Bootstrap3.dll"/>
+    <file src="..\Bootstrap3\bin\Release\Bridge.Bootstrap3.xml" target="lib\net40\Bridge.Bootstrap3.xml"/>
+    <file src="..\Bootstrap3\bin\Release\Bridge.Bootstrap3.pdb" target="lib\net40\pdb\Bridge.Bootstrap3.pdb"/>
+  </files>
+</package>

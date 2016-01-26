@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Bridge.jQuery</id>
+    <version>0.0.0</version>
+    <title>Bridge.NET jQuery</title>
+    <authors>Object.NET, Inc.</authors>
+    <iconUrl>http://speed.bridge.net/identity/bridgedotnet-100x100.png</iconUrl>
+    <owners />
+    <licenseUrl>https://github.com/bridgedotnet/Bridge/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://bridge.net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>jQuery 2 installation into Bridge.NET projects.</description>
+    <summary>jQuery installation into Bridge.NET projects</summary>
+    <copyright>Copyright (c) 2008-2016, Object.NET, Inc. (http://object.net/). All rights reserved.</copyright>
+    <tags>jquery bridge.net bridge js javascript C# csharp mobile ios asp.net aspnet mvc aspnetmvc web transpiler compiler object.net</tags>
+    <dependencies>
+      <dependency id="Bridge" version="1.10.0" />
+    </dependencies>
+    <frameworkAssemblies>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!--content-->
+    <file src="..\jQuery2\build\package\README.jQuery.txt" target="content\App_Readme\Bridge.NET\README.jQuery.txt"/>
+
+    <!--NET40-->
+    <file src="..\jQuery2\bin\Release\Bridge.jQuery2.dll" target="lib\net40\Bridge.jQuery2.dll"/>
+    <file src="..\jQuery2\bin\Release\Bridge.jQuery2.xml" target="lib\net40\Bridge.jQuery2.xml"/>
+    <file src="..\jQuery2\bin\Release\Bridge.jQuery2.pdb" target="lib\net40\pdb\Bridge.jQuery2.pdb"/>
+  </files>
+</package>

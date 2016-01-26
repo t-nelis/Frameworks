@@ -13,6 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.QUnit", "QUnit\Bridg
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{42D82A7C-EC6C-4C9F-A169-3F22275ED2BB}"
 	ProjectSection(SolutionItems) = preProject
+		.nuget\Bridge.AngularJS.nuspec = .nuget\Bridge.AngularJS.nuspec
+		.nuget\Bridge.Bootstrap.nuspec = .nuget\Bridge.Bootstrap.nuspec
+		.nuget\Bridge.Collections.Dev.nuspec = .nuget\Bridge.Collections.Dev.nuspec
+		.nuget\Bridge.Collections.nuspec = .nuget\Bridge.Collections.nuspec
+		.nuget\Bridge.jQuery.nuspec = .nuget\Bridge.jQuery.nuspec
+		.nuget\Bridge.QUnit.Dev.nuspec = .nuget\Bridge.QUnit.Dev.nuspec
+		.nuget\Bridge.QUnit.nuspec = .nuget\Bridge.QUnit.nuspec
+		.nuget\Bridge.WebGL.nuspec = .nuget\Bridge.WebGL.nuspec
+		.nuget\NuGet.Build.Package.targets = .nuget\NuGet.Build.Package.targets
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
