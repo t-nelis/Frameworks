@@ -22,10 +22,10 @@
   </metadata>
   <files>
     <!--content-->
-    <file src="..\AngularJS\build\package\README.AngularJS.txt" target="content\App_Readme\Bridge.NET\README.AngularJS.txt"/>
+    <file src="..\..\AngularJS\build\package\README.AngularJS.txt" target="content\App_Readme\Bridge.NET\README.AngularJS.txt"/>
 
     <!--NET40-->
-    <file src="..\AngularJS\bin\Release\Bridge.AngularJS.dll" target="lib\net40\Bridge.AngularJS.dll"/>
-    <file src="..\AngularJS\bin\Release\Bridge.AngularJS.pdb" target="lib\net40\pdb\Bridge.AngularJS.pdb"/>
+    <file src="..\..\AngularJS\bin\Release\Bridge.AngularJS.dll" target="lib\net40\Bridge.AngularJS.dll"/>
+    <file src="..\..\AngularJS\bin\Release\Bridge.AngularJS.pdb" target="lib\net40\pdb\Bridge.AngularJS.pdb"/>
   </files>
 </package>

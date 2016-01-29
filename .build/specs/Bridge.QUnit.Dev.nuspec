@@ -21,11 +21,11 @@
   </metadata>
   <files>
     <!--content-->
-    <file src="..\QUnit\build\package\README.QUnit.txt" target="content\App_Readme\Bridge.NET\README.QUnit.txt"/>
+    <file src="..\..\QUnit\build\package\README.QUnit.txt" target="content\App_Readme\Bridge.NET\README.QUnit.txt"/>
 
     <!--NET40-->
-    <file src="..\QUnit\bin\Release\Bridge.QUnit.dll" target="lib\net40\Bridge.QUnit.dll"/>
-    <file src="..\QUnit\bin\Release\Bridge.QUnit.xml" target="lib\net40\Bridge.QUnit.xml"/>
-    <file src="..\QUnit\bin\Release\Bridge.QUnit.pdb" target="lib\net40\pdb\Bridge.QUnit.pdb"/>
+    <file src="..\..\QUnit\bin\Release\Bridge.QUnit.dll" target="lib\net40\Bridge.QUnit.dll"/>
+    <file src="..\..\QUnit\bin\Release\Bridge.QUnit.xml" target="lib\net40\Bridge.QUnit.xml"/>
+    <file src="..\..\QUnit\bin\Release\Bridge.QUnit.pdb" target="lib\net40\pdb\Bridge.QUnit.pdb"/>
   </files>
 </package>

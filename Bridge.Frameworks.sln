@@ -13,15 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.QUnit", "QUnit\Bridg
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{42D82A7C-EC6C-4C9F-A169-3F22275ED2BB}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\Bridge.AngularJS.nuspec = .nuget\Bridge.AngularJS.nuspec
-		.nuget\Bridge.Bootstrap.nuspec = .nuget\Bridge.Bootstrap.nuspec
-		.nuget\Bridge.Collections.Dev.nuspec = .nuget\Bridge.Collections.Dev.nuspec
-		.nuget\Bridge.Collections.nuspec = .nuget\Bridge.Collections.nuspec
-		.nuget\Bridge.jQuery.nuspec = .nuget\Bridge.jQuery.nuspec
-		.nuget\Bridge.QUnit.Dev.nuspec = .nuget\Bridge.QUnit.Dev.nuspec
-		.nuget\Bridge.QUnit.nuspec = .nuget\Bridge.QUnit.nuspec
-		.nuget\Bridge.WebGL.nuspec = .nuget\Bridge.WebGL.nuspec
-		.nuget\NuGet.Build.Package.targets = .nuget\NuGet.Build.Package.targets
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
@@ -33,9 +24,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.WebGL", "WebGL\Bridg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.AngularJS", "AngularJS\Bridge.AngularJS.csproj", "{CFD49E9D-FA2D-46A6-B50D-8D114F07C07C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".common", ".common", "{746A3210-494F-418D-8534-3FB8C1DD06D3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{16FF416E-9157-4B8A-80B8-65946FE29CE9}"
 	ProjectSection(SolutionItems) = preProject
-		.common\CommonAssemblyInfo.cs = .common\CommonAssemblyInfo.cs
+		.build\CommonAssemblyInfo.cs = .build\CommonAssemblyInfo.cs
+		.build\NuGet.Build.Package.targets = .build\NuGet.Build.Package.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{C0B01623-3AEA-472E-BD8D-4F2D05378ADC}"
+	ProjectSection(SolutionItems) = preProject
+		.build\specs\Bridge.AngularJS.nuspec = .build\specs\Bridge.AngularJS.nuspec
+		.build\specs\Bridge.Bootstrap.nuspec = .build\specs\Bridge.Bootstrap.nuspec
+		.build\specs\Bridge.Collections.Dev.nuspec = .build\specs\Bridge.Collections.Dev.nuspec
+		.build\specs\Bridge.Collections.nuspec = .build\specs\Bridge.Collections.nuspec
+		.build\specs\Bridge.jQuery.nuspec = .build\specs\Bridge.jQuery.nuspec
+		.build\specs\Bridge.QUnit.Dev.nuspec = .build\specs\Bridge.QUnit.Dev.nuspec
+		.build\specs\Bridge.QUnit.nuspec = .build\specs\Bridge.QUnit.nuspec
+		.build\specs\Bridge.WebGL.nuspec = .build\specs\Bridge.WebGL.nuspec
 	EndProjectSection
 EndProject
 Global
@@ -79,5 +83,6 @@ Global
 		{2F36A7E8-FC89-49A9-8161-5BBBE8F66A3A} = {7C762820-1165-4EB4-B7A3-3BB45DF33CE7}
 		{476C2F05-4770-481C-90D1-8353E5F379DC} = {7C762820-1165-4EB4-B7A3-3BB45DF33CE7}
 		{CFD49E9D-FA2D-46A6-B50D-8D114F07C07C} = {7C762820-1165-4EB4-B7A3-3BB45DF33CE7}
+		{C0B01623-3AEA-472E-BD8D-4F2D05378ADC} = {16FF416E-9157-4B8A-80B8-65946FE29CE9}
 	EndGlobalSection
 EndGlobal

@@ -22,11 +22,11 @@
   </metadata>
   <files>
     <!--content-->
-    <file src="..\jQuery2\build\package\README.jQuery.txt" target="content\App_Readme\Bridge.NET\README.jQuery.txt"/>
+    <file src="..\..\jQuery2\build\package\README.jQuery.txt" target="content\App_Readme\Bridge.NET\README.jQuery.txt"/>
 
     <!--NET40-->
-    <file src="..\jQuery2\bin\Release\Bridge.jQuery2.dll" target="lib\net40\Bridge.jQuery2.dll"/>
-    <file src="..\jQuery2\bin\Release\Bridge.jQuery2.xml" target="lib\net40\Bridge.jQuery2.xml"/>
-    <file src="..\jQuery2\bin\Release\Bridge.jQuery2.pdb" target="lib\net40\pdb\Bridge.jQuery2.pdb"/>
+    <file src="..\..\jQuery2\bin\Release\Bridge.jQuery2.dll" target="lib\net40\Bridge.jQuery2.dll"/>
+    <file src="..\..\jQuery2\bin\Release\Bridge.jQuery2.xml" target="lib\net40\Bridge.jQuery2.xml"/>
+    <file src="..\..\jQuery2\bin\Release\Bridge.jQuery2.pdb" target="lib\net40\pdb\Bridge.jQuery2.pdb"/>
   </files>
 </package>
