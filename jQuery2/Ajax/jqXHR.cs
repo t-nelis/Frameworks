@@ -258,7 +258,8 @@ namespace Bridge.jQuery2
         /// </summary>
         /// <param name="fulfilledHandler">The fulfilledHandler is called when the promise is fulfilled</param>
         /// <param name="errorHandler">The errorHandler is called when a promise fails.</param>
-        void IPromise.Then(Delegate fulfilledHandler, Delegate errorHandler)
+        /// <param name="progressHandler">The progressHandler</param>
+        void IPromise.Then(Delegate fulfilledHandler, Delegate errorHandler, Delegate progressHandler)
         {
         }
 

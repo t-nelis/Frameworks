@@ -117,3 +117,6 @@ UpgradeLog*.XML
 /Collections/Bridge/output/bridge.min.js
 .vs/config/applicationhost.config
 *.nupkg
+**/App_Readme
+**/Bridge/output
+Collections/Bridge/output/bridge.collections.js
