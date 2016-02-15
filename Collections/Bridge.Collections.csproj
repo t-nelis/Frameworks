@@ -104,7 +104,7 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
-  <Import Project="$(SolutionDir)\.build\common\NuGet.Build.Package.targets" />
+  <Import Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " Project="$(SolutionDir)\.build\common\NuGet.Build.Package.targets" />
   <Target Name="CleanProjectNuGetOutput" BeforeTargets="Clean">
     <ItemGroup>
       <FilesToDelete Include="$(ProjectDir)$(OutDir)Bridge.*.nupkg" />
