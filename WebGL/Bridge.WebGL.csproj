@@ -53,7 +53,7 @@
     <Compile Include="ShaderPrecisionFormat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\.build\CommonAssemblyInfo.cs">
+    <Compile Include="..\.build\common\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Renderbuffer.cs" />
@@ -100,7 +100,7 @@
       <Path>$(SolutionDir).build\specs\Bridge.WebGL.nuspec</Path>
     </NuGetPackageSourcePath>
   </ItemGroup>
-  <Import Project="$(SolutionDir)\.build\NuGet.Build.Package.targets" />
+  <Import Project="$(SolutionDir)\.build\common\NuGet.Build.Package.targets" />
   <Target Name="CleanProjectNuGetOutput" BeforeTargets="Clean">
     <ItemGroup>
       <FilesToDelete Include="$(ProjectDir)$(OutDir)Bridge.*.nupkg" />
